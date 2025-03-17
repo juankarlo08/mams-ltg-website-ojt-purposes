@@ -10,26 +10,12 @@ import Card from 'react-bootstrap/Card';
 import NewsData from '../../data/newsdata';
 
 const responsive = {
-    xxl: {
-       breakpoint: { max: 4000, min: 1400 },
-       items: 3,
-     },
-     xl: {
-       breakpoint: { max: 1399, min: 1200 },
-       items: 1,
-     },
-     lg: {
-       breakpoint: { max: 1119, min: 992 },
-       items: 1,
-     },
-     md: {
-       breakpoint: { max: 991, min: 768 },
-       items: 1,
-     },
-     sm: {
-       breakpoint: { max: 767, min: 576 },
-       items: 1,
-     },
+  xxl: { breakpoint: { max: 4000, min: 1400 }, items: 3 },
+  xl: { breakpoint: { max: 1399, min: 1200 }, items: 2 },
+  lg: { breakpoint: { max: 1119, min: 992 }, items: 1 },
+  md: { breakpoint: { max: 991, min: 768 }, items: 1 },
+  sm: { breakpoint: { max: 767, min: 576 }, items: 1 },
+  xs: { breakpoint: { max: 575, min: 0 }, items: 1 }
    };
    
 
@@ -49,19 +35,18 @@ const NewsAndEventSection = () => {
         infinite={true}
         keyBoardControl={true}
         transitionDuration={500}
-        containerClass="carousel-container"
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-60-px"
+        itemClass="carousel-item-padding-60-px d-flex justify-content-center"
         
         
       >
         {NewsData.map((newsdata) => (
-          <Card className="custom-card mx-auto" style={{ width: '100%', maxWidth: '22rem' }} key={newsdata.id}>
+          <Card fluid className="custom-card" key={newsdata.id}>
             <Card.Img variant="top" className="card-img-size" src={newsdata.img} />
             <Card.Body>
               <Card.Text className='card-text mb-2'>{newsdata.date}</Card.Text>
               <Card.Title className='news-data-title'>{newsdata.title}</Card.Title>
-              <Button variant='danger'> Read More</Button>
+              <Button variant='danger' className='mt-3'> Read More</Button>
             </Card.Body>
           </Card>
         ))}
