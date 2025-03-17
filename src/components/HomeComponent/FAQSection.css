@@ -1,0 +1,13 @@
+.accordion-button{
+    background-color: transparent;
+    color: white;
+}
+
+.accordion{
+    --bs-accordion-color: white;
+    --bs-accordion-bg: transparent;
+    --bs-accordion-active-bg: transparent;
+    --bs-accordion-border-color: none;
+    --bs-accordion-btn-icon: url("../../assets/down-arrow.png");
+    --bs-accordion-btn-active-icon: url("../../assets/down-arrow.png");
+}

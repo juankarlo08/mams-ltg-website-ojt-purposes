@@ -8,8 +8,8 @@ import Franchisee from '../../img/paolo.png';
 const TestimonialSection = () => {
   return (
     <Container fluid className='bg-dark custom-x-padding py-5'>
-        <Row className='text-center justify-content-center'>
-            <Col lg={8} className='mt-5'>
+        <Row className='my-5 text-center justify-content-center'>
+            <Col lg={8}>
                 <img 
                 src={FranchiseeLogo} 
                  width="auto"

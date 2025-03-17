@@ -10,14 +10,14 @@ import LinearOperations from '../../img/linearoperations.png';
 
 const FeatureListSection = () => {
   return (
-    <Container fluid className='bg-white custom-x-padding py-5'>
+    <Container fluid className='bg-white custom-x-padding custom-y-padding py-5'>
         <Row className='mt-5 justify-content-center'>
             <Col className='mb-5' xxl={10}>
               <h1 className="text-center display-4 fw-bold">Why Choose Our Microlending Franchise?</h1>
             </Col>
         </Row>
       
-        <Row className='mt-5'>
+        <Row className='my-5'>
                 <Col xxl={4} lg={4} >
                     <Card className='text-center align-items-center border-0'>
                         <Card.Img src={GreatReturns} className="feature-list-pic" alt="Great Return Icon" variant="top" />

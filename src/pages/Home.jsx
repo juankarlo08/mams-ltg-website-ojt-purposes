@@ -5,6 +5,7 @@ import StatsSection from '../components/HomeComponent/StatsSection'
 import TestimonialSection from '../components/HomeComponent/TestimonialSection'
 import NewsAndEventSection from '../components/HomeComponent/NewsAndEventSection'
 import CTASection from '../components/HomeComponent/CTASection'
+import FAQSection from '../components/HomeComponent/FAQSection'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
     <TestimonialSection />
     <NewsAndEventSection />
     <CTASection />
+    <FAQSection />
     </>
   )
 }

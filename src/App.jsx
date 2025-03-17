@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import NavSection from './components/Header/NavSection';
 import Home from './pages/Home';
+import FooterSection from './components/Footer/FooterSection';
 
 
 const Dashboard = () =>{
@@ -15,7 +16,7 @@ const Dashboard = () =>{
   <div>
     <NavSection />
     <Outlet />
-    {/* <FooterCont /> */}
+     <FooterSection />
   </div>
   );
 };

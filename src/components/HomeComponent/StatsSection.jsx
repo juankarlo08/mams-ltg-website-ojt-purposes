@@ -9,7 +9,7 @@ import StatsPic from '../../img/stats-pic.png';
 const StatsSection = () => {
   return (
     <Container fluid className='bg-light custom-x-padding py-5'>
-    <Row className='d-flex flex-column-reverse flex-md-row align-items-center py-5'>
+    <Row className='d-flex flex-column-reverse flex-md-row align-items-center my-5'>
         <Col md={6} sm={12} className='mt-5 d-flex justify-content-center align-items-center'>
         <img src={StatsPic} className='img-fluid rounded-5' alt='stats pic' />
         </Col>
@@ -29,7 +29,7 @@ const StatsSection = () => {
             </Col>
         </Row>
         <div className='mt-4'>
-            <Button variant='dark' className='me-2'>Learn More</Button>
+            <Button variant='danger' className='me-2'>Learn More</Button>
             <Button variant='border-0'>Sign Up &gt;</Button>
         </div>
         </Col>
