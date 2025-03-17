@@ -28,7 +28,7 @@ const FooterSection = () => {
       <Container fluid className='custom-x-padding pt-5'>
           <Row className='pb-5'>
            <Col md={8} sm={12}  >
-           <div className="d-flex flex-column align-items-sm-center align-items-md-start"> 
+           <div className="d-flex flex-column align-items-center align-items-md-start"> 
 
            
            <Navbar.Brand className='pb-4 '>
@@ -81,7 +81,7 @@ const FooterSection = () => {
           </Row>
       <Row >
         <hr/>
-        <div className="d-flex justify-content-sm-center justify-content-md-start">
+        <div className="d-flex justify-content-center justify-content-md-start">
           <p>&copy; 2024 MAMS LT&G Franchising Corp. All rights reserved.</p>
         </div>
       </Row>

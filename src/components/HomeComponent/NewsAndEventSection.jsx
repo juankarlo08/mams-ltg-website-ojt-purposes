@@ -56,7 +56,7 @@ const NewsAndEventSection = () => {
         
       >
         {NewsData.map((newsdata) => (
-          <Card className="custom-card mx-auto" style={{ width: '22rem' }} key={newsdata.id}>
+          <Card className="custom-card mx-auto" style={{ width: '100%', maxWidth: '22rem' }} key={newsdata.id}>
             <Card.Img variant="top" className="card-img-size" src={newsdata.img} />
             <Card.Body>
               <Card.Text className='card-text mb-2'>{newsdata.date}</Card.Text>
