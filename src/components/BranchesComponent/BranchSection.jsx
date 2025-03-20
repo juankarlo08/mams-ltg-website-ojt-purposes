@@ -16,7 +16,7 @@ const BranchSection = () => {
       <Row className='bg-light p-4 align-items-center'>
         <Col md={6}className='d-flex justify-content-center justify-content-md-start'>
             <Form>
-              <InputGroup >
+              <InputGroup className='my-2'>
                 <InputGroup.Text className='bg-white border-end-0 ' >
                   <img
                     src={SearchImg}
