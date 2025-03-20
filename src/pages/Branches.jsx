@@ -14,7 +14,7 @@ const Branches = () => {
       exit='exit'
     >
     <MapSection />
-    <BranchSection />
+     <BranchSection /> 
 
 
     </motion.div>

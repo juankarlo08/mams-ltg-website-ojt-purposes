@@ -4,16 +4,18 @@ import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Form, InputGroup, FormControl} from "react-bootstrap";
 import SearchImg from '../../assets/search.png';
+import BranchesData from '../../data/branchesdata';
+import Carousel from 'react-bootstrap/Carousel';
+import CarouselImg from '../../img/angeles.jpg'
 
 
 const BranchSection = () => {
   return (
     <Container fluid className="custom-x-padding py-5">
-      <Row className='bg-light p-4 align-items-center'>
+      <Row className='bg-light bo p-4 align-items-center rounded-4'>
         <Col md={6}className='d-flex justify-content-center justify-content-md-start'>
             <Form>
               <InputGroup className='my-2'>
@@ -45,47 +47,63 @@ const BranchSection = () => {
         </Col>
       </Row>
 
-
-      <Tab.Container id="list-group-tabs-example" defaultActiveKey="link1">
+     
+      <Tab.Container id="list-group-tabs-example" defaultActiveKey="1">
         <Row className='mt-5'>
           <Col sm={4}>
+          <div className="rounded-3 shadow-sm p-3 border-dark-subtle" style={{ maxHeight: "500px", overflowY: "auto"}}>
             <ListGroup>
-              <ListGroup.Item action eventKey="link1">
-                Link 1
+            {BranchesData.map((branchesdata) => (
+              <ListGroup.Item className="border-end-0 border-start-0 rounded-0" eventKey={branchesdata.id}>
+                {branchesdata.branch_name}
               </ListGroup.Item>
-              <ListGroup.Item action eventKey="link2">
-                Link 2
-              </ListGroup.Item>
+            ))}
+              
+             
             </ListGroup>
+            </div>
           </Col>
+        
+        
           <Col sm={8}>
             <Tab.Content>
-              <Tab.Pane eventKey="link1">
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="https://via.placeholder.com/150" alt="Placeholder" />
+            {BranchesData.map((branchesdata) => (
+              <Tab.Pane eventKey={branchesdata.id} key={branchesdata.id}>
+                <Card className="shadow-sm border-light-subtle p-3" style={{ maxWidth: "60rem" }}>
+                  <Card.Header as="h4" className='bg-white'>{branchesdata.branch_name}</Card.Header>
+                  <Row>
+                  <Col>
                   <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
                     <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
+                      <h6 className='mt-4'>Address:</h6>
+                      <p> {branchesdata.address}</p>
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Text>
+                      <h6 className='mt-4'>Contact:</h6>
+                      <p> {branchesdata.contact}</p>
+                    </Card.Text>
+                    <Card.Text>
+                      <h6 className='mt-4'>Owned and Operated by:</h6>
+                      <p> {branchesdata.company}</p>
+                    </Card.Text>
+                    
                   </Card.Body>
+                  </Col>
+                  <Col>
+                  <Carousel>
+                      <Carousel.Item interval={1000}>
+                         <img
+                         className="d-block w-50 "
+                         src={CarouselImg}
+                         alt="carousel-img"
+                     />      
+                      </Carousel.Item>
+                    </Carousel>
+                  </Col>
+                  </Row>
                 </Card>
               </Tab.Pane>
-              <Tab.Pane eventKey="link2">
-                <Card style={{ width: "18rem" }}>
-                  <Card.Img variant="top" src="https://via.placeholder.com/150" alt="Placeholder" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and make up the bulk of the
-                      card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
-              </Tab.Pane>
+                ))}
             </Tab.Content>
           </Col>
         </Row>
