@@ -9,6 +9,7 @@ import {
 import NavSection from './components/Header/NavSection';
 import Home from './pages/Home';
 import FooterSection from './components/Footer/FooterSection';
+import Branches from './pages/Branches';
 
 
 const Dashboard = () =>{
@@ -25,10 +26,16 @@ const router = createHashRouter([
   {
     path: "/",
     element: <Dashboard />,
-    children: [{
-      path: "/",
-      element: <Home />,
-   }]
+    children: [
+      {
+        path: "/", 
+        element: <Home />
+      },
+      {
+        path: "branches", 
+        element: <Branches />
+      }
+  ]
   },
 
 ]);

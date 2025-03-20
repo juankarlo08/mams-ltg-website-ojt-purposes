@@ -1,0 +1,25 @@
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* Fullscreen map */
+    overflow: hidden;
+  }
+  .branches-card {
+    position: absolute;
+    bottom: 20px; /* Adjust spacing from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+    width: 80%; /* Adjust as needed */
+}
+  
+
+  .map-fade {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    pointer-events: none; 
+  }
+

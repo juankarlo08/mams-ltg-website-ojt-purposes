@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,7 +10,7 @@ const NavSection = () => {
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-body-light">
     <Container fluid className='custom-x-padding'>
-      <Navbar.Brand href="/">
+      <Navbar.Brand as={Link} to="/">
       <img
           src={Logo}
           width="auto"
@@ -21,11 +22,11 @@ const NavSection = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto">
-            <Nav.Link className="text-center" href="/">Home</Nav.Link>
-            <Nav.Link className="text-center" href="/about">About</Nav.Link>
-            <Nav.Link className="text-center" href="#link">Branches</Nav.Link>
-            <Nav.Link className="text-center" href="#link">Franchising</Nav.Link>
-            <Nav.Link className="text-center" href="#link">Contact</Nav.Link>
+            <Nav.Link className="text-center" as={Link} to="/">Home</Nav.Link>
+            <Nav.Link className="text-center" as={Link} to="/about">About</Nav.Link>
+            <Nav.Link className="text-center" as={Link} to="/branches">Branches</Nav.Link>
+            <Nav.Link className="text-center" as={Link} to="/franchising">Franchising</Nav.Link>
+            <Nav.Link className="text-center" as={Link} to="/contact">Contact</Nav.Link>
         </Nav>
         <Nav>
           <Button className="rounded" variant="danger" size="sm" href="#">Franchise Now</Button>

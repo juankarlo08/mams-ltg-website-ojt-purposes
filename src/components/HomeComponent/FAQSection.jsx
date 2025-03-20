@@ -116,7 +116,7 @@ const FAQSection = () => {
     <Col className='mt-5'>
     <h3> Still have questions?</h3>
     <p className='mt-3'>We're here to help you!</p>
-    <Button variant="light" >Contact</Button>
+    <Button variant="danger" >Contact</Button>
     </Col>
   </Row>
   </Container>
