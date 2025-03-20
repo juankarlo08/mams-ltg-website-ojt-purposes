@@ -26,11 +26,14 @@ const containerStyle = {
     fullscreenControl: true
   }
 
+  
+
 const MapSection = () => {
     const [selectedBranch, setSelectedBranch] = useState(null);
+    const apiKey = import.meta.env.VITE_API_KEY;
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyCS56UEU6qB8RRk42ienFd_LE3j1vkvFrY">
+    <LoadScript googleMapsApiKey={apiKey}>
       <div className="map-container" >
        
         <GoogleMap
@@ -65,7 +68,7 @@ const MapSection = () => {
         <div className="map-fade"></div>
           
 
-        <div className="branches-card mx-3 text-center">
+        <div className="branches-card mx-auto text-center">
           <h3 className="text-light display-4 fw-bold">Find a Branch Near You</h3>
           <p className="text-light">From year 2018 a fast growing branches across the Philippines started from 5 branches to {ltgData.features.length} branches as of now.</p>
         </div>
