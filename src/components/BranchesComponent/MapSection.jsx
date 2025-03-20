@@ -18,10 +18,10 @@ const containerStyle = {
   };
   
   const options = {
-    streetViewControl: true,
+    streetViewControl: false,
     rotateControl: true,
     scaleControl: true,
-    zoomControl: true,
+    zoomControl: false,
     mapTypeControl: false,
     fullscreenControl: true
   }
