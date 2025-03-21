@@ -14,7 +14,7 @@ const FAQSection = () => {
         <p className="lead">Here are some common questions about our franchise opportunities, how to get started and our microlending business.</p>
         <h3 className='mt-5'>LT&G Credit Line</h3>
         
-    <Accordion defaultActiveKey={["0","1","2","3"]} alwaysOpen flush className='mt-2'>
+    <Accordion defaultActiveKey={["0","1","2","3"]} alwaysOpen flush className='mt-2 custom-accordion'>
      <Accordion.Item eventKey="0" className='border-top'>
          <Accordion.Header>
             <div className='fw-bold text-light'>What is LT&G Credit Line?</div> 
@@ -64,7 +64,7 @@ const FAQSection = () => {
 
   <Row>
      <h3 className='mt-5'>MAMS LT&G Franchising Corp </h3>
-     <Accordion defaultActiveKey={["0","1","2","3"]} alwaysOpen flush className='mt-2'>
+     <Accordion defaultActiveKey={["0","1","2","3"]} alwaysOpen flush className='mt-2 custom-accordion'>
      <Accordion.Item eventKey="0" className='border-top'>
          <Accordion.Header >
          <div className="fw-bold text-light">What is LT&G’s franchising model?</div>

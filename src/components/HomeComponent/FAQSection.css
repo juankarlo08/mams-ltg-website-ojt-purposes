@@ -3,7 +3,7 @@
     color: white;
 }
 
-.accordion{
+.custom-accordion{
     --bs-accordion-color: white;
     --bs-accordion-bg: transparent;
     --bs-accordion-active-bg: transparent;

@@ -9,7 +9,9 @@ import { Form, InputGroup, FormControl} from "react-bootstrap";
 import SearchImg from '../../assets/search.png';
 import BranchesData from '../../data/branchesdata';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImg from '../../img/angeles.jpg'
+import CarouselImg from '../../img/angeles.jpg';
+import './BranchSection.css'
+import Accordion from 'react-bootstrap/Accordion';
 
 
 const BranchSection = () => {
@@ -47,11 +49,11 @@ const BranchSection = () => {
         </Col>
       </Row>
 
-     
-      <Tab.Container id="list-group-tabs-example" defaultActiveKey="1">
-        <Row className='mt-5'>
-          <Col sm={4}>
-          <div className="rounded-3 shadow-sm p-3 border-dark-subtle" style={{ maxHeight: "500px", overflowY: "auto"}}>
+    {/* Large Screen View */}
+    <Tab.Container id="list-group-tabs-example" defaultActiveKey="1">
+      <Row className='mt-5 d-none d-md-flex'>    
+          <Col lg={5}>
+          <div className="rounded-3 shadow-sm p-3 border-dark-subtle mb-3" style={{ maxHeight: "500px", overflowY: "auto"}}>
             <ListGroup>
             {BranchesData.map((branchesdata) => (
               <ListGroup.Item className="border-end-0 border-start-0 rounded-0" eventKey={branchesdata.id}>
@@ -64,12 +66,12 @@ const BranchSection = () => {
             </div>
           </Col>
         
-        
-          <Col sm={8}>
+          
+          <Col>
             <Tab.Content>
             {BranchesData.map((branchesdata) => (
               <Tab.Pane eventKey={branchesdata.id} key={branchesdata.id}>
-                <Card className="shadow-sm border-light-subtle p-3" style={{ maxWidth: "60rem" }}>
+                <Card className="shadow-sm border-light-subtle p-3" style={{ maxWidth: "55rem" }}>
                   <Card.Header as="h4" className='bg-white'>{branchesdata.branch_name}</Card.Header>
                   <Row>
                   <Col>
@@ -93,9 +95,9 @@ const BranchSection = () => {
                   <Carousel>
                       <Carousel.Item interval={1000}>
                          <img
-                         className="d-block w-50 "
+                         className="carousel-img pt-3"
                          src={CarouselImg}
-                         alt="carousel-img"
+                         alt="company-logo"
                      />      
                       </Carousel.Item>
                     </Carousel>
@@ -108,7 +110,59 @@ const BranchSection = () => {
           </Col>
         </Row>
       </Tab.Container>
+
+      
+
+  {/* Small Screen View */}
+      <Row className="d-md-none">
+        <Col>
+      <Accordion defaultActiveKey="0">
+      {BranchesData.map((branchesdata) => (
+      <Accordion.Item eventKey={branchesdata.id.toString()} key={branchesdata.id}>
+        <Accordion.Header>{branchesdata.branch_name}</Accordion.Header>
+        <Accordion.Body>
+                <Card className="shadow-sm border-light-subtle p-3" style={{ maxWidth: "55rem" }}>
+                  <Card.Header as="h4" className='bg-white'>{branchesdata.branch_name}</Card.Header>
+                  <Row>
+                  <Col>
+                  <Card.Body>
+                    <Card.Text>
+                      <h6 className='mt-4'>Address:</h6>
+                      <p> {branchesdata.address}</p>
+                    </Card.Text>
+                    <Card.Text>
+                      <h6 className='mt-4'>Contact:</h6>
+                      <p> {branchesdata.contact}</p>
+                    </Card.Text>
+                    <Card.Text>
+                      <h6 className='mt-4'>Owned and Operated by:</h6>
+                      <p> {branchesdata.company}</p>
+                    </Card.Text>
+                    
+                  </Card.Body>
+                  </Col>
+                  <Col>
+                  <Carousel>
+                      <Carousel.Item interval={1000}>
+                         <img
+                         className="carousel-img pt-3"
+                         src={CarouselImg}
+                         alt="company-logo"
+                     />      
+                      </Carousel.Item>
+                    </Carousel>
+                  </Col>
+                  </Row>
+                </Card>
+        </Accordion.Body>
+      </Accordion.Item>
+       ))}
+    </Accordion> 
+    </Col>
+    </Row>
     </Container>
+    
+                
   )
 }
 
