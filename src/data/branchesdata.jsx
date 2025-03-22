@@ -8,6 +8,8 @@ export default [
             address: '2nd Flr. Y&Y Bldg., Magsaysay, Alaminos City, Pangasinan',
             listImages: [],
             contact_no: ["09814061189"],
+            region: "Luzon"
+
         },
         {
             id: 2,
@@ -16,6 +18,7 @@ export default [
             address: 'Unit 6 2nd floor NJT Bldg. Infront of Sta. Maria Church, Balibago, Angeles City',
             listImages: [],
             contact_no: ['09493662929'],
+            region: "Luzon"
         },
         {
             id: 3,
@@ -24,6 +27,7 @@ export default [
             address: '',
             listImages: [],
             contact_no: [],
+            region: "Luzon"
         },
         {
             id: 4,

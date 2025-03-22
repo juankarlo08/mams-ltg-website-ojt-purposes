@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { useState } from "react";
 import Container from 'react-bootstrap/Container';
 import Col from 'react-bootstrap/Col';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -14,7 +15,17 @@ import './BranchSection.css'
 import Accordion from 'react-bootstrap/Accordion';
 
 
+
 const BranchSection = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [regionFilter, setRegionFilter] = useState("All");
+
+const filteredBranches = BranchesData.filter(branch =>
+  branch.branch_name.toLowerCase().includes(searchTerm.toLowerCase())
+  &&
+  (regionFilter === "All" || branch.region === regionFilter)
+);
+
   return (
     <Container fluid className="custom-x-padding py-5">
       <Row className='bg-light bo p-4 align-items-center rounded-4'>
@@ -29,7 +40,12 @@ const BranchSection = () => {
                     height="20"
                   />
                 </InputGroup.Text>
-                <FormControl type="text" placeholder="Search..." className='border-start-0 py-2 pe-5' />
+                <FormControl 
+                type="text" 
+                placeholder="Search..." 
+                className='border-start-0 py-2 pe-5' 
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}/>
               </InputGroup>
             </Form>
         </Col>
@@ -38,7 +54,10 @@ const BranchSection = () => {
           <p>Filter by:</p>
         </div>
         <div>
-          <Form.Select className='py-2'>
+          <Form.Select 
+          className='py-2'  
+          value={regionFilter} 
+          onChange={(e) => setRegionFilter(e.target.value)}>
             <option>All</option>
             <option>Luzon</option>
             <option>Visayas</option>
@@ -51,15 +70,20 @@ const BranchSection = () => {
 
     {/* Large Screen View */}
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="1">
-      <Row className='mt-5 d-none d-md-flex'>    
+      <Row className='mt-5 d-none d-lg-flex'>    
           <Col lg={5}>
           <div className="rounded-3 shadow-sm p-3 border-dark-subtle mb-3" style={{ maxHeight: "500px", overflowY: "auto"}}>
             <ListGroup>
-            {BranchesData.map((branchesdata) => (
-              <ListGroup.Item className="border-end-0 border-start-0 rounded-0" eventKey={branchesdata.id}>
+
+              {filteredBranches.length > 0 ? (
+            filteredBranches.map((branchesdata) => (
+              <ListGroup.Item className="border-end-0 border-start-0 rounded-0" key={branchesdata.id} eventKey={branchesdata.id}>
                 {branchesdata.branch_name}
               </ListGroup.Item>
-            ))}
+            ))
+          ) : (
+            <ListGroup.Item>No branches found</ListGroup.Item>
+          )}
               
              
             </ListGroup>
@@ -114,7 +138,7 @@ const BranchSection = () => {
       
 
   {/* Small Screen View */}
-      <Row className="d-md-none">
+      <Row className="d-lg-none">
         <Col>
       <Accordion defaultActiveKey="0">
       {BranchesData.map((branchesdata) => (
