@@ -145,10 +145,10 @@ const filteredBranches = BranchesData.filter(branch =>
       <Accordion.Item eventKey={branchesdata.id.toString()} key={branchesdata.id}>
         <Accordion.Header>{branchesdata.branch_name}</Accordion.Header>
         <Accordion.Body>
-                <Card className="shadow-sm border-light-subtle p-3" style={{ maxWidth: "55rem" }}>
+                <Card className="shadow-sm border-light-subtle p-3 " style={{ maxWidth: "55rem" }}>
                   <Card.Header as="h4" className='bg-white'>{branchesdata.branch_name}</Card.Header>
                   <Row>
-                  <Col>
+                  <Col sm={6}>
                   <Card.Body>
                     <Card.Text>
                       <h6 className='mt-4'>Address:</h6>
@@ -165,7 +165,7 @@ const filteredBranches = BranchesData.filter(branch =>
                     
                   </Card.Body>
                   </Col>
-                  <Col>
+                  <Col sm={6}>
                   <Carousel>
                       <Carousel.Item interval={1000}>
                          <img
