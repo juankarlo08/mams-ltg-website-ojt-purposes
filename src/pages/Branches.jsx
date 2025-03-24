@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { pageAnimation } from '../animation';
 import BranchSection from '../components/BranchesComponent/BranchSection';
 import MapSection from '../components/BranchesComponent/MapSection';
+import BranchCTASection from '../components/BranchesComponent/BranchCTASection';
 
 const Branches = () => {
   return (
@@ -15,6 +16,7 @@ const Branches = () => {
     >
     <MapSection />
      <BranchSection /> 
+     <BranchCTASection />
 
 
     </motion.div>

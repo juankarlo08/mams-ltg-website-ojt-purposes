@@ -70,7 +70,7 @@ const filteredBranches = BranchesData.filter(branch =>
 
     {/* Large Screen View */}
     <Tab.Container id="list-group-tabs-example" defaultActiveKey="1">
-      <Row className='mt-5 d-none d-lg-flex'>    
+      <Row className='my-5 d-none d-lg-flex'>    
           <Col lg={5}>
           <div className="rounded-3 shadow-sm p-3 border-dark-subtle mb-3" style={{ maxHeight: "500px", overflowY: "auto"}}>
             <ListGroup>
@@ -138,7 +138,7 @@ const filteredBranches = BranchesData.filter(branch =>
       
 
   {/* Small Screen View */}
-      <Row className="d-lg-none">
+      <Row className="d-lg-none mb-5">
         <Col>
       <Accordion defaultActiveKey="0">
       {BranchesData.map((branchesdata) => (
