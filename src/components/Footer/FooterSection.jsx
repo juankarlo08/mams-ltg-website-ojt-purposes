@@ -26,7 +26,7 @@ const FooterSection = () => {
 
   return (
       <Container fluid className='custom-x-padding pt-5'>
-          <Row className='pb-5'>
+          <Row className='pb-5 mt-5'>
            <Col md={8} sm={12}  >
            <div className="d-flex flex-column align-items-center align-items-md-start"> 
 

@@ -8,7 +8,7 @@ import CTAPic from '../../img/angeles-2.jpg';
 
 const CTASection = () => {
   return (
-    <Container fluid className='bg-light custom-x-padding py-5'>
+    <Container fluid className='custom-x-padding py-5'>
         <Row className="text-center justify-content-center my-5">
           <Col xxl={9} md={12}>
                 <h1 className='display-4 fw-bold'>Start Your Journey to Financial Freedom With Our Microlending Franchise</h1>

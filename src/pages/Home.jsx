@@ -25,6 +25,7 @@ const Home = () => {
     <NewsAndEventSection />
     <CTASection />
     <FAQSection />
+  
 
     </motion.div>
     </>
