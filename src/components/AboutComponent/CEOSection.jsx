@@ -10,10 +10,11 @@ const CEOSection = () => {
     <Container fluid className='custom-x-padding py-5'>
         
     <Row className='my-5 d-flex align-items-center'>
-    <Col md={6} sm={12} className='mt-5 d-flex justify-content-center align-items-center'>
-        <img src={CEOPic} className='img-fluid' style={{maxHeight:"700px", width:"auto"}}alt='stats pic' />
+    <Col md={6} sm={12} className='d-flex justify-content-center align-items-center '>
+        <img src={CEOPic} className='img-fluid mb-5' style={{maxHeight:"700px", width:"auto"}}alt='stats pic' />
         </Col>
       <Col>
+      
       <h1 className="display-4 fw-bold">Marco Antonio M. Soliman</h1>
       <h5>President / CEO</h5>
       <p className="lead mt-4">Based in Legazpi, Albay, entrepreneur Marco Antonio M. Soliman 
