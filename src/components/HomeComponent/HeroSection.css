@@ -1,11 +1,11 @@
 .bg-hero{
     background-image: url(../../img/header-pic-background.jpg);
     background-size: cover;
-    background-position: center; 
+    background-position: top; 
     background-repeat: no-repeat; 
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
     .bg-hero{
         background-image: url(../../img/header-pic-background2.jpg);
         background-size: cover;

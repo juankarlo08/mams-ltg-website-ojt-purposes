@@ -4,68 +4,54 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+const timelineData = [
+  {
+    date: "Aug 2021",
+    title: "Founded company",
+    description:
+      "Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.",
+  },
+  {
+    date: "Dec 2021",
+    title: "Secured $65m in funding",
+    description:
+      "Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.",
+  },
+  {
+    date: "Feb 2022",
+    title: "Released beta",
+    description:
+      "Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.",
+  },
+  {
+    date: "Dec 2022",
+    title: "Global launch of product",
+    description:
+      "Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.",
+  },
+];
+
 const TimelineSection = () => {
     
   return (
-    <Container fluid className='custom-x-padding py-5 timeline-section bg-light'>
-      <Row className='timeline-items'>
-        <Col className='timeline-item'>
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015</div>
-          <div class="timeline-content">
-            <h3>timeline item title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+    <Container fluid className="custom-x-padding py-5 bg-light">
+    <Row className="align-items-center my-5">
+      {timelineData.map((item, index) => (
+        <Col key={index} md={3}>
+          {/* Date with Horizontal Line */}
+          <div className="d-flex align-items-center">
+            <span className="text-danger fw-bold small">• {item.date}</span>
+            {index !== timelineData.length - 1 && (
+              <div className="flex-grow-1 ms-2 border-bottom"></div>
+            )}
           </div>
+
+          {/* Title & Description */}
+          <h5 className="fw-bold mt-2">{item.title}</h5>
+          <p className="text-muted">{item.description}</p>
         </Col>
-        <Col className='timeline-item'>
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015</div>
-          <div class="timeline-content">
-            <h3>timeline item title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </Col>
-        <Col className='timeline-item'>
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015</div>
-          <div class="timeline-content">
-            <h3>timeline item title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </Col>
-        <Col className='timeline-item'>
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015</div>
-          <div class="timeline-content">
-            <h3>timeline item title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </Col>
-        <Col className='timeline-item'>
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015</div>
-          <div class="timeline-content">
-            <h3>timeline item title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </Col>
-        <Col className='timeline-item'>
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015</div>
-          <div class="timeline-content">
-            <h3>timeline item title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </Col>
-        <Col className='timeline-item'>
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">2015</div>
-          <div class="timeline-content">
-            <h3>timeline item title</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          </div>
-        </Col>
-      </Row>
+      ))}
+    </Row>
   </Container>
   )
 }

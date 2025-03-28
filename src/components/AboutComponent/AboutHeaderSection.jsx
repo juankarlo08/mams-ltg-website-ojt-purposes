@@ -7,8 +7,8 @@ import './AboutHeaderSection.css';
 
 const AboutHeaderSection = () => {
   return (
-    <Container fluid className='bg-about custom-x-padding py-5 text-light text-center d-flex align-items-center'>
-        <Row className=' my-5 justify-content-center'>
+    <Container fluid className='bg-about custom-x-padding py-5 text-light  d-flex align-items-center'>
+        <Row className=' my-5 justify-content-end'>
         <Col lg={6} className='my-5'>
              <h6 className='fw-bold'>About</h6>
             <h1 className="fw-bold display-4">LT&G Credit Line </h1>

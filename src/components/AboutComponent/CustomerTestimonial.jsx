@@ -26,16 +26,16 @@ const testimonials = [
 const CustomerTestimonial = () => {
   return (
       <Container fluid className="custom-x-padding py-5 bg-light">
-        <Row>
+        <Row className='mt-5'>
             <Col>
-            <h2 className="text-center fw-bold">Customer testimonials</h2>
-      <p className="text-center text-muted">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <h1 className="text-center display-4 fw-bold">Real Stories, Real Success: Our Clients Speak</h1>
+      <p className="text-center lead text-muted">
+      Discover how our microloans have empowered individuals and businesses to achieve their financial goals.
       </p>
             </Col>
         </Row>
 
-      <Row className="justify-content-center">
+      <Row className="justify-content-center my-5">
         {testimonials.map((testimonial) => (
           <Col md={4} key={testimonial.id} className="mb-4">
             <Card className="border-0 shadow p-3 text-center">

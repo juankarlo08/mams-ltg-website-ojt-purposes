@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import GreatReturns from '../../img/greatreturns.png';
 import TimelessIndustry from '../../img/timelessindustry.png';
 import LinearOperations from '../../img/linearoperations.png';
@@ -29,6 +30,7 @@ const FeatureListSection = () => {
                                 <Card.Text>
                                     <p>Compared to similarly priced FRANCHISE PACKAGES, LT&G boasts of a relatively faster ROI of 28 MONTHS!</p>
                                 </Card.Text>
+                                <Button variant='none' className="text-danger">Learn More → </Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -42,6 +44,7 @@ const FeatureListSection = () => {
                                 <Card.Text>
                                    <p> Financial Industry will always be relevant regardless of shifts in the market. You know what they say, "MONEY MAKES THE WORLD GO ROUND".</p>
                                 </Card.Text>
+                                <Button variant='none' className="text-danger">Learn More → </Button>
                         </Card.Body>
                     </Card>
                 </Col>
@@ -55,6 +58,7 @@ const FeatureListSection = () => {
                                 <Card.Text>
                                     <p>The Business System is designed to produce maximum results with minimal effort. Say GOODBYE to concerns regarding SPOILAGE, LOW INVENTORY, or EXPENSIVE RENTALS.</p>
                                 </Card.Text>
+                                <Button variant='none' className="text-danger">Learn More → </Button>
                         </Card.Body>
                     </Card>
                 </Col>

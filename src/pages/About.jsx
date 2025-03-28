@@ -6,6 +6,7 @@ import CEOSection from '../components/AboutComponent/CEOSection';
 import TimelineSection from '../components/AboutComponent/TimelineSection';
 import TeamSection from '../components/AboutComponent/TeamSection';
 import CustomerTestimonial from '../components/AboutComponent/CustomerTestimonial';
+import FranchiseTestimonial from '../components/AboutComponent/FranchiseTestimonial';
 
 
 const About = () => {
@@ -22,6 +23,7 @@ const About = () => {
         <TimelineSection />
         <TeamSection />
         <CustomerTestimonial />
+        <FranchiseTestimonial />
 
 
     </motion.div>
