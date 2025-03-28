@@ -13,6 +13,12 @@ body{
   border-color: #b62525;
 }
 
+:root{
+  --bs-danger: #b62525;
+  --bs-red: #b62525;
+  --bs-danger-rgb: 182, 37, 37;
+}
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
