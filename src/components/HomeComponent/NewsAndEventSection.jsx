@@ -21,7 +21,7 @@ const responsive = {
 
 const NewsAndEventSection = () => {
   return (
-    <Container fluid className='bg-light margin-x-padding py-5'>
+    <Container fluid className='margin-x-padding py-5'>
         <Row className='justify-content-center my-5'>
             <Col xxl={10}>
                 <h1 className='display-4 fw-bold text-center'>What's New?</h1>

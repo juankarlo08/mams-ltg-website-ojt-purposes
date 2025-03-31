@@ -1,0 +1,6 @@
+.bg-testimonial{
+    background-image: url(../../img/testimonial-section.jpg);
+    background-size: cover;
+    background-position: top; 
+    background-repeat: no-repeat; 
+}
