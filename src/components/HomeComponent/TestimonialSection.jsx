@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import FranchiseeLogo from '../../img/samplelogo.png';
 import Franchisee from '../../img/paolo.png';
+import Button from 'react-bootstrap/Button';
 import './TestimonialSection.css';
 
 const TestimonialSection = () => {
@@ -32,6 +33,9 @@ const TestimonialSection = () => {
                 className='mt-5 text-light' />
                 <h4 className='fw-bold mt-3 text-light'>Paolo S. Bobier</h4>
                 <h7 className="text-light text-secondary">Franchise Owner, One SM Lending Corporation</h7>
+                <div className='mt-4'>
+                <Button variant='danger'>Learn More</Button>
+                </div>
             </Col>
         </Row>
     </Container>

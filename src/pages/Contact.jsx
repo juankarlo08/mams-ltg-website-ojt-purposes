@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { pageAnimation } from '../animation';
 import ContactFormSection from '../components/ContactComponent/ContactFormSection';
 import ContactSection from '../components/ContactComponent/ContactSection'
+import FAQSection from '../components/ContactComponent/FAQSection';
 
 const Contact = () => {
   return (
@@ -15,6 +16,7 @@ const Contact = () => {
     >
     <ContactSection />
     <ContactFormSection />
+    <FAQSection />
     
 
 

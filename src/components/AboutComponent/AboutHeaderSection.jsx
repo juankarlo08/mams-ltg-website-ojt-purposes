@@ -7,12 +7,12 @@ import './AboutHeaderSection.css';
 
 const AboutHeaderSection = () => {
   return (
-    <Container fluid className='bg-about custom-x-padding py-5 text-light  d-flex align-items-center'>
-        <Row className=' my-5 justify-content-end'>
-        <Col lg={6} className='my-5'>
+    <Container fluid className=' bg-light custom-x-padding py-5 text-dark d-flex align-items-center'>
+        <Row className=' my-5'>
+        <Col lg={5} className='my-5'>
              <h6 className='fw-bold'>About</h6>
             <h1 className="fw-bold display-4">LT&G Credit Line </h1>
-            <p className='mt-5 lead'>
+            <p className='mt-4 lead'>
             LT&G Credit Line offers loans to micro-entrepreneurs for operational or growth capital, 
             providing customized credit, flexible terms, risk-handling insurance, and value-added services.
             </p>

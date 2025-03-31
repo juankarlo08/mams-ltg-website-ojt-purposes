@@ -1,41 +1,40 @@
 import React from 'react'
-import './TimelineSection.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const timelineData = [
   {
-    date: "Aug 2021",
-    title: "Founded company",
+    date: "2014",
+    title: "Marking the Beginning",
     description:
-      "Nihil aut nam. Dignissimos a pariatur et quos omnis. Aspernatur asperiores et dolorem dolorem optio voluptate repudiandae.",
+      "LT&G Credit Line took its first major step in the microlending industry with the opening of its inaugural branch in Legazpi City, Albay. This milestone marked the beginning of the company's mission to provide accessible and reliable financial solutions to individuals and businesses.",
   },
   {
-    date: "Dec 2021",
-    title: "Secured $65m in funding",
+    date: "2018",
+    title: "First Franchise Branch",
     description:
-      "Provident quia ut esse. Vero vel eos repudiandae aspernatur. Cumque minima impedit sapiente a architecto nihil.",
+      "LT&G Credit Line achieved a significant milestone by opening its first franchise branch, expanding its reach beyond company-owned locations. This marked the beginning of the brand’s growth through franchising, allowing more entrepreneurs to bring LT&G’s trusted financial services to their communities",
   },
   {
-    date: "Feb 2022",
-    title: "Released beta",
+    date: "2019 - 2021",
+    title: "49 Branches Nationwide",
     description:
-      "Sunt perspiciatis incidunt. Non necessitatibus aliquid. Consequatur ut officiis earum eum quia facilis. Hic deleniti dolorem quia et.",
+      "LT&G Credit Line had rapidly expanded to 49 branches nationwide, solidifying its presence in the microlending industry. This growth reflected the company's commitment to providing accessible financial solutions to more communities across the country.",
   },
   {
-    date: "Dec 2022",
-    title: "Global launch of product",
+    date: "2025",
+    title: "Total of 100 Branches Expected by the End of Next Year",
     description:
-      "Ut ipsa sint distinctio quod itaque nam qui. Possimus aut unde id architecto voluptatem hic aut pariatur velit.",
+      "LT&G Credit Line is on track to reach a total of 100 branches nationwide by the end of 2025, marking a new milestone in its expansion. This growth reflects the company’s dedication to making financial services more accessible to communities across the country.",
   },
 ];
 
 const TimelineSection = () => {
     
   return (
-    <Container fluid className="custom-x-padding py-5 bg-light">
-    <Row className="align-items-center my-5">
+    <Container fluid className="custom-x-padding py-5">
+    <Row className="my-5">
       {timelineData.map((item, index) => (
         <Col key={index} md={3}>
           {/* Date with Horizontal Line */}
