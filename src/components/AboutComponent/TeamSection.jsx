@@ -42,7 +42,7 @@ const TeamSection = () => {
               <Card.Img
                 variant="top"
                 src={member.img}
-                className="rounded-circle mx-auto mt-4"
+                className="rounded-circle border mx-auto mt-4"
                 style={{ width: "200px", height: "200px", objectFit: "cover" }}
               />
               <Card.Body>

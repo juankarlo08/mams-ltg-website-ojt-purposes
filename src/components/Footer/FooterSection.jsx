@@ -27,7 +27,7 @@ const FooterSection = () => {
     }
 
   return (
-      <Container fluid className='custom-x-padding py-3 bg-dark'>
+      <Container fluid className='custom-x-padding py-3 bg-warning'>
       <Row className="d-flex flex-lg-row flex-column-reverse text-center align-items-center">
         <Col lg={6} >
         <div className="d-flex text-light justify-content-lg-start justify-content-center mt-3">

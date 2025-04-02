@@ -8,7 +8,7 @@ import StatsPic from '../../img/stats-pic.png';
 
 const StatsSection = () => {
   return (
-    <Container fluid className='bg-light custom-x-padding py-5'>
+    <Container fluid className='custom-x-padding py-5'>
     <Row className='d-flex flex-column-reverse flex-md-row align-items-center my-5'>
         <Col md={6} sm={12} className='d-flex justify-content-center'>
         <img src={StatsPic} className='img-fluid rounded-5' style={{maxHeight:"650px"}} alt='stats pic' />
@@ -29,8 +29,8 @@ const StatsSection = () => {
             </Col>
         </Row>
         <div className='my-4'>
-            <Button variant='danger' className='me-2'>Learn More</Button>
-            <Button variant='border-0'>Sign Up &gt;</Button>
+            <Button variant='danger' className='me-3'>Learn More</Button>
+            <a href="#" className="text-dark text-decoration-none">Sign up →</a>
         </div>
         </Col>
     </Row>

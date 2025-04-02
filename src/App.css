@@ -17,6 +17,8 @@ body{
   --bs-danger: #b62525;
   --bs-red: #b62525;
   --bs-danger-rgb: 182, 37, 37;
+  --bs-warning: #232b37;
+  --bs-warning-rgb: 35, 43, 55;
 }
 
 

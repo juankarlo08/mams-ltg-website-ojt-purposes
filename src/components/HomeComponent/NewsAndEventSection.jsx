@@ -21,7 +21,7 @@ const responsive = {
 
 const NewsAndEventSection = () => {
   return (
-    <Container fluid className='bg-light margin-x-padding py-5'>
+    <Container fluid className='margin-x-padding py-5'>
         <Row className='justify-content-center my-5'>
             <Col xxl={10}>
                 <h1 className='display-4 fw-bold text-center'>What's New?</h1>
@@ -41,10 +41,15 @@ const NewsAndEventSection = () => {
         
       >
         {NewsData.map((newsdata) => (
-          <Card fluid className="custom-card" key={newsdata.id}>
+          <Card className="custom-card" key={newsdata.id}>
             <Card.Img variant="top" className="card-img-size" src={newsdata.img} />
             <Card.Body>
-              <Card.Text className='card-text mb-2'>{newsdata.date}</Card.Text>
+            <Card.Text className="card-text mb-2">
+              <Row className="d-flex justify-content-between">
+                <Col className="text-start text-muted"><small>{newsdata.date}</small></Col>
+                <Col className="text-end">{newsdata.source}</Col>
+              </Row>
+            </Card.Text>
               <Card.Title className='news-data-title'>{newsdata.title}</Card.Title>
               <Button variant='danger' className='mt-3'> Read More</Button>
             </Card.Body>
