@@ -1,0 +1,15 @@
+.bg-color{
+    background-color: #354153;
+    border-color: #808080;
+}
+.custom-y-padding{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.bg-contact{
+        background-image: url(../../img/contact-header.jpg);
+        background-size: cover;
+        background-position: top; 
+        background-repeat: no-repeat; 
+}

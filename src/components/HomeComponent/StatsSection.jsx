@@ -19,11 +19,11 @@ const StatsSection = () => {
         <h1 className="display-4 fw-bold mt-3">Transforming Lives Through Microfinance Solutions</h1>
         <p className='lead mt-3 text-muted'>LT&G Credit Line has empowered thousands of entrepreneurs across the Philippines. Our innovative microlending approach has made financial access a reality for many. </p>
         <Row>
-            <Col md={6} sm={12} className='border-start'>
+            <Col md={6} sm={12} className='border-start ps-4'>
             <h1 className="fw-bold display-5 mt-3">100K+</h1>
             <p className='text-muted'>Satisfied clients</p>
             </Col>
-            <Col md={6} sm={12} className='border-start'> 
+            <Col md={6} sm={12} className='border-start ps-4'> 
             <h1 className="fw-bold display-5 mt-3">60+</h1>
             <p className='text-muted' >Branches nationwide</p>
             </Col>

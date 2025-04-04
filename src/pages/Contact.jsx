@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from "framer-motion"
 import { pageAnimation } from '../animation';
 import ContactFormSection from '../components/ContactComponent/ContactFormSection';
-import ContactSection from '../components/ContactComponent/ContactSection'
 import FAQSection from '../components/ContactComponent/FAQSection';
 
 const Contact = () => {
@@ -14,7 +13,6 @@ const Contact = () => {
       animate='show'
       exit='exit'
     >
-    <ContactSection />
     <ContactFormSection />
     <FAQSection />
     

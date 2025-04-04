@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from "framer-motion"
 import { pageAnimation } from '../animation';
 import PricingSection from '../components/FranchisingComponent/PricingSection';
+import FranchiseProgramSection from '../components/FranchisingComponent/FranchiseProgramSection';
 
 const Franchising = () => {
   return (
@@ -13,6 +14,7 @@ const Franchising = () => {
       exit='exit'
     >
     <PricingSection />
+    <FranchiseProgramSection />
     
 
 

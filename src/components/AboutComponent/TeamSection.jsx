@@ -38,12 +38,12 @@ const TeamSection = () => {
         <Row className="g-4 mt-5">
         {teamMembers.map((member, index) => (
           <Col key={index} md={4}>
-            <Card className="text-center shadow border-0 py-5" style={{ background: "#fff", borderRadius: "20px" }}>
+            <Card className="text-center  border-0 py-5" style={{ background: "#fff", borderRadius: "20px" }}>
               <Card.Img
                 variant="top"
                 src={member.img}
-                className="rounded-circle border mx-auto mt-4"
-                style={{ width: "200px", height: "200px", objectFit: "cover" }}
+                className="rounded-circle shadow mx-auto mt-4"
+                style={{ width: "300px", height: "300px", objectFit: "cover" }}
               />
               <Card.Body>
                 <Card.Title className="fw-bold">{member.name}</Card.Title>

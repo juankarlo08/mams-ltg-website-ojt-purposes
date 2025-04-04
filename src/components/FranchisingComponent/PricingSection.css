@@ -1,6 +1,6 @@
-.pricing-header {
-    background: #232b37;
-    padding: 80px 0;
-    text-align: center;
-    height: 500px;
-  }
+.bg-pricing{
+  background-image: url(../../img/pricing-header.jpg);
+  background-size: cover;
+  background-position: top; 
+  background-repeat: no-repeat; 
+}
