@@ -4,17 +4,18 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import StatsPic from '../../img/stats-pic.png';
+import Image from 'react-bootstrap/Image';
 
 
 const StatsSection = () => {
   return (
     <Container fluid className='custom-x-padding py-5'>
-    <Row className='d-flex flex-column-reverse flex-md-row align-items-center my-5'>
-        <Col md={6} sm={12} className='d-flex justify-content-center'>
-        <img src={StatsPic} className='img-fluid rounded-5' style={{maxHeight:"650px"}} alt='stats pic' />
+    <Row className='d-flex flex-column-reverse flex-lg-row align-items-center my-5'>
+        <Col lg={6} className='d-flex justify-content-center'>
+        <Image  src={StatsPic} className='rounded-5 img-fluid' style={{maxHeight:"600px"}} alt='stats pic' />
         </Col>
         
-        <Col md={6} sm={12} className='mt-md-5 mt-sm-5 ps-md-5 '>
+        <Col lg={6} className='mt-md-5 mt-sm-5 ps-md-5 '>
         <h6 className='fw-bold'>Success</h6>
         <h1 className="display-4 fw-bold mt-3">Transforming Lives Through Microfinance Solutions</h1>
         <p className='lead mt-3 text-muted'>LT&G Credit Line has empowered thousands of entrepreneurs across the Philippines. Our innovative microlending approach has made financial access a reality for many. </p>

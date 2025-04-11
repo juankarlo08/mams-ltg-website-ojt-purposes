@@ -9,3 +9,10 @@
     background-color: transparent;
     color: rgb(0, 0, 0);
 }
+
+.list-group-item.active {
+    background-color: #b62525 !important;
+    border-color: #b62525 !important;
+  }
+  
+

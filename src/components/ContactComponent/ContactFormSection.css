@@ -1,6 +1,7 @@
 .bg-color{
     background-color: #354153;
-    border-color: #808080;
+    border-color: #808080;  
+    color: white;
 }
 .custom-y-padding{
     padding-top: 100px;
@@ -12,4 +13,9 @@
         background-size: cover;
         background-position: top; 
         background-repeat: no-repeat; 
+}
+
+.bg-color:focus{
+    color: white;
+    background-color: #354153;
 }

@@ -27,6 +27,7 @@ const NavSection = () => {
             <Nav.Link className="text-center" as={Link} to="/branches">Branches</Nav.Link>
             <Nav.Link className="text-center" as={Link} to="/franchising">Franchising</Nav.Link>
             <Nav.Link className="text-center" as={Link} to="/contact">Contact</Nav.Link>
+            
         </Nav>
         <Nav>
           <Button className="rounded" variant="danger" size="sm" href="#">Franchise Now</Button>

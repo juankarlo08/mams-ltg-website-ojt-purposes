@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 import { pageAnimation } from '../animation';
 import ContactFormSection from '../components/ContactComponent/ContactFormSection';
 import FAQSection from '../components/ContactComponent/FAQSection';
+import ApplyForLoanSection from '../components/ContactComponent/ApplyForLoanSection';
 
 const Contact = () => {
   return (
@@ -14,6 +15,7 @@ const Contact = () => {
       exit='exit'
     >
     <ContactFormSection />
+    <ApplyForLoanSection />
     <FAQSection />
     
 

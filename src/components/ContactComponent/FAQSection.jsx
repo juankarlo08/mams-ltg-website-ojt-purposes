@@ -7,6 +7,10 @@ import Button from 'react-bootstrap/Button';
 import './FAQSection.css';
 
 const FAQSection = () => {
+    const handleRefresh = () => {
+        window.scrollTo(0, 0); // Scroll to top
+        
+      };
   return (
     <Container fluid className='custom-x-padding py-5'>
         <Row className='my-5'>
@@ -116,7 +120,7 @@ const FAQSection = () => {
     <Col className='mt-5'>
     <h3> Still have questions?</h3>
     <p className='mt-3'>We're here to help you!</p>
-    <Button variant="danger" >Contact</Button>
+    <Button variant="danger" onClick={handleRefresh}>Contact</Button>
     </Col>
   </Row>
   </Container>
