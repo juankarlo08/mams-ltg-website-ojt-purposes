@@ -21,21 +21,21 @@ const FeatureListSection = () => {
                 <img src={GreatReturns} style={{height:"50px"}} alt="Great Return Icon" variant="top" />
                          <h5 className='fw-bold mt-4'>Great Returns</h5>
                          <p className='text-muted'>Compared to similarly priced FRANCHISE PACKAGES, LT&G boasts of a relatively faster ROI of 28 MONTHS!</p>
-                         <a href="#" className="text-danger text-decoration-none">Learn More →</a>
+       
        
                 </Col>       
                 <Col lg={3}>
                         <img src={TimelessIndustry} style={{height:"50px"}} alt="Timeless Industry Icon" variant="top" />
                         <h5 className='fw-bold mt-4'>Timeless Industry</h5>
                         <p className='text-muted'> Financial Industry will always be relevant regardless of shifts in the market. You know what they say, "MONEY MAKES THE WORLD GO ROUND".</p>
-                        <a href="#" className="text-danger text-decoration-none">Learn More →</a>
+        
              
                 </Col>
                 <Col lg={3}>
                         <img src={LinearOperations} style={{height:"50px"}} alt="Linear Operations Icon" variant="top" />
                         <h5 className='fw-bold mt-4'>Linear Operations</h5>
                         <p className='text-muted'>The Business System is designed to produce maximum results with minimal effort. Say GOODBYE to concerns regarding SPOILAGE, LOW INVENTORY, or EXPENSIVE RENTALS.</p>
-                        <a href="#" className="text-danger text-decoration-none">Learn More →</a>
+
                 </Col>
             </Row>
     </Container>
