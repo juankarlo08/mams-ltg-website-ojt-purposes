@@ -3,6 +3,7 @@ import AboutHeaderSection from '../components/AboutComponent/AboutHeaderSection'
 import CEOSection from '../components/AboutComponent/CEOSection';
 import TimelineSection from '../components/AboutComponent/TimelineSection';
 import TeamSection from '../components/AboutComponent/TeamSection';
+import MissionVisionSection from '../components/AboutComponent/MissionVisionSection';
 
 
 const About = () => {
@@ -10,6 +11,7 @@ const About = () => {
     <>
 
         <AboutHeaderSection />
+        <MissionVisionSection />
         <CEOSection />
         <TimelineSection />
         <TeamSection />

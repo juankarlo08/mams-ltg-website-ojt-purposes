@@ -11,7 +11,7 @@ const HeroSection = () => {
   return (
     <Container fluid className='hero-section custom-x-padding py-5'>
             <Row className="d-flex align-items-center justify-content-center my-5">
-                <Col lg={6} className='d-flex flex-column justify-content-center text-center text-lg-start' style={{ minHeight: '100vh' }}>
+                <Col lg={6} className='d-flex flex-column justify-content-center text-center text-lg-start' >
                     <h1 className='text-info display-3 fw-bold'>Franchise the Future <br /> of Microlending</h1>  
                     <p className='text-muted lead mt-3'>LT&G Credit Line — The first microlending franchise in the Philippines, providing accessible loans to empower your future. Join us in transforming lives and building a brighter financial future together.</p>
                     <div className='mt-4'>
@@ -44,7 +44,7 @@ const HeroSection = () => {
                 </Col>
                 
       
-        <Col lg={6} className='mt-5 d-flex align-items-center'>
+        <Col lg={6} className='d-flex align-items-center'>
           <video
             width="100%"
             height="auto"

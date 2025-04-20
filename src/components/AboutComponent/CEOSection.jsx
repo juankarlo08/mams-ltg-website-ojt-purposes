@@ -9,9 +9,9 @@ const CEOSection = () => {
   return (
     <Container fluid className='custom-x-padding pt-5'>
         
-    <Row className='mt-5 d-flex align-items-center'>
+    <Row className='mt-5 d-flex align-items-center rounded-5 shadow-sm border p-5'>
     <Col md={6} sm={12} className='d-flex justify-content-center align-items-center '>
-        <img src={CEOPic} className='img-fluid mb-5' style={{maxHeight:"800px", width:"auto"}}alt='stats pic' />
+        <img src={CEOPic} className='img-fluid mb-5' style={{maxHeight:"500px", width:"auto"}}alt='stats pic' />
         </Col>
       <Col>
       

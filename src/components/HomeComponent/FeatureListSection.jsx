@@ -2,6 +2,7 @@ import React from 'react'
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import GreatReturns from '../../img/greatreturns.png';
 import TimelessIndustry from '../../img/timelessindustry.png';
 import LinearOperations from '../../img/linearoperations.png';
@@ -38,6 +39,12 @@ const FeatureListSection = () => {
 
                 </Col>
             </Row>
+            {/* <Row className='text-center'>
+            <div className='mt-4'>
+                    <Button variant='danger' className='me-2'>Learn More</Button>
+                    <a href="#" className="text-dark text-decoration-none">Sign up -→</a>
+                    </div>
+            </Row> */}
     </Container>
   )
 }

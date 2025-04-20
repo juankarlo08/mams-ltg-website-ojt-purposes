@@ -10,7 +10,7 @@ import './FranchiseProgramSection.css';
 
 const FranchiseProgramSection = () => {
   return (
-    <Container fluid className="custom-x-padding custom-y-padding">
+    <Container fluid className="bg-white custom-x-padding custom-y-padding">
       <Row className='mt-5 justify-content-center'>
            <Col className='mb-5' xxl={10}>
             <h1 className="display-4 fw-bold text-center">Franchise Programs</h1>

@@ -1,11 +1,11 @@
 import React from 'react'
 import HeroSection from '../components/HomeComponent/HeroSection'
 import FeatureListSection from '../components/HomeComponent/FeatureListSection'
-// import TestimonialSection from '../components/HomeComponent/TestimonialSection'
+import TestimonialSection from '../components/HomeComponent/TestimonialSection'
 import NewsAndEventSection from '../components/HomeComponent/NewsAndEventSection'
 import CTASection from '../components/HomeComponent/CTASection'
 import CustomerTestimonial from '../components/HomeComponent/CustomerTestimonial'
-import FranchiseTestimonial from '../components/HomeComponent/FranchiseTestimonial'
+// import FranchiseTestimonial from '../components/HomeComponent/FranchiseTestimonial'
 
 const Home = () => {
   return (
@@ -13,10 +13,10 @@ const Home = () => {
     
     <HeroSection />
     <FeatureListSection />
-    {/* <TestimonialSection /> */}
+    <TestimonialSection />
+    {/* <FranchiseTestimonial /> */}
     <CustomerTestimonial />
-    <FranchiseTestimonial />
-    <NewsAndEventSection />
+  <NewsAndEventSection />
     <CTASection />
 
     </>

@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 const NavSection = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" fixed="top" className="bg-body-light p-0">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-light p-0">
     <Container fluid className='custom-x-padding bg-white py-2 border-bottom '>
       <Navbar.Brand as={Link} to="/">
       <img
