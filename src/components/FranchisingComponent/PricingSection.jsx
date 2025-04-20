@@ -35,7 +35,7 @@ const PricingSection = () => {
               <li className='mt-2'>✔ Grand Opening & Marketing Support</li>
               <li className='mt-2'>✔ Continuing Business Guidance</li>
             </ul>
-            <Button variant="danger" className="mt-2">Get started today</Button>
+            <Button variant="danger" href='#/contact' className="mt-2">Get started today</Button>
           </Card.Body>
         </Card>
       </Col>
@@ -60,7 +60,7 @@ const PricingSection = () => {
               <li className='mt-2'>✔ Grand Opening & Marketing Support</li>
               <li className='mt-2'>✔ Continuing Business Guidance</li>
             </ul>
-            <Button variant="danger" className="mt-2">Get started today</Button>
+            <Button variant="danger" href='#/contact' className="mt-2">Get started today</Button>
           </Card.Body>
         </Card>
       </Col>

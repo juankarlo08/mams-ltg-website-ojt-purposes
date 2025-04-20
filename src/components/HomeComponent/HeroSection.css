@@ -1,11 +1,11 @@
 .bg-hero{
-    background-image: url(../../img/header-pic-background.jpg);
+    background-image: url(../../img/gradient-background.jpg);
     background-size: cover;
     background-position: top; 
     background-repeat: no-repeat; 
 }
 
-@media (max-width: 991.98px) {
+/* @media (max-width: 991.98px) {
     .bg-hero{
         background-image: url(../../img/header-pic-background2.jpg);
         background-size: cover;
@@ -13,5 +13,5 @@
         background-repeat: no-repeat; 
 
     }
-}
+} */
 

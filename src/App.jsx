@@ -6,13 +6,14 @@ import {
   Outlet,
   RouterProvider,
 } from "react-router-dom";
-import NavSection from './components/Header/NavSection';
+// import NavSection from './components/Header/NavSection';
 import Home from './pages/Home';
 import FooterSection from './components/Footer/FooterSection';
 import Branches from './pages/Branches';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Franchising from './pages/Franchising';
+import NavSection from './components/Header/NavSection';
 
 
 const Dashboard = () =>{

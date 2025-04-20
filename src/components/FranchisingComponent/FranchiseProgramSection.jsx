@@ -4,11 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import PreOpeningPic from '../../img/pre-opening-pic.jpg';
+import FranchiseTrainingPic from '../../img/franchise-training-pic.jpg';
+import MarketingSupportPic from '../../img/marketing-support-pic.jpg';
 import './FranchiseProgramSection.css';
 
 const FranchiseProgramSection = () => {
   return (
-    <Container fluid className="custom-x-padding py-5">
+    <Container fluid className="custom-x-padding custom-y-padding">
       <Row className='mt-5 justify-content-center'>
            <Col className='mb-5' xxl={10}>
             <h1 className="display-4 fw-bold text-center">Franchise Programs</h1>
@@ -50,7 +52,7 @@ const FranchiseProgramSection = () => {
     <Row xs={1} md={3} className="justify-content-center my-5">
         <Col md={3} sm={12}>
           <Card className="text-white border-0 rounded-1 overflow-hidden shadow card-size">
-            <Card.Img src={PreOpeningPic} className="franchising-card-img" alt="Card image" />
+            <Card.Img src={MarketingSupportPic} className="franchising-card-img" alt="Card image" />
             <Card.ImgOverlay
               className="d-flex flex-column justify-content-end image-overlay"
             >
@@ -60,7 +62,7 @@ const FranchiseProgramSection = () => {
         </Col>
         <Col md={3} sm={12}>
           <Card className="text-white border-0 rounded-1 overflow-hidden shadow card-size">
-            <Card.Img src={PreOpeningPic} className="franchising-card-img" alt="Card image" />
+            <Card.Img src={FranchiseTrainingPic} className="franchising-card-img" alt="Card image" />
             <Card.ImgOverlay
               className="d-flex flex-column justify-content-end image-overlay"
             >

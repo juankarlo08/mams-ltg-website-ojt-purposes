@@ -1,31 +1,26 @@
 import React from 'react'
-import { motion } from "framer-motion"
-import { pageAnimation } from '../animation';
 import HeroSection from '../components/HomeComponent/HeroSection'
 import FeatureListSection from '../components/HomeComponent/FeatureListSection'
 import StatsSection from '../components/HomeComponent/StatsSection'
-import TestimonialSection from '../components/HomeComponent/TestimonialSection'
+// import TestimonialSection from '../components/HomeComponent/TestimonialSection'
 import NewsAndEventSection from '../components/HomeComponent/NewsAndEventSection'
 import CTASection from '../components/HomeComponent/CTASection'
+import CustomerTestimonial from '../components/HomeComponent/CustomerTestimonial'
+import FranchiseTestimonial from '../components/HomeComponent/FranchiseTestimonial'
 
 const Home = () => {
   return (
     <>
-    <motion.div
-      variants={pageAnimation}
-      initial='hidden'
-      animate='show'
-      exit='exit'
-    >
+    
     <HeroSection />
     <FeatureListSection />
     <StatsSection />
-    <TestimonialSection />
+    {/* <TestimonialSection /> */}
+    <CustomerTestimonial />
+    <FranchiseTestimonial />
     <NewsAndEventSection />
     <CTASection />
-  
 
-    </motion.div>
     </>
   )
 }

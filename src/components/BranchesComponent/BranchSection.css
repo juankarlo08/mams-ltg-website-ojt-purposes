@@ -13,6 +13,7 @@
 .list-group-item.active {
     background-color: #b62525 !important;
     border-color: #b62525 !important;
+    border-radius: 20px !important;
   }
   
 
