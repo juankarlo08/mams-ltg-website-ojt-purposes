@@ -1,0 +1,27 @@
+.timeline-dot{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #b62525;
+    border-radius: 50%;
+     /* top: 50px; */
+    transform: translateX(10%); 
+}
+
+.timeline-vertical{
+    position: absolute;
+    background-color: rgba(33, 37, 41, 0.363);
+    width: 3px;
+    top: 0;
+    bottom: 0;
+    left: 50%
+}
+
+.pic-holder{
+    width: auto;
+    max-height: 300px;
+}
+
+
+
+

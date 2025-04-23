@@ -28,7 +28,7 @@ const filteredBranches = BranchesData.filter(branch =>
 
   return (
     <Container fluid className="bg-white custom-x-padding py-5">
-      <Row className='bg-light bo p-4 align-items-center rounded-4'>
+      <Row className='bg-light p-4 align-items-center rounded-4'>
         <Col md={6}className='d-flex justify-content-center justify-content-md-start'>
             <Form>
               <InputGroup className='my-2'>
