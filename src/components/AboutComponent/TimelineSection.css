@@ -4,8 +4,6 @@
     height: 16px;
     background-color: #b62525;
     border-radius: 50%;
-     /* top: 50px; */
-    transform: translateX(10%); 
 }
 
 .timeline-vertical{
@@ -14,7 +12,7 @@
     width: 3px;
     top: 0;
     bottom: 0;
-    left: 50%
+
 }
 
 .pic-holder{

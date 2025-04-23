@@ -11,9 +11,10 @@ const About = () => {
     <>
 
         <AboutHeaderSection />
-        <MissionVisionSection />
+  
         <CEOSection />
         <TimelineSection />
+        <MissionVisionSection />
         <TeamSection />
 
     </>
