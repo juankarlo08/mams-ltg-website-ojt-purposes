@@ -5,6 +5,7 @@ import TestimonialSection from '../components/HomeComponent/TestimonialSection'
 import NewsAndEventSection from '../components/HomeComponent/NewsAndEventSection'
 import CTASection from '../components/HomeComponent/CTASection'
 import CustomerTestimonial from '../components/HomeComponent/CustomerTestimonial'
+import LogoClouds from '../components/HomeComponent/LogoClouds'
 // import FranchiseTestimonial from '../components/HomeComponent/FranchiseTestimonial'
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <>
     
     <HeroSection />
+    <LogoClouds />
     <FeatureListSection />
     <TestimonialSection />
     {/* <FranchiseTestimonial /> */}

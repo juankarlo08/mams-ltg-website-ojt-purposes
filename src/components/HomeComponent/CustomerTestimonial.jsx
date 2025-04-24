@@ -1,27 +1,33 @@
 import React from 'react'
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
+import MiriamSinio from '../../img/miriam-sinio.png';
+import CrisantaPamintuan from '../../img/crisanta-pamintuan.png';
+import MarifeMataba from '../../img/marife-mataba.png';
 
 const testimonials = [
     {
       id: 1,
       name: "Miriam Sinio",
-      subtitle: "Sari-Sari Store Owner",
-      text: "Maganda ang patakaran ng LT&G at ang payment ay di gaanong kalaki. Mapapagipunan ang arawan at mababait ang mga collector",
+      pic: MiriamSinio,
+      subtitle: "Karinderya Store Owner",
+      text: "Nung bumaba ang aking negosyo, LT&G lang ang nakatulong sa akin upang makasurvive ang aking negosyong karinderya. Ang dagdag puhunan ng ng LT&G ang rason kung bakit patuloy pa din akong nagnenegosyo",
       rating: 5,
     },
     {
       id: 2,
       name: "Crisanta Pamintuan",
+      pic: CrisantaPamintuan,
       subtitle: "Salon Store Owner",
       text: "Wala po akong masasabi sa LT&G Credit Line kasi since nanghiram po ako dito nakatulong po ito ng malaki sa akin sa pamamagitan ng pagdadagdag ko ng puhunan sa aking salon",
       rating: 5,
     },
     {
       id: 3,
-      name: "Name Surname",
+      name: "Marife Mataba",
+      pic: MarifeMataba,
       subtitle: "Sari-Sari Store Owner",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare.",
+      text: "Nang dahil sa LT&G lumawak ang aking business, dati kasi simpleng sari-sari store lang ngayon ay nadagdagan ang pinagkakakitaan dahil sa dagdag puhunan ng LT&G",
       rating: 5,
     },
   ];
@@ -41,7 +47,7 @@ const CustomerTestimonial = () => {
       <Row className="justify-content-center my-5">
         {testimonials.map((testimonial) => (
           <Col md={4} key={testimonial.id} className="mb-4">
-            <Card className="border-0 shadow p-3 text-center p-5">
+            <Card className="border shadow-sm p-3 text-center p-5">
               <div>
                 {[...Array(testimonial.rating)].map((_, index) => (
                   <FaStar key={index} className="text-warning" />
@@ -52,12 +58,8 @@ const CustomerTestimonial = () => {
                   "{testimonial.text}"
                 </Card.Text>
                 <div className="d-flex flex-column align-items-center">
-                  <div
-                  
-                    className="rounded-circle bg-light d-flex justify-content-center align-items-center"
-                    style={{ width: "50px", height: "50px" }}
-                  >
-                    <FaStar className="text-muted" />
+                  <div>
+                   <img src={testimonial.pic} className="rounded-circle d-flex justify-content-center align-items-center" alt="First Pic" style={{ width: "60px", height: "60px" }}/>
                   </div>
                   
                     <Row>

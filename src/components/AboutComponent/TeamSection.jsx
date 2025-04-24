@@ -11,6 +11,7 @@ import ArnoldPic from '../../img/team-arnold1.jpg';
 import EmsPic from '../../img/team-ems1.jpg';
 import AlexPic from '../../img/team-blank1.jpg';
 import ShainlyPic from '../../img/team-blank1.jpg';
+import FretzPic from '../../img/team-fretz1.jpg'
 
 const TeamSection = () => {
     const teamMembers = [
@@ -22,6 +23,7 @@ const TeamSection = () => {
         { name: "Emelyn Marbella", role: "Finance Head", img: EmsPic },
         { name: "Alexis Daimler Esquejo", role: "Franchise Marketing Officer", img: AlexPic },
         { name: "Shainly Love Nuñez", role: "Accounting Head", img: ShainlyPic },
+        { name: "Frederick Ildefonso", role: "Debt Recovery Specialist", img: FretzPic },
 
       ];
       
@@ -37,8 +39,8 @@ const TeamSection = () => {
         {teamMembers.map((member, index) => (
           <Col key={index} xxl={4} lg={6} md={12} className='mb-5'>
 
-          <Card className="text-white border-0 mx-auto rounded-4 " style={{ width: "380px", height: "auto", objectFit: "cover", overflow: "hidden" }}>
-                <Card.Img src={member.img} alt="Card image" />
+          <Card className="text-white border-0 mx-auto rounded-4 " style={{ maxWidth: "380px", height: "auto", objectFit: "cover", overflow: "hidden" }}>
+                <Card.Img src={member.img} className="img-fluid" alt="Card image" />
                 <Card.ImgOverlay className='d-flex flex-column justify-content-end p-4'>
                     <Card.Title className="fw-bold">{member.name}</Card.Title>
                     <Card.Text className="text-secondary">{member.role}</Card.Text>

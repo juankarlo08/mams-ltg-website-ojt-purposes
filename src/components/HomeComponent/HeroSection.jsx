@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import './HeroSection.css'
 import PromotionalVideo from '../../video/promotional-video.mp4';
-import VideoThumbnail from '../../img/video-thumbnail.jpg'
+import VideoThumbnail from '../../img/video-thumbnail/video-thumbnail.png'
 
 const HeroSection = () => {
   return (
@@ -51,7 +51,7 @@ const HeroSection = () => {
             controls
             muted
             poster={VideoThumbnail} 
-            className='rounder-3 shadow'
+            className='rounded-5 shadow'
           >
             <source src={PromotionalVideo} type="video/mp4" />
             Your browser does not support the video tag.

@@ -15,63 +15,67 @@ const FranchiseProgramSection = () => {
              </Col>
     </Row>
 
-    <Row>
-      <Col lg={6}>
-      <Card className="mb-4 rounded-5 border">
-         <Card.Img variant="top" src={PreOpeningPic} className="franchise-card-img"/>
-          <Card.Body>
-            <h5>Pre-Opening Support</h5>
-            <p className="text-muted">We conducted franchise area mapping and surveys, 
-              carried out staff recruitment activities, evaluated branch office sites, 
-              offered a certificate course in microlending, provided assistance with 
-              business registration and licensing, and completed office refurbishment.</p>
-          </Card.Body>
-        </Card>
-      </Col>
+    <Row className="d-flex">
+  <Col lg={3} className="d-flex flex-column">
+    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+      <Card.Body>
+        <h5 className='mb-4'>Pre-Opening Support</h5>
+        <ul className="list-unstyled text-start text-muted">
+          <li className='mt-2'>• Franchise Area Mapping & Survey</li>
+          <li className='mt-2'>• Staff Recruitment Activities</li>
+          <li className='mt-2'>• Staff Training</li>
+          <li className='mt-2'>• Branch Office Site Evaluation</li>
+          <li className='mt-2'>• Certificate Course in Microlending</li>
+          <li className='mt-2'>• Assistance On Business Registration & Licensing</li>
+          <li className='mt-2'>• Office Refurbishment</li>
+        </ul>
+      </Card.Body>
+    </Card>
+  </Col>
 
-      <Col lg={6}>
-      <Card className="mb-4">
-          <Card.Body>
-            <h5>Opening Support</h5>
-            <p className="text-muted">We performed detailed area mapping, 
-              guided the business roll-out, facilitated systems installation 
-              and orientation, and organized a branch blessing on opening day.</p>
-          </Card.Body>
-        </Card>
-      </Col>
-    </Row>
+  <Col lg={3} className="d-flex flex-column">
+    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+      <Card.Body>
+        <h5 className='mb-4'>Opening Support</h5>
+        <ul className="list-unstyled text-start text-muted">
+          <li className='mt-2'>• Detailed Area Mapping</li>
+          <li className='mt-2'>• Guided Business Roll Out</li>
+          <li className='mt-2'>• Systems Installation and Orientation</li>
+          <li className='mt-2'>• Branch Blessing on Opening Day</li>
+        </ul>
+      </Card.Body>
+    </Card>
+  </Col>
 
-    <Row>
-      <Col md={4}>
-        <Card className="mb-4">
-          <Card.Body>
-            <h5>Continuing Support</h5>
-            <p className="text-muted">We conducted periodic branch audits, 
-              provided regular assistance through area supervisors, 
-              ensured daily IT monitoring and support, offered 
-              consistent HR assistance and guidance, and held 
-              semi-monthly branch evaluations with franchise owners 
-              and managers.</p>
-          </Card.Body>
-        </Card>
-      </Col>
-      <Col md={4}>
-        <Card className="mb-4">
-          <Card.Body>
-            <h5>Marketing Support</h5>
-            <p className="text-muted">We launched an opening week marketing drive in collaboration with the LT&G Head Office team, ran social media advertising campaigns, and created flyer layouts and designs.</p>
-          </Card.Body>
-        </Card>
-      </Col>
-      <Col md={4}>
-        <Card className="mb-4">
-          <Card.Body>
-            <h5>Franchise Training</h5>
-            <p className="text-muted">We provided 15 days of comprehensive training at our facility.</p>
-          </Card.Body>
-        </Card>
-      </Col>
-    </Row>
+  <Col lg={3} className="d-flex flex-column">
+    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+      <Card.Body>
+        <h5 className='mb-4'>Continuing Support</h5>
+        <ul className="list-unstyled text-start text-muted">
+          <li className='mt-2'>• Periodic Branch Audit</li>
+          <li className='mt-2'>• Regular Branch Assistance by Area Supervisors</li>
+          <li className='mt-2'>• Daily IT monitoring And Support</li>
+          <li className='mt-2'>• Regular HR Assistance and Guidance</li>
+          <li className='mt-2'>• Semi-Monthly Branch Evaluation with Franchise Owners & Managers</li>
+        </ul>
+      </Card.Body>
+    </Card>
+  </Col>
+
+  <Col lg={3} className="d-flex flex-column">
+    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+      <Card.Body>
+        <h5 className='mb-4'>Marketing Support</h5>
+        <ul className="list-unstyled text-start text-muted">
+          <li className='mt-2'>• Opening Week Marketing Drive with LT&G Head Office Team</li>
+          <li className='mt-2'>• Social Media Advertising</li>
+          <li className='mt-2'>• Flyer Layout and Design</li>
+        </ul>
+      </Card.Body>
+    </Card>
+  </Col>
+</Row>
+
   </Container>
 
   )
