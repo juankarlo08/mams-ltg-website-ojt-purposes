@@ -1,49 +1,108 @@
-import Angeles1 from '../img/angeles-1.jpg';
-import Angeles2 from '../img/angeles-2.jpg'
+import News1 from '../img/news-pic/franchise-negosyo.jpg';
+import News2 from '../img/news-pic/ltg-muntinlupa-open.jpg';
+import News3 from '../img/news-pic/ltg-las-piñas-blessing.jpg'
+import News4 from '../img/news-pic/ltg-cares.jpg'
+import News5 from '../img/news-pic/ltg-taytay-blessing.jpg'
+import News6 from '../img/news-pic/ltg-bacoor-blessing.jpg'
+import News7 from '../img/news-pic/franchise-negosyo-negros.jpg'
+import News8 from '../img/news-pic/ltg-valenzuela-blessing.jpg'
+import News9 from '../img/news-pic/ltg-meycauayan-blessing.jpg'
+import News10 from '../img/news-pic/ltg-lipa-blessing.jpg'
+import News11 from '../img/news-pic/ltg-malolos-blessing.jpg'
+
 import { FaFacebook} from "react-icons/fa6";
 export default [
     {
         id: 1,
-        date: "April 12-14, 2024",
-        title: "INTERNATIONAL FRANCHISE EXPO 2024: A Pr emier Event For Franchise Innovatorsssssssssssssssssssssssssssssssssssssssss",
-        img: Angeles1,
-        content: "The International Franchise Asia Expo 2024 was a landmark event, and LT&G shone once again as one of the leading non-food sector exhibitors. The company presented new offerings, showcased its continued growth, and engaged with a vibrant community of franchising professionals.",
+        date: "March 21-22, 2025",
+        title: "Happening Now! 🚀 Franchise Negosyo Para sa Tuguegarao at SM City Tuguegarao!",
+        link: "https://www.facebook.com/share/p/16Qwn9qUok/",
+        img: News1,
         source: <FaFacebook />
         
     },
     {
         id: 2,
-        date: "April 30, 2024",
-        title: "NATIONAL FRANCHISE EXPO 2024: A Premier Event For Franchise Innovators",
-        img: Angeles2,
-        content: "The International Franchise Asia Expo 2024 was a landmark event, and LT&G shone once again as one of the leading non-food sector exhibitors. The company presented new offerings, showcased its continued growth, and engaged with a vibrant community of franchising professionals.",
+        date: "March 3, 2025",
+        title: " Now Open: LT&G Muntinlupa Branch – Your Trusted Partner, Closer Than Ever!",
+        link: "https://www.facebook.com/share/v/16a5h1FkPe/",
+        img: News2,
         source: <FaFacebook />
         
     },
     {
         id: 3,
-        date: "April 30, 2024",
-        title: "NATIONAL FRANCHISE EXPO 2024: A Premier Event For Franchise Innovators",
-        img: Angeles1,
-        content: "The International Franchise Asia Expo 2024 was a landmark event, and LT&G shone once again as one of the leading non-food sector exhibitors. The company presented new offerings, showcased its continued growth, and engaged with a vibrant community of franchising professionals.",
+        date: "January 27, 2025",
+        title: "A New Chapter Begins: LT&G Credit Line Las Piñas Branch Blessing 🎉",
+        link: "https://www.facebook.com/share/p/18w7a6Srek/",
+        img: News3,
         source: <FaFacebook />
     },
     {
         id: 4,
-        date: "April 30, 2024",
-        title: "NATIONAL FRANCHISE EXPO 2024: A Premier Event For Franchise Innovators",
-        img: Angeles1,
-        content: "The International Franchise A",
+        date: "November 27, 2024",
+        title: "LT&G Lends a Helping Hand in Catanduanes 🤲",
+        link: "https://www.facebook.com/share/p/192e3vtXMF/",
+        img: News4,
         source: <FaFacebook />
         
     },
     {
         id: 5,
-        date: "April 30, 2024",
-        title: "NATIONAL FRANCHISE EXPO 2024: A Premier Event For Franchise Innovators",
-        img: Angeles1,
-        content: "The International Franchise Asia Expo 2024 was a landmark event, and LT&G shone once again as one of the leading non-food sector exhibitors. The company presented new offerings, showcased its continued growth, and engaged with a vibrant community of franchising professionals.",
+        date: "October 15, 2024",
+        title: "A Blessed Beginning: LT&G Credit Line Taytay Branch Blessing 🎉",
+        link: "https://www.facebook.com/share/p/19ioPTSq2d/",
+        img: News5,
+        source: <FaFacebook />
+    },
+    {
+        id: 6,
+        date: "October 7, 2024",
+        title: "🎉 Celebrate with Us: The Blessing of LT&G Credit Line Bacoor Branch! ✨",
+        link: "https://www.facebook.com/share/p/15BhYxw1BN/",
+        img: News6,
+        source: <FaFacebook />
+    },
+    {
+        id: 7,
+        date: "October 7, 2024",
+        title: "🚀 Launching: Franchise Negosyo Para Sa Negros! 💼✨",
+        link: "https://www.facebook.com/share/p/15gwZDSdMU/",
+        img: News7,
+        source: <FaFacebook />
+    },
+    {
+        id: 8,
+        date: "September 8, 2024",
+        title: "🎉 Join Us for the Blessing of LT&G Credit Line Valenzuela Branch! ✨",
+        link: "https://www.facebook.com/share/p/16ETxdJznh/",
+        img: News8,
+        source: <FaFacebook />
+    },
+    {
+        id: 9,
+        date: "September 6, 2024",
+        title: "✨ A Blessed Beginning: LT&G Credit Line Meycauayan Branch Blessing 🎉",
+        link: "https://www.facebook.com/share/p/16f1CX2AdS/",
+        img: News9,
+        source: <FaFacebook />
+    },
+    {
+        id: 10,
+        date: "September 6, 2024",
+        title: "Congratulations on the Blessing of LT&G Credit Line Lipa Branch! 🎉",
+        link: "https://www.facebook.com/share/p/18EG1tDhjV/",
+        img: News10,
+        source: <FaFacebook />
+    },
+    {
+        id: 11,
+        date: "September 2, 2024",
+        title: "🌟 A Blessed Milestone: LT&G Credit Line Malolos Branch Blessing 🎉",
+        link: "https://www.facebook.com/share/p/1BiHu328Gb/",
+        img: News11,
         source: <FaFacebook />
     }
+    
     
 ]

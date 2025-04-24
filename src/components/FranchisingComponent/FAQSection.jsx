@@ -120,7 +120,7 @@ const FAQSection = () => {
     <Col className='mt-5'>
     <h3> Still have questions?</h3>
     <p className='mt-3'>We're here to help you!</p>
-    <Button variant="danger" onClick={handleRefresh}>Contact</Button>
+    <Button variant="danger" href='#/contact'>Contact</Button>
     </Col>
   </Row>
   </Container>

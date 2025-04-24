@@ -16,8 +16,8 @@ const AboutHeaderSection = () => {
           LT&amp;G Credit Line offers loans to micro-entrepreneurs for operational or growth capital, providing customized credit, flexible terms, risk-handling insurance, and value-added services. LT&amp;G is committed to empowering small businesses and families through fair, reliable, and accessible financial solutions. Guided by the principle "better loans, better lives," we promote financial stability, improved livelihoods, and community growth through responsible lending.
         </p>
           <div className='mt-4'>
-          <Button variant='danger' className='me-2'>Learn More</Button>
-          <Button variant='secondary'>Join Now</Button>
+          <Button variant='danger' className='me-2' href='#/franchising'>Learn More</Button>
+          <Button variant='secondary' href='#/contact'>Join Now</Button>
           </div>
       </Col>
       <Col lg={6} className='d-flex justify-content-lg-end justify-content-center'>

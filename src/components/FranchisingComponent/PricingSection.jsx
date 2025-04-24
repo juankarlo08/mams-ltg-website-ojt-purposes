@@ -19,14 +19,14 @@ const PricingSection = () => {
         <Card className="shadow-sm p-4 text-start">
           <Card.Body>
           <Row className='align-items-center'>   
-            <Col >
+            <Col lg={6}>
             <h6 className="mb-3 text-danger fw-bold">Junior Branch</h6>
             <h2 className="fw-bold mb-0">Php 252,000</h2>
-            <small className='text-muted '>Franchise Fee</small>
+            <small className='text-muted mb-2'>Franchise Fee</small>
             </Col>
-            <Col className='border-start'>
-            <h3 className="fw-bold text-info "> Starts at 2.45M</h3>
-            </Col>
+              <Col lg={6} className='border border-3 rounded-3 border-danger shadow-sm'>
+               <h5 className="fw-bold text-info my-2"> Franchise investment package starts at <span className='text-danger'>₱2.45M</span></h5>
+               </Col>
             </Row>
             
             <Card.Text className="text-muted mt-3">
@@ -46,7 +46,8 @@ const PricingSection = () => {
             </ul>
 
             <Button variant="danger" href='#/contact' className="mt-2">Get started today</Button>
-         
+           
+       
           </Card.Body>
         </Card>
       </Col>
@@ -54,9 +55,17 @@ const PricingSection = () => {
       <Col md={4} className="mb-4">
         <Card className="shadow-sm p-4 text-start">
           <Card.Body>
-          <h6 className="mb-3 text-danger fw-bold">Full Branch</h6>
-            <h2 className="fw-bold mb-0">Php 448,000</h2>
-            <small className='text-muted'>Franchise Fee</small>
+          <Row className='align-items-center'>   
+          <Col lg={6}>
+                  <h6 className="mb-3 text-danger fw-bold">Full Branch</h6>
+                <h2 className="fw-bold mb-0">Php 448,000</h2>
+                <small className='text-muted'>Franchise Fee</small>
+              </Col>
+                <Col lg={6} className='border border-3 rounded-3 border-danger shadow-sm'>
+                 <h5 className="fw-bold text-info my-2"> Start your franchise journey from <span className='text-danger'>Php 3.5M</span></h5>
+                </Col>
+            </Row>
+         
             <Card.Text className="text-muted mt-3">
             A complete franchise package designed for those ready to establish a full-scale operation with broader market reach and higher income potential
             </Card.Text>
@@ -73,6 +82,7 @@ const PricingSection = () => {
               <li className='mt-2'>✔ Business Guidance and Support</li>
             </ul>
             <Button variant="danger" href='#/contact' className="mt-2">Get started today</Button>
+            
           </Card.Body>
         </Card>
       </Col>

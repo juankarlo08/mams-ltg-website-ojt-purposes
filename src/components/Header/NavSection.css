@@ -1,3 +1,7 @@
-.nav-link:focus{
-    color: #b62525;
+.link-active:hover, a:hover{
+    color: #000000!important;
+}
+
+.active{
+    color: red !important;
 }

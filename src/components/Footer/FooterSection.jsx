@@ -22,7 +22,7 @@ const FooterSection = () => {
     }
     function igHandleClick() {
       window.open(
-        "https://www.youtube.com/@mamsltgfranchisingcorp.9849"
+        "https://www.instagram.com/mamsltg?igsh=MTNlejljNzZ1aGpndA=="
       );
     }
 

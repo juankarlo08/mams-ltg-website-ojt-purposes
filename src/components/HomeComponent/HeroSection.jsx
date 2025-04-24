@@ -15,8 +15,8 @@ const HeroSection = () => {
                     <h1 className='text-info display-3 fw-bold'>Franchise the Future <br /> of Microlending</h1>  
                     <p className='text-muted lead mt-3'>LT&G Credit Line — The first microlending franchise in the Philippines, providing accessible loans to empower your future. Join us in transforming lives and building a brighter financial future together.</p>
                     <div className='mt-4'>
-                    <Button variant='danger' className='me-2'>Learn More</Button>
-                    <Button variant='secondary'>Join Now</Button>
+                    <Button variant='danger' className='me-2' href='#/franchising'>Learn More</Button>
+                    <Button variant='secondary' href='#/contact'>Join Now</Button>
                     </div>
                     <Row className='mt-4 gap-4'>
                         <Col className='border-start ps-4'>

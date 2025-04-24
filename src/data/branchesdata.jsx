@@ -1,3 +1,12 @@
+import JMCBataan from '../img/company logo/jmc-bataan.png'
+import GreenDot from '../img/company logo/green-dot-lending-corp.png'
+import CRN from '../img/company logo/crn-lending-corp.png'
+import JoyousVictory from '../img/company logo/joyous-victory-lending-inc.png'
+import JBP from '../img/company logo/jbp-loan-your-blessings-lending-inc.png'
+import B2 from '../img/company logo/b2micro-lending-corp.png'
+import BlueCollar from '../img/company logo/blue-collar-lending-inc.png'
+import OneSM from '../img/company logo/one-sm-corp.png'
+
 
 export default [
 
@@ -8,17 +17,17 @@ export default [
             address: '2nd Flr. Y&Y Bldg., Magsaysay, Alaminos City, Pangasinan',
             listImages: [],
             contact_no: ["09814061189"],
-            region: "Luzon"
+            region: "Northern Luzon"
 
         },
         {
             id: 2,
-            branch_name: 'Angeles',
+            branch_name: 'Angeles City',
             company:"B2 Micro Lending Corp",
             address: 'Unit 6 2nd floor NJT Bldg. Infront of Sta. Maria Church, Balibago, Angeles City',
-            listImages: [],
+            listImages: [B2],
             contact_no: ['09493662929'],
-            region: "Luzon"
+            region: "Northern Luzon"
         },
         {
             id: 3,
@@ -27,24 +36,26 @@ export default [
             address: '',
             listImages: [],
             contact_no: [],
-            region: "Luzon"
+            region: "Southern Luzon"
         },
         {
             id: 4,
             branch_name: 'Apalit, Pampanga',
             company:"B2 Microlending Corp",
             address: '3rd Flr. St. Jude Bldg., Brgy. San Vicente, Apalit, Pampanga',
-            listImages: [],
-            contact_no: ['0961-664-4947(Smart)', '0946-105-8051(TNT)', '0955-317-6475(Globe/TM)'],
+            listImages: [B2],
+            contact_no: ['Smart 09461058051'],
+            region: "Northern Luzon"
 
         },
         {
             id: 5,
-            branch_name: 'Bacoor',
+            branch_name: 'Bacoor, Cavite',
             company:"LoanMax365",
             address: 'Blk 17 Lot 2 Niog Road Meadowood Executive Village P.F Espiritu VI Panapaan Bacoor, Cavite ',
             listImages: [],
-            contact_no: [''],
+            contact_no: ['09171493988'],
+            region: "Southern Luzon"
  
         },
         {
@@ -54,6 +65,7 @@ export default [
             address: '',
             listImages: [],
             contact_no: [''],
+            region: "Northern Luzon"
 
         },
         {
@@ -61,16 +73,18 @@ export default [
             branch_name: 'Baliuag, Bulacan',
             company:"B2 Microlending Corp",
             address: '0713, New 3rd floor Plaza Naning, Poblacion, Baliuag, Bulacan',
-            listImages: [],
-            contact_no: ['0975-425-8155(Globe/TM)']
+            listImages: [B2],
+            contact_no: ['09510642117'],
+            region: "Northern Luzon"
         },
         {
             id: 8,
             branch_name: 'Bataan',
             company:"JMC Bataan Lending Investor Corp",
             address: '2nd Flr. Brick Corner Bldg. Paterno St., Poblacion City Of Balanga, Bataan 2100',
-            listImages: [],
-            contact_no: ['0929-147-6049(Smart)']
+            listImages: [JMCBataan],
+            contact_no: ['09508069662'],
+            region: "Northern Luzon"
         },
         {
             id: 9,
@@ -78,23 +92,27 @@ export default [
             company:"Johnzen Grand Creditline Lending Inc",
             address: 'Door 1, RFG bldg. Del. Pilar St. Fatima Cabanatuan City',
             listImages: [],
-            contact_no: [],
+            contact_no: ['09193285688'],
+            region: "Northern Luzon"
         },
         {
             id: 10,
             branch_name: 'Cagayan De Oro',
-            company:"",
-            address: '',
+            company:"Adeeva Lending",
+            address: 'Crossing Iponan, Cagayan De Oro City',
             listImages: [],
-            contact_no: [],
+            contact_no: ['09973450256'],
+            region: "Mindanao"
+            
         },
         {
             id: 11,
             branch_name: 'Castillejos',
             company:"Blue Collar Lending Inc",
             address: 'Umipig Building, 98 National Highway, San Juan, Castillejos, Zambales 2208',
-            listImages: [],
-            contact_no: [],
+            listImages: [BlueCollar],
+            contact_no: ['09603994403'],
+            region: "Southern Luzon"
         },
         {
             id: 12,
@@ -102,332 +120,292 @@ export default [
             company:"JE29:11 Lending Corp",
             address: 'Ground Floor KJC Building Purok 7 Pitogo, Consolacion, Cebu',
             listImages: [],
-            contact_no: ['0927-386-0140(Globe)']
+            contact_no: ['09277667532'],
+            region: "Visayas"
         },
         {
             id: 13,
-            branch_name: 'Cubao',
-            company:"",
-            address: '',
-            listImages: [],
-            contact_no: ['0927-386-0140(Globe)']
-        },
-        {
-            id: 14,
             branch_name: 'Daraga',
             company:"LT&G Credit Line Corp",
             address: '2nd floor Calderon Bldg. Alcala St. Brgy. Sipi, Daraga Albay',
             listImages: [],
-            contact_no: ['0955-397-6367(Globe/TM)']
+            contact_no: ['09647343268'],
+            region: "Southern Luzon"
         },
         {
-            id: 15,
-            branch_name: 'Fairview',
-            company:"",
-            address: '',
-            listImages: [],
-            contact_no: ['0946-305-7554(TNT)', '0931-826-0655(Sun)'],
-        },
-        {
-            id: 16,
+            id: 14,
             branch_name: 'G. Araneta, QC',
             company:"One SM Lending Corporation",
             address: '3rd floor Rm. 305 Pasda bldg. 9 P. Florentino St. , Cor. G. Araneta Ave. Brgy. Sto Domingo, Quezon City ( Matalahib)',
-            listImages: [],
-            contact_no: ['0916-617-9259(Globe)'],
+            listImages: [OneSM],
+            contact_no: ['09602482955'],
+            region: "Metro Manila"
         },
         {
-            id: 17,
-            branch_name: 'General Trias, Cavite / Dasmariñas',
-            company:"8J Business Lending Corp",
-            address: '201 Unit 2nd Floor Osrem Building Brgy. Tejero General Trias Cavite',
-            listImages: [],
-            contact_no: [],
-        },
-        {
-            id: 18,
-            branch_name: 'Guimba, Nueva Ecija',
-            company:"",
-            address: '',
-            listImages: [],
-            contact_no: [],
-        },
-        {
-            id: 19,
+            id: 15,
             branch_name: 'Imus, Cavite',
             company:"",
             address: '',
             listImages: [],
             contact_no: [''],
+            region: "Southern Luzon"
         },
         {
-            id: 20,
+            id: 16,
             branch_name: 'Irosin',
             company:"LT&G Credit Line Corp",
             address: '2F Francisco Fuller Commercial Bldg., Bonifacio St., Brgy. San Juan, Irosin, Sorsogon',
             listImages: [],
-            contact_no: ['09519326835 (Smart/TNT)'],
+            contact_no: ['Smart/TNT 09519326835'],
+            region: "Southern Luzon"
         },
         {
-            id: 21,
+            id: 17,
             branch_name: 'Las Piñas',
             company:"Joyous Victory Lending Inc.",
             address: '2nd Flr. Unit 2-B J&J Bldg., Alabang-Zapote Road, Talon Uno, Las Piñas City, M.M.',
-            listImages: [],
-            contact_no: [''],
+            listImages: [JoyousVictory],
+            contact_no: ['09285070388'],
+            region: "Metro Manila"
         },
     
         {
-            id: 22,
-            branch_name: 'Legazpi',
+            id: 18,
+            branch_name: 'Legazpi City',
             company:"LT&G Credit Line Corp",
             address: '2nd floor, Unit C, CQ Bldg. 3 Phase 2, Rosal Street, Imperial Court, Brgy. 24, Rizal, Legazpi City',
             listImages: [],
-            contact_no: ['0995-104-6267(Globe)', '0960-867-0566(Smart)', '0917-531-3862(Globe/TM)'],
+            contact_no: ['09094821355'],
+            region: "Southern Luzon"
         },
         {
-            id: 23,
-            branch_name: 'Ligao City',
-            company:"",
-            address: '',
-            listImages: [],
-            contact_no: [''],
-        },
-        {
-            id: 24,
-            branch_name: 'Lipa',
+            id: 19,
+            branch_name: 'Lipa, Batangas',
             company:"Prudent JMR Lending Corporation",
             address: '2nd Flr. Unit 206 Dream 8 Plaza Bldg. , San Sebastian (balagbag) , Lipa City , Batangas.',
             listImages: [],
-            contact_no: [''],
+            contact_no: ['09649560189'],
+            region: "Southern Luzon"
         },
         {
-            id: 25,
-            branch_name: 'Malolos',
+            id: 20,
+            branch_name: 'Malolos, Bulacan',
             company:"KCM9 Lending Corp",
-            address: '',
+            address: 'Unit 3 2nd Floor Mark lll Building, A. Mabini Street, Mojon, Malolos Bulacan',
             listImages: [],
-            contact_no: [''],
+            contact_no: ['09616855675'],
+            region: "Northern Luzon"
         },
         {
-            id: 26,
+            id: 21,
             branch_name: 'Mandaluyong',
             company:"Pesmerga Lending Corp",
             address: '2/F Unit V, TFN Building, 963 Gen Kalentong Cor. Haig St, Daang Bakal, Mandaluyong, 1550 Metro Manila',
             listImages: [],
-            contact_no: ['0947-329-3789(Smart)'],
+            contact_no: [''],
+            region: "Metro Manila"
         },
         {
-            id: 27,
+            id: 22,
             branch_name: 'Manila 1',
             company:"One SM Lending Corporation",
             address: '3rd Flr. Room 305 DMV Bldg. Herbosa St. Tondo, Manila',
-            listImages: [],
-            contact_no: ['0910-539-5384(TNT)', "0907-815-1615(TNT)"],
+            listImages: [OneSM],
+            contact_no: ['09858491794'],
+            region: "Metro Manila"
         },
 
         {
-            id: 28,
+            id: 23,
             branch_name: 'Marikina',
             company:"JBP Loan Your Blessings Lending Inc",
             address: '2nd Flr. Castillo Bldg. 50 General Ordoñez Ave., Brgy. Concepcion Uno, Marikina City',
-            listImages: [],
-            contact_no: ['0999-990-6949(Smart)'],
+            listImages: [JBP],
+            contact_no: ['Smart/TNT 09999906949'],
+            region: "Metro Manila"
         },
         {
-            id: 29,
-            branch_name: 'Meycauayan',
+            id: 24,
+            branch_name: 'Meycauayan, Bulacan',
             company:"Green Dot Lending Corporation",
             address: 'Unit 201 933 ABZ Bldg. Mc Arthur Hi Way Calvario Meycauayan, Bulacan',
-            listImages: [],
-            contact_no: [''],
+            listImages: [GreenDot],
+            contact_no: ['09709597225'],
+            region: "Northern Luzon"
         },
         {
-            id: 30,
+            id: 25,
             branch_name: 'Midsayap',
             company:"AHP Lending Services Corporation",
             address: '2nd floor JL Feliciano Bldg., Quezon Avenue, Poblacion 5, Midsayap North Cotabato',
             listImages: [],
-            contact_no: ['0999-990-6949(Smart)'],
+            contact_no: ['09350585855'],
+            region: "Mindanao"
         },
         {
-            id: 31,
+            id: 26,
             branch_name: 'Monumento',
             company:"One SM Lending Corp",
             address: '3rd Floor Ok Plaza Bldg., Brgy. 75 Samson Rd., Monumento, Caloocan City',
-            listImages: [],
-            contact_no: ['0932-965-3121(Sun)'],
+            listImages: [OneSM],
+            contact_no: ['09690690368'],
+            region: "Metro Manila"
         },
         {
-            id: 32,
+            id: 27,
             branch_name: 'Muntinlupa',
             company:"8florpen Philippines Lending Corporation",
             address: 'Room 307 3rd floor, Christ the King Bldg., National Highway, Tunasan Muntinlupa City',
             listImages: [],
-            contact_no: ['0932-965-3121(Sun)'],
+            contact_no: ['09625653823'],
+            region: "Metro Manila"
         },
     
         {
-            id: 34,
+            id: 28,
             branch_name: 'North Caloocan',
             company:"JBP Loan Your Blessing Lending Inc",
             address: '4GFM Bldg. 1634 Ilang-Ilang St., Camarin, Caloocan City',
-            listImages: [],
-            contact_no: ['0917-174-1970(Globe/TM)'],
+            listImages: [JBP],
+            contact_no: ['09999906948'],
+            region: "Metro Manila"
         },
         {
-            id: 35,
+            id: 29,
             branch_name: 'Parañaque',
             company:"",
             address: '',
             listImages: [],
             contact_no: [],
+            region: "Metro Manila"
         },
         {
-            id: 36,
-            branch_name: 'Pasig',
-            company:"",
-            address: '',
-            listImages: [],
-            contact_no: [''],
-        },
-        {
-            id: 37,
+            id: 30,
             branch_name: 'Pateros',
             company:"CRN Lending Corp.",
             address: '2nd Floor A&L De Borja Realty Inc., 29 Bagong Kalsada St., Martirez St., Del 96 Pateros, Metro Manila',
-            listImages: [],
-            contact_no: ['0975-981-3400(Globe/TM)'],
+            listImages: [CRN],
+            contact_no: ['09457646716'],
+            region: "Metro Manila"
         },
      
         {
-            id: 38,
+            id: 31,
             branch_name: 'Roxas',
             company:"LT&G Credit Line Corp",
             address: '2nd Floor SRE Arcade, San Roque Extension, Brgy VIII, Roxas City Capiz 5800',
             listImages: [],
-            contact_no: ['0975-981-3400(Globe/TM)'],
+            contact_no: ['09634369476'],
+            region: "Visayas"
         },
         {
-            id: 39,
+            id: 32,
             branch_name: 'San Carlos, Pangasinan',
             company:"",
             address: '',
             listImages: [],
-            contact_no: ['09101459070 (Smart/TNT)'],
+            contact_no: [''],
+            region: "Northern Luzon"
         },
         {
-            id: 40,
+            id: 33,
             branch_name: 'San Fernando, Pampanga',
             company:"1st Stellar Seven Lending Inc.",
             address: '145 V. Tiomico St. Sto. Rosario, City of San Fernando, Pampanga, 2000',
             listImages: [],
-            contact_no: [''],
+            contact_no: ['09622966115'],
+            region: "Northern Luzon"
         },
         {
-            id: 41,
-            branch_name: 'San Jose City, Nueva Ecija',
-            company:"",
-            address: '',
-            listImages: [],
-            contact_no: [''],
-        },
-        {
-            id: 42,
+            id: 34,
             branch_name: 'San Juan City',
             company:"QVDS Lending Corporation",
             address: '2nd Floor, Fiesta Greetings Building Unit 107,160 Alfonso XIII ST San Juan City Metro Manila',
             listImages: [],
             contact_no: [''],
+            region: "Metro Manila"
         },
    
         {
-            id: 43,
+            id: 35,
             branch_name: 'Sorsogon',
             company:"LT&G Credit Line Corp",
             address: '3F, Garcia Bldg., Alegre St., Balogo, Sorsogon City',
             listImages: [],
-            contact_no: ['09101459070 (Smart/TNT)'],
+            contact_no: ['Smart/TNT 09101459070'],
         },
     
         {
-            id: 44,
+            id: 36,
             branch_name: 'Tabaco',
             company:"LT&G Credit Line Corp",
             address: '2F, JHEM Building, P-4 Tagas, Tabaco City',
             listImages: [],
             contact_no: [''],
+            region: "Southern Luzon"
+            
         },
         {
-            id: 45,
-            branch_name: 'Talisay, Cebu',
-            company:"LT&G Credit Line Corp",
-            address: '2nd Floor, ARBS Bldg. Dumlog, Talisay City',
-            listImages: [],
-            contact_no: ['0995-471-9323(Globe)', '0910-441-6897(TNT)'],
-        },
-        {
-            id: 46,
-            branch_name: 'Tanay, Rizal',
+            id: 37,
+            branch_name: 'Tanay',
             company:"",
             address: '',
             listImages: [],
-            contact_no: [''],
+            contact_no: [],
+            region: "Southern Luzon"
         },
         {
-            id: 47,
+            id: 38,
             branch_name: 'Tandang Sora',
             company:"JBP Loan Your Blessings Lending Inc",
             address: 'Unit 103, LRI Bldg. #21 Congressional Ave, Bahay Toro, Quezon City',
-            listImages: [],
-            contact_no: ['0949-881-8911(Smart)'],
+            listImages: [JBP],
+            contact_no: ['Smart/TNT 09498818911'],
+            region: "Metro Manila"
         },
         {
-            id: 48,
+            id: 39,
             branch_name: 'Tarlac 1',
             company:"Johnzen Grand Credit Line Lending Inc.",
             address: '2nd Flr. M. Suarez Commercial Bldg. , Plaridel St. , San Jose , Concepcion , Tarlac.',
             listImages: [],
-            contact_no: ['0927-038-7208(Globe/TM)', '0963-001-8803(Smart/TNT)'],
+            contact_no: ['09617698389'],
+            region: "Northern Luzon"
         },
         {
-            id: 49,
-            branch_name: 'Tarlac 2',
-            company:"",
-            address: '',
-            listImages: [],
-            contact_no: ['0946-284-4734(TNT)', '0938-999-7003(TNT)'],
-        },
-        {
-            id: 50,
+            id: 40,
             branch_name: 'Taytay',
             company:"Arkev Lending Solutions Inc ",
             address: '659 G. Borja Ave. Muzon, Taytay, Rizal',
             listImages: [],
-            contact_no: [''],
+            contact_no: ['09683864731'],
+            region: "Southern Luzon"
         },
         {
-            id: 51,
-            branch_name: 'Urdaneta',
+            id: 41,
+            branch_name: 'Urdaneta, Pangasinan',
             company:"VT888 Urdaneta Lending Corporation",
             address: 'Mc Arthur Highway, San Vicente, Urdaneta City, Pangasinan,Philippines.',
             listImages: [],
-            contact_no: ['0932-263-9960(Sun)'],
+            contact_no: ['09060148372'],
+            region: "Northern Luzon"
         },
         {
-            id: 52,
+            id: 42,
             branch_name: 'Valenzuela',
             company:"Green Dot Lending Corporation",
             address: '#84 Karuhatan road ,Unit 2D Arca Commercial Place',
-            listImages: [],
-            contact_no: [''],
+            listImages: [GreenDot],
+            contact_no: ['09271828489'],
+            region: "Metro Manila"
         },
         {
-            id: 53,
+            id: 43,
             branch_name: 'Virac',
             company:"LT&G Credit Line Corp.",
             address: '2F Talan Bldg. Brgy. San Pablo, Virac, Catanduanes',
             listImages: [],
-            contact_no: ['09318815566 (Smart/TNT)'],
+            contact_no: [],  
+            region: "Southern Luzon"
         },
 ]

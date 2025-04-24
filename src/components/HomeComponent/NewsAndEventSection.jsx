@@ -51,7 +51,7 @@ const NewsAndEventSection = () => {
               </Row>
             </Card.Text>
               <Card.Title className='news-data-title'>{newsdata.title}</Card.Title>
-              <Button variant='danger' className='mt-3'> Read More</Button>
+              <Button variant='danger' className='mt-3' href={newsdata.link}> Read More</Button>
             </Card.Body>
           </Card>
         ))}

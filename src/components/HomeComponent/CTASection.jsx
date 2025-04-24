@@ -14,8 +14,8 @@ const CTASection = () => {
                 <h1 className='display-4 fw-bold'>Start Your Journey to Financial Freedom With Our Microlending Franchise</h1>
                 <p className='lead mt-3 text-muted'>Take the first step toward financial success by joining our trusted microlending franchise. Enjoy a proven business model, expert support, and a thriving market. Get started now and grow your own profitable lending business!</p>
                 <div className='mt-4'>
-                <Button variant='danger' className='me-3'>Learn More</Button>
-                <a href="#" className="text-dark text-decoration-none">Sign up -→</a>
+                <Button variant='danger' className='me-3' href='#/franchising'>Learn More</Button>
+                <a href="#/contact" className="text-dark text-decoration-none" >Sign up -→</a>
                 </div>
           </Col>
         </Row>

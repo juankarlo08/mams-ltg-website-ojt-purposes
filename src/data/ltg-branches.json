@@ -108,6 +108,21 @@
         {
             "type": "Feature",
             "properties": {
+                "LTG_ID": 6,
+                "NAME": "LT&G Credit Line Cagayan De Oro Branch",
+                "ADDRESS": "Crossing Iponan, Cagayan De Oro City",
+                "LINK": "/"
+            },
+            "geometry": {
+                "coordinates": [
+                    8.4972138,
+                    124.6004227
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
                 "LTG_ID": 8,
                 "NAME": "LT&G Credit Line Castillejos Branch",
                 "ADDRESS": "Umipig Building, 98 National Highway, San Juan, Castillejos, Zambales 2208",
@@ -149,22 +164,7 @@
                     123.7111664
                 ]
             }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "LTG_ID": 11,
-                "NAME": "LT&G Credit Line General Trias, Cavite and Dasmariñas, Cavite Branch",
-                "ADDRESS": "201 Unit 2nd Floor Osrem Building Brgy. Tejero General Trias Cavite",
-                "LINK": "/"
-            },
-            "geometry": {
-                "coordinates": [
-                    14.3966416,
-                    120.8562437
-                ]
-            }
-        },          
+        },        
         {
             "type": "Feature",
             "properties": {
@@ -192,21 +192,6 @@
                 "coordinates": [
                     12.7023842,
                     124.0357762
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "LTG_ID": 17,
-                "NAME": "LT&G Credit Line Iloilo Branch",
-                "ADDRESS": "3/F PAFCPIC Building Brgy. Buhang Taft North Mandurriao, Iloilo City, 5000",
-                "LINK": "/"
-            },
-            "geometry": {
-                "coordinates": [
-                    10.7198154,
-                    122.5526683
                 ]
             }
         },
@@ -303,21 +288,6 @@
         {
             "type": "Feature",
             "properties": {
-                "LTG_ID": 22,
-                "NAME": "LT&G Credit Line Manila 2 Branch",
-                "ADDRESS": "The Station Point Bldg., 3294 R. Magsaysay Blvd., Corner Maganda St., Zone 43 Brgy. 427 Sampaloc, Manila",
-                "LINK": "/"
-            },
-            "geometry": {
-                "coordinates": [
-                    14.6027372,
-                    121.0020075
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
                 "LTG_ID": 23,
                 "NAME": "LT&G Credit Line Marikina Branch",
                 "ADDRESS": "2nd Flr. Castillo Bldg. 50 General Ordoñez Ave., Brgy. Concepcion Uno, Marikina City",
@@ -378,15 +348,15 @@
         {
             "type": "Feature",
             "properties": {
-                "LTG_ID": 27,
-                "NAME": "LT&G Credit Line Naga Branch",
-                "ADDRESS": "2nd Flr. Unit 10 Zone 5 MMCN Bldg., Panganiban Drive Concepcion Pequeña, Naga City",
+                "LTG_ID": 29,
+                "NAME": "LT&G Credit Line Muntinlupa Branch",
+                "ADDRESS": "Room 307 3rd floor, Christ the King Bldg., National Highway, Tunasan Muntinlupa City",
                 "LINK": "/"
             },
             "geometry": {
                 "coordinates": [
-                    13.6215895,
-                    123.1951795
+                    14.377475,
+                    121.0465639
                 ]
             }
         },
@@ -493,21 +463,6 @@
                 "coordinates": [
                     13.3551013,
                     123.7298887
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "LTG_ID": 36,
-                "NAME": "LT&G Credit Line Talisay Branch",
-                "ADDRESS": "2nd Floor, ARBS Bldg. Dumlog, Talisay City",
-                "LINK": "/"
-            },
-            "geometry": {
-                "coordinates": [
-                    10.2489913,
-                    123.8390867
                 ]
             }
         },

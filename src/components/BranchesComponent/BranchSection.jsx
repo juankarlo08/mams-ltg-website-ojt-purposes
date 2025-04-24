@@ -10,7 +10,6 @@ import { Form, InputGroup, FormControl} from "react-bootstrap";
 import SearchImg from '../../assets/search.png';
 import BranchesData from '../../data/branchesdata';
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImg from '../../img/angeles.jpg';
 import './BranchSection.css'
 import Accordion from 'react-bootstrap/Accordion';
 
@@ -59,10 +58,11 @@ const filteredBranches = BranchesData.filter(branch =>
           value={regionFilter} 
           onChange={(e) => setRegionFilter(e.target.value)}>
             <option>All</option>
-            <option>Luzon</option>
+            <option>Northern Luzon</option>
+            <option>Southern Luzon</option>
+            <option>Metro Manila</option>
             <option>Visayas</option>
             <option>Mindanao</option>
-            <option>Metro Manila</option>
           </Form.Select>
           </div>
         </Col>
@@ -106,7 +106,7 @@ const filteredBranches = BranchesData.filter(branch =>
                     </Card.Text>
                     <Card.Text>
                       <h6 className='mt-4'>Contact:</h6>
-                      <p> {branchesdata.contact}</p>
+                      <p> {branchesdata.contact_no}</p>
                     </Card.Text>
                     <Card.Text>
                       <h6 className='mt-4'>Owned and Operated by:</h6>
@@ -119,8 +119,8 @@ const filteredBranches = BranchesData.filter(branch =>
                   <Carousel>
                       <Carousel.Item interval={1000}>
                          <img
-                         className="carousel-img pt-3"
-                         src={CarouselImg}
+                         className="carousel-img img-fluid pt-3"
+                         src={branchesdata.listImages}
                          alt="company-logo"
                      />      
                       </Carousel.Item>
@@ -156,7 +156,7 @@ const filteredBranches = BranchesData.filter(branch =>
                     </Card.Text>
                     <Card.Text>
                       <h6 className='mt-4'>Contact:</h6>
-                      <p> {branchesdata.contact}</p>
+                      <p> {branchesdata.contact_no}</p>
                     </Card.Text>
                     <Card.Text>
                       <h6 className='mt-4'>Owned and Operated by:</h6>
@@ -169,8 +169,8 @@ const filteredBranches = BranchesData.filter(branch =>
                   <Carousel>
                       <Carousel.Item interval={1000}>
                          <img
-                         className="carousel-img pt-3"
-                         src={CarouselImg}
+                         className="carousel-img img-fluid pt-3"
+                         src={branchesdata.listImages}
                          alt="company-logo"
                      />      
                       </Carousel.Item>

@@ -22,15 +22,15 @@ const NavSection = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mx-auto">
-            <Nav.Link className="text-center" as={Link} to="/">Home</Nav.Link>
-            <Nav.Link className="text-center" as={Link} to="/about">About</Nav.Link>
-            <Nav.Link className="text-center" as={Link} to="/branches">Branches</Nav.Link>
-            <Nav.Link className="text-center" as={Link} to="/franchising">Franchising</Nav.Link>
-            <Nav.Link className="text-center" as={Link} to="/contact">Contact</Nav.Link>
+            <Nav.Link className="text-center " as={Link} to="/">Home</Nav.Link>
+            <Nav.Link className="text-center " as={Link} to="/about">About</Nav.Link>
+            <Nav.Link className="text-center " as={Link} to="/branches">Branches</Nav.Link>
+            <Nav.Link className="text-center " as={Link} to="/franchising">Franchising</Nav.Link>
+            <Nav.Link className="text-center " as={Link} to="/contact">Contact</Nav.Link>
             
         </Nav>
         <Nav>
-          <Button className="rounded" variant="danger" size="sm" href="#">Franchise Now</Button>
+          <Button className="rounded" variant="danger" size="sm" href='#/contact'>Franchise Now</Button>
         </Nav>
       </Navbar.Collapse>
     </Container>
