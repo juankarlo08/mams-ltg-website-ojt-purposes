@@ -6,18 +6,16 @@ import NewsAndEventSection from '../components/HomeComponent/NewsAndEventSection
 import CTASection from '../components/HomeComponent/CTASection'
 import CustomerTestimonial from '../components/HomeComponent/CustomerTestimonial'
 import LogoClouds from '../components/HomeComponent/LogoClouds'
-// import FranchiseTestimonial from '../components/HomeComponent/FranchiseTestimonial'
+
 
 const Home = () => {
   return (
     <>
-    
     <HeroSection />
     <LogoClouds />
     <FeatureListSection />
-    <TestimonialSection />
-    {/* <FranchiseTestimonial /> */}
     <CustomerTestimonial />
+    <TestimonialSection />
   <NewsAndEventSection />
     <CTASection />
 

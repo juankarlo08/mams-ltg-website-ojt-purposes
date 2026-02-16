@@ -4,6 +4,11 @@ import { FaStar } from "react-icons/fa";
 import MiriamSinio from '../../img/miriam-sinio.png';
 import CrisantaPamintuan from '../../img/crisanta-pamintuan.png';
 import MarifeMataba from '../../img/marife-mataba.png';
+import { fadeIn, childVariant } from '../../data/animation';
+import { motion } from 'framer-motion';
+
+const MotionContainer = motion(Container);
+const MotionCol = motion(Col);
 
 const testimonials = [
     {
@@ -11,7 +16,7 @@ const testimonials = [
       name: "Miriam Sinio",
       pic: MiriamSinio,
       subtitle: "Karinderya Store Owner",
-      text: "Nung bumaba ang aking negosyo, LT&G lang ang nakatulong sa akin upang makasurvive ang aking negosyong karinderya. Ang dagdag puhunan ng ng LT&G ang rason kung bakit patuloy pa din akong nagnenegosyo",
+      text: "Nung bumaba ang aking negosyo, LT&G lang ang nakatulong sa akin upang makasurvive ang aking negosyong karinderya. Ang dagdag puhunan ng LT&G ang rason kung bakit patuloy pa din akong nagnenegosyo",
       rating: 5,
     },
     {
@@ -34,55 +39,48 @@ const testimonials = [
 
 const CustomerTestimonial = () => {
   return (
-      <Container fluid className="custom-x-padding py-5">
+      <MotionContainer fluid className="bg-light custom-x-padding py-5" variants={fadeIn} initial="hidden" whileInView="show">
         <Row className='mt-5'>
-            <Col>
-            <h1 className="text-center display-4 fw-bold">Real Stories, Real Success: Our Clients Speak</h1>
-      <p className="text-center lead text-muted">
-      Discover how our microloans have empowered individuals and businesses to achieve their financial goals.
-      </p>
-            </Col>
-        </Row>
-
-      <Row className="justify-content-center my-5">
-        {testimonials.map((testimonial) => (
-          <Col md={4} key={testimonial.id} className="mb-4">
-            <Card className="border shadow-sm p-3 text-center p-5">
-              <div>
-                {[...Array(testimonial.rating)].map((_, index) => (
-                  <FaStar key={index} className="text-warning" />
-                ))}
-              </div>
-              <Card.Body>
-                <Card.Text className="fw-bold">
-                  "{testimonial.text}"
-                </Card.Text>
-                <div className="d-flex flex-column align-items-center">
-                  <div>
-                   <img src={testimonial.pic} className="rounded-circle d-flex justify-content-center align-items-center" alt="First Pic" style={{ width: "60px", height: "60px" }}/>
-                  </div>
-                  
-                    <Row>
-                      <Col>
-                      <Card.Text className="mt-2 fw-semibold">{testimonial.name}</Card.Text>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col>
-                      <Card.Text className='text-muted mt-0'> <small>LT&G Client - {testimonial.subtitle}</small></Card.Text>
-                      </Col>
-
-                    </Row>
-                    
-                    
-                  
-                </div>
-              </Card.Body>
-            </Card>
+          <Col>
+          <h1 className="text-center display-4">Real Stories, Real Success: Our Clients Speak</h1>
           </Col>
-        ))}
-      </Row>
-    </Container>
+        </Row>
+        <Row className="justify-content-center my-5">
+          {testimonials.map((testimonial) => (
+            <MotionCol variants={childVariant} md={4} key={testimonial.id} className="d-flex mb-4 align-items-stretch">
+              <Card className="border shadow-sm p-3 text-center p-4 ">
+                <Row className='justify-content-center'>
+                  <img src={testimonial.pic} className="rounded-circle border border-3 border-danger p-0 d-flex justify-content-center align-items-center text-center" alt="First Pic" style={{ width: "auto", maxHeight: "80px" }}/>
+                </Row>
+                <Row className='mt-3'>
+                  <div>
+                    {[...Array(testimonial.rating)].map((_, index) => (
+                      <FaStar key={index} className="text-warning" />
+                    ))}
+                  </div>
+                </Row>
+                <Card.Body>
+                  <Card.Text className="fw-bold">
+                    "{testimonial.text}"
+                  </Card.Text>
+                  <div className="d-flex flex-column align-items-center">
+                    <Row>
+                      <Col>
+                       <Card.Text className="mt-2 fw-semibold">{testimonial.name}</Card.Text>
+                      </Col>
+                    </Row>
+                    <Row>
+                      <Col>
+                       <Card.Text className='text-muted mt-0'> <small>LT&G Client - {testimonial.subtitle}</small></Card.Text>
+                      </Col>
+                    </Row>
+                  </div>
+                </Card.Body>
+              </Card>
+            </MotionCol>
+          ))}
+        </Row>
+      </MotionContainer>
   )
 }
 

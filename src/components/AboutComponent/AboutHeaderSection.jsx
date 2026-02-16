@@ -2,22 +2,22 @@ import React from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './AboutHeaderSection.css';
 import AboutPic from '../../img/about-header-pic.png'
+import { Link } from 'react-router-dom';
 
 
 const AboutHeaderSection = () => {
   return (
-    <Container fluid className="bg-about custom-x-padding">
+    <Container fluid className="custom-x-padding">
     <Row >
-      {/* Left Text Section */}
-      <Col lg={6} className="d-flex flex-column justify-content-center my-5 text-center text-lg-start">
-      <p className='fw-bold mb-2'>About</p>
-        <h1 className="fw-bold display-4">LT&amp;G Credit Line</h1>
-        <p className="mt-3 lead text-muted">
+      <Col lg={6} className="d-flex flex-column justify-content-center my-5 text-start">
+      <p className=' mb-2'>About</p>
+        <h1 className=" display-4">LT&amp;G Credit Line</h1>
+        <p className="mt-3 fs-5 fw-light text-muted">
           LT&amp;G Credit Line offers loans to micro-entrepreneurs for operational or growth capital, providing customized credit, flexible terms, risk-handling insurance, and value-added services. LT&amp;G is committed to empowering small businesses and families through fair, reliable, and accessible financial solutions. Guided by the principle "better loans, better lives," we promote financial stability, improved livelihoods, and community growth through responsible lending.
         </p>
           <div className='mt-4'>
-          <Button variant='danger' className='me-2' href='#/franchising'>Learn More</Button>
-          <Button variant='secondary' href='#/contact'>Join Now</Button>
+          <Button variant='danger' className='me-2' as={Link} to="/franchising">Learn More</Button>
+          <Button variant='secondary' as={Link} to="/contact">Join Now</Button>
           </div>
       </Col>
       <Col lg={6} className='d-flex justify-content-lg-end justify-content-center'>

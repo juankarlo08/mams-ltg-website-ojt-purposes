@@ -8,6 +8,11 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import NewsData from '../../data/newsdata';
+import { fadeIn } from '../../data/animation';
+import { motion } from 'framer-motion';
+
+const MotionContainer = motion(Container);
+const MotionCard = motion(Card);
 
 const responsive = {
   xxl: { breakpoint: { max: 4000, min: 1400 }, items: 3 },
@@ -21,14 +26,19 @@ const responsive = {
 
 const NewsAndEventSection = () => {
   return (
-    <Container fluid className='margin-x-padding py-5'>
+    <MotionContainer
+     fluid 
+     className='py-5 bg-light'
+     variants={fadeIn}
+    initial="hidden"
+    whileInView="show">
+
         <Row className='justify-content-center my-5'>
             <Col xxl={10}>
-                <h1 className='display-4 fw-bold text-center'>What's New?</h1>
-                <p className='lead mt-3 text-center'>Exciting Updates from Our Microlending Franchise</p>
+                <h1 className='display-4 text-center'>What's New?</h1>
          
                 <Carousel
-        className='carousel-containers mt-5'
+        className='carousel-containers mt-4 py-5'
         responsive={responsive}
         swipeable={true}
         showDots={true}
@@ -41,7 +51,7 @@ const NewsAndEventSection = () => {
         
       >
         {NewsData.map((newsdata) => (
-          <Card className="custom-card" key={newsdata.id}>
+          <MotionCard className="custom-card" key={newsdata.id} whileHover={{ scale: 1.1 }}>
             <Card.Img variant="top" className="card-img-size" src={newsdata.img} />
             <Card.Body>
             <Card.Text className="card-text mb-2">
@@ -53,13 +63,13 @@ const NewsAndEventSection = () => {
               <Card.Title className='news-data-title'>{newsdata.title}</Card.Title>
               <Button variant='danger' className='mt-3' href={newsdata.link}> Read More</Button>
             </Card.Body>
-          </Card>
+          </MotionCard>
         ))}
       </Carousel>
            </Col>
       
     </Row>
-  </Container>
+  </MotionContainer>
   )
 }
 

@@ -1,7 +1,31 @@
-.link-active:hover, a:hover{
-    color: #000000!important;
-}
+ .custom-nav .nav-link {
+    color: #808080;
+    transition: color 0.5s ease;
+  }
+  
+  .custom-nav .nav-link:hover {
+    color: #b62525; 
+ 
+  }
 
-.active{
-    color: red !important;
-}
+  
+  .nav-link.active {
+    font-weight: bold;
+    color: #b62525 !important;
+
+  } 
+
+
+  
+   @media (min-width: 992px) { 
+
+      .underline {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px; 
+        background-color: #b62525; 
+      }
+  
+  } 

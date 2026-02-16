@@ -1,5 +1,5 @@
-.franchise-card-img{
-    object-fit: cover;
-    object-position: center;
-    max-height: 500px;
-}
+ .franchise-program-header{
+ position: absolute;
+  top: -50px;
+  z-index: 1;
+ }

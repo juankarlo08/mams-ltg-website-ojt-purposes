@@ -10,6 +10,11 @@ import Modal from 'react-bootstrap/Modal';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2'
+import { fadeIn, childVariant } from '../../data/animation';
+import { motion } from 'framer-motion';
+
+const MotionCol = motion(Col);
+const MotionContainer = motion(Container);
 
 const ContactFormSection = () => {
     const [agreed, setAgreed] = useState(true);
@@ -45,13 +50,19 @@ const ContactFormSection = () => {
       };
   
   return (
-  <Container fluid>
-  <Row>
+  <MotionContainer 
+  fluid
+  variants={fadeIn}
+  initial="hidden"
+  whileInView="show"
+  >
+  <Row variants={childVariant}>
     <Col md={6} className=" text-light bg-contact custom-x-padding custom-y-padding">
+      <motion.div variants={childVariant}>
     <Row className='my-4'>
       <Col>
-      <h1 className="fw-bold display-4">Contact Us</h1>
-      <p className='lead text-secondary'>We're here to answer your questions and provide support.</p> 
+      <h1 className="display-4">Contact Us</h1>
+      <p className='fs-5 fw-light text-secondary'>We're here to answer your questions and provide support.</p> 
       </Col>
     </Row>
     <Row className='align-items-center my-2'>
@@ -90,34 +101,29 @@ const ContactFormSection = () => {
       <a className="fw-bold text-light" href="https://maps.app.goo.gl/9j2KKx84g4is6soUA">Manila Office</a>
       <small className='mt-2'> 2/F Unit V, TFN Building, 963 Gen Kalentong Cor.Haig St, Daang Bakal, Mandaluyong, 1550 Metro Manila</small> 
       </Col>
-     
-    </Row>
-  
-     
-      
+    </Row>    
+    </motion.div>
     </Col>
+
     <Col md={6} className='text-white bg-info custom-x-padding custom-y-padding'>
+    <motion.div variants={childVariant}>
       <Form ref={form} onSubmit={sendEmail}>
         <Form.Group className="mb-3" controlId="formName">
           <Form.Label>Name*</Form.Label>
           <Form.Control className="bg-color" type="text" name="name" required/>
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="formEmail">
           <Form.Label>Email *</Form.Label>
           <Form.Control className="bg-color" type="email" name="email" required/>
         </Form.Group>
-    
           <Form.Group controlId="phone-number" className="mb-3">
             <Form.Label>Mobile Number *</Form.Label>
            <Form.Control className="bg-color" type="text" name="number" required/>
            </Form.Group>
-
         <Form.Group className="mb-3" controlId="formMessage">
           <Form.Label>Message *</Form.Label>
           <Form.Control className="bg-color" as="textarea" name="message" rows={4} required/>
         </Form.Group>
-
         <Form.Group controlId="terms" className="mb-3">
           <Form.Check
                type="checkbox"
@@ -134,15 +140,14 @@ const ContactFormSection = () => {
                   </a>.
               
                 </>
-
               
               }
      
              />
          </Form.Group>
-
         <Button variant="danger" type="submit">Submit</Button>
       </Form>
+      </motion.div>
     </Col>
 
   </Row>
@@ -241,7 +246,7 @@ const ContactFormSection = () => {
         </Modal.Body>
       </Modal>
 
-</Container>
+</MotionContainer>
   )
 }
 

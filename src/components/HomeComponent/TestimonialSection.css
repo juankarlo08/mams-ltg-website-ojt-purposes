@@ -1,6 +1,38 @@
-.bg-testimonial{
-    background-image: url(../../img/testimonial-section.jpg);
+.bg-testimonial-mam-eunice{
+    background-image: url(../../img/bg-testimonial-mam-eunice.jpg);
     background-size: cover;
-    background-position: top; 
+    background-position: center; 
     background-repeat: no-repeat; 
+}
+
+.bg-testimonial-sir-carlo{
+    background-image: url(../../img/bg-testimonial-sir-carlo.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.bg-testimonial-sir-jasper{
+    background-image: url(../../img/bg-testimonial-sir-jasper.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    .video-size{
+    height: auto;
+    width: 100%;
+}
+ }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+  .video-size{
+    height: auto;
+    width: 60%;
+}
+
 }

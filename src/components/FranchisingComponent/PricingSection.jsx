@@ -1,37 +1,56 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 import './PricingSection.css'
+import { fadeIn, childVariant } from '../../data/animation';
+import { motion } from 'framer-motion';
+
+const MotionContainer = motion(Container);
+const MotionCol = motion(Col);
 
 const PricingSection = () => {
   return (
-    <Container fluid className="py-5 custom-x-padding text-light bg-pricing">
+    <MotionContainer 
+    fluid 
+    className="py-5 custom-x-padding text-light bg-pricing"
+    variants={fadeIn}
+    initial="hidden"
+    whileInView="show"
+    >
+      
     <Row className="justify-content-center">
-    <div className="text-center my-5">
-          <p className="fw-semibold">Pricing</p>
-          <h1 className="display-4 fw-bold">Choose the right plan for you</h1>
-          <p className="lead text-secondary">
-            Choose an affordable plan that’s packed with the best features for
-            engaging your audience, creating customer loyalty, and driving sales.
-          </p>
+       <div className="text-center my-5">
+          <p >Pricing</p>
+          <h1 className="display-4">Choose the right plan for you</h1>        
         </div>
 
-      <Col md={4} className="mb-4">
-        <Card className="shadow-sm p-4 text-start">
+      <MotionCol md={4} className="mb-4" variants={childVariant}>
+        <Card className="shadow-sm p-4 border-2 border-danger">
+          <div className='d-flex justify-content-center'>
+              <div className="vps-badge-header fs-5">Junior Branch</div>
+          </div>
           <Card.Body>
-          <Row className='align-items-center'>   
-            <Col lg={6}>
-            <h6 className="mb-3 text-danger fw-bold">Junior Branch</h6>
-            <h2 className="fw-bold mb-0">Php 252,000</h2>
-            <small className='text-muted mb-2'>Franchise Fee</small>
-            </Col>
-              <Col lg={6} className='border border-3 rounded-3 border-danger shadow-sm'>
-               <h5 className="fw-bold text-info my-2"> Franchise investment package starts at <span className='text-danger'>₱2.45M</span></h5>
+            <Row >
+            <Col className='text-center'>
+            <small className="text-muted fst-italic"> Franchise package starts at </small>
+               <h2 className="fw-bold text-muted"> ₱2.45M </h2>
+                 <hr />
                </Col>
+            </Row>
+          <Row className='align-items-center'>   
+            <Col>
+      
+            <p className='fw-bold mb-2 '>Franchise Fee</p>
+            <h2 className="fw-bold mb-0 ">Php 252,000</h2>
+            
+            </Col>
+              
             </Row>
             
             <Card.Text className="text-muted mt-3">
             An ideal entry-level option for entrepreneurs looking to start with a manageable investment and grow within a smaller market.
             </Card.Text>
+          
             <ul className="list-unstyled text-start" >
               <li className='mt-2'>✔ Less Employee Needed </li>
               <li className='mt-2'>✔ Less Required Space</li>
@@ -45,25 +64,33 @@ const PricingSection = () => {
               <li className='mt-2'>✔ Business Guidance and Support</li>
             </ul>
 
-            <Button variant="danger" href='#/contact' className="mt-2">Get started today</Button>
+            <Button variant="danger" as={Link} to="/contact" className="mt-2">Get started today</Button>
            
        
           </Card.Body>
         </Card>
-      </Col>
+      </MotionCol>
 
-      <Col md={4} className="mb-4">
-        <Card className="shadow-sm p-4 text-start">
+      <MotionCol md={4} className="mb-4" variants={fadeIn}>
+        <Card className="shadow-sm p-4 border-2 border-danger">
+            <div className='d-flex justify-content-center'>
+              <div className="vps-badge-header fs-5 ">Full Branch</div>
+          </div>
           <Card.Body>
+             <Row >
+            <Col className='text-center'>
+            <small className="text-muted fst-italic"> Franchise package starts at </small>
+               <h2 className="fw-bold text-muted"> ₱3.5M </h2>
+                 <hr />
+               </Col>
+            </Row>
           <Row className='align-items-center'>   
-          <Col lg={6}>
-                  <h6 className="mb-3 text-danger fw-bold">Full Branch</h6>
-                <h2 className="fw-bold mb-0">Php 448,000</h2>
-                <small className='text-muted'>Franchise Fee</small>
+          <Col >
+           <p className='fw-bold mb-2'>Franchise Fee</p>
+            <h2 className="fw-bold mb-0 ">Php 448,000</h2>
+            
               </Col>
-                <Col lg={6} className='border border-3 rounded-3 border-danger shadow-sm'>
-                 <h5 className="fw-bold text-info my-2"> Start your franchise journey from <span className='text-danger'>Php 3.5M</span></h5>
-                </Col>
+       
             </Row>
          
             <Card.Text className="text-muted mt-3">
@@ -81,13 +108,13 @@ const PricingSection = () => {
               <li className='mt-2'>✔ Marketing Support</li>
               <li className='mt-2'>✔ Business Guidance and Support</li>
             </ul>
-            <Button variant="danger" href='#/contact' className="mt-2">Get started today</Button>
+            <Button variant="danger" as={Link} to="/contact" className="mt-2">Get started today</Button>
             
           </Card.Body>
         </Card>
-      </Col>
+      </MotionCol>
     </Row>
-    </Container>
+    </MotionContainer>
  
 
   )

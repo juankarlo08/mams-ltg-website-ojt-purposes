@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './TimelineSection.css'
 import FirstPic from '../../img/first-pic.jpg'
@@ -7,27 +8,37 @@ import ThirdPic from '../../img/third-pic.jpg'
 import FourthPic from '../../img/fourth-pic.jpg'
 import FifthPic from '../../img/fifth-pic.jpg'
 import SixthPic from '../../img/sixth-pic.jpg'
+import { fadeIn, childVariant } from '../../data/animation';
+import { motion } from 'framer-motion';
+
+const MotionContainer = motion(Container);
+const MotionRow = motion(Row);
 
 const TimelineSection = () => {
   return (
     
-  <Container fluid className="py-5 custom-x-padding">
+  <MotionContainer 
+  fluid 
+  className="py-5 custom-x-padding"
+  variants={fadeIn}
+  initial="hidden"
+  whileInView="show">
 
-  <Row className='justify-content-center my-5'>
+  <MotionRow variants={childVariant} className='justify-content-center my-5'>
     <Col xxl={7} className='text-center'>
-        <p className='text-center mb-2 fw-bold'>Better Loans, Better Lives</p>
-        <h1 className="display-4 fw-bold text-center">Milestones of Growth</h1>
+        <p className='text-center mb-2'>Better Loans, Better Lives</p>
+        <h1 className="display-4 text-center">Milestones of Growth</h1>
         <p className="lead text-muted text-center mb-4">Every step marks our dedication to providing reliable credit solutions. 
         Together, we've built a legacy of progress and partnership.</p>
         <div className='mb-5'>
-        <Button variant='danger' href='#/contact'>Become a Franchisee</Button>
+        <Button variant='danger' as={Link} to="/franchising">Become a Franchisee</Button>
         </div>
         
     </Col>    
-  </Row>
+  </MotionRow>
 
     {/* //////////////////111111//////////////////////////////// */}
-  <Row className="mt-5 mt-md-3 justify-content-center">
+  <MotionRow variants={childVariant} className="mt-5 mt-md-3 justify-content-center">
   {/* Left: Image Placeholder */}
   <Col
     md={{ span: 5, order: 1 }}
@@ -35,7 +46,7 @@ const TimelineSection = () => {
     className="d-flex align-items-start align-items-lg-center justify-content-start justify-content-lg-end mt-md-0"
   >
     <div className="text-center">
-      <img src={FirstPic} alt="First Pic" className="pic-holder img-fluid" />
+      <img src={FirstPic} alt="First Pic" className="pic-holder img-fluid rounded-4" />
     </div>
   </Col>
   {/* Center: Timeline Line and Dot */}
@@ -73,10 +84,10 @@ const TimelineSection = () => {
   >
     <div className="timeline-vertical"></div>
   </Col>
-</Row>
+</MotionRow>
 
 {/* //////////////////////222222222////////////////////////////////// */}
-<Row className="justify-content-center">
+<MotionRow variants={childVariant} className="justify-content-center">
   {/* Left: Image Placeholder */}
   <Col
     md={{ span: 5, order: 3 }}
@@ -84,7 +95,7 @@ const TimelineSection = () => {
     className="d-flex align-items-start align-items-lg-center justify-content-start justify-content-lg-start mt-md-0"
   >
     <div className="text-center">
-      <img src={SecondPic} alt="First Pic" className="pic-holder img-fluid" />
+      <img src={SecondPic} alt="First Pic" className="pic-holder img-fluid rounded-4" />
     </div>
   </Col>
   {/* Center: Timeline Line and Dot */}
@@ -122,10 +133,10 @@ const TimelineSection = () => {
   >
     <div className="timeline-vertical"></div>
   </Col>
-</Row>
+</MotionRow>
 
     {/* ////////////////33333333///////////////////////////    */}
-<Row className="justify-content-center">
+<MotionRow variants={childVariant} className="justify-content-center">
   {/* Left: Image Placeholder */}
   <Col
     md={{ span: 5, order: 1 }}
@@ -133,7 +144,7 @@ const TimelineSection = () => {
     className="d-flex align-items-start align-items-lg-center justify-content-start justify-content-lg-end mt-md-0"
   >
     <div className="text-center">
-      <img src={ThirdPic} alt="First Pic" className="pic-holder img-fluid" />
+      <img src={ThirdPic} alt="First Pic" className="pic-holder img-fluid rounded-4" />
     </div>
   </Col>
   {/* Center: Timeline Line and Dot */}
@@ -171,11 +182,11 @@ const TimelineSection = () => {
   >
     <div className="timeline-vertical"></div>
   </Col>
-</Row>   
+</MotionRow>   
 
 {/* /////////////////4444////////////////////////// */}
 
-<Row  className="justify-content-center">
+<MotionRow variants={childVariant} className="justify-content-center">
   {/* Left: Image Placeholder */}
   <Col
     md={{ span: 5, order: 3 }}
@@ -183,7 +194,7 @@ const TimelineSection = () => {
     className="d-flex align-items-start align-items-lg-center justify-content-start justify-content-lg-start mt-md-0"
   >
     <div className="text-center">
-      <img src={FourthPic} alt="First Pic" className="pic-holder img-fluid" />
+      <img src={FourthPic} alt="First Pic" className="pic-holder img-fluid rounded-4" />
     </div>
   </Col>
   {/* Center: Timeline Line and Dot */}
@@ -220,12 +231,12 @@ const TimelineSection = () => {
   >
     <div className="timeline-vertical"></div>
   </Col>
-</Row>
+</MotionRow>
 
 
 
     {/* ////////////////5555555///////////////////////////    */}
-<Row className="justify-content-center">
+<MotionRow variants={childVariant} className="justify-content-center">
   {/* Left: Image Placeholder */}
   <Col
     md={{ span: 5, order: 1 }}
@@ -233,7 +244,7 @@ const TimelineSection = () => {
     className="d-flex align-items-start align-items-lg-center justify-content-start justify-content-lg-end mt-md-0"
   >
     <div className="text-center">
-      <img src={FifthPic} alt="First Pic" className="pic-holder img-fluid" />
+      <img src={FifthPic} alt="First Pic" className="pic-holder img-fluid rounded-4" />
     </div>
   </Col>
   {/* Center: Timeline Line and Dot */}
@@ -270,11 +281,11 @@ const TimelineSection = () => {
   >
     <div className="timeline-vertical"></div>
   </Col>
-</Row>  
+</MotionRow>  
 
 {/* ///////////////66666///////////////////// */}
 
-<Row className="justify-content-center mb-5">
+<MotionRow variants={childVariant} className="justify-content-center mb-5">
   {/* Left: Image Placeholder */}
   <Col
     md={{ span: 5, order: 3 }}
@@ -282,7 +293,7 @@ const TimelineSection = () => {
     className="d-flex align-items-start align-items-lg-center justify-content-start justify-content-lg-start mt-md-0"
   >
     <div className="text-center">
-      <img src={SixthPic} alt="First Pic" className="pic-holder img-fluid" />
+      <img src={SixthPic} alt="First Pic" className="pic-holder img-fluid rounded-4" />
     </div>
   </Col>
   {/* Center: Timeline Line and Dot */}
@@ -320,10 +331,10 @@ const TimelineSection = () => {
   >
     <div className="timeline-vertical"></div>
   </Col>
-</Row>
+</MotionRow>
 
 
-      </Container>
+      </MotionContainer>
   )
 }
 

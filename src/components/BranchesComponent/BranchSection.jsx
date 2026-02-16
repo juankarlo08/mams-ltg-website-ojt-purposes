@@ -6,14 +6,14 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 import Card from 'react-bootstrap/Card';
-import { Form, InputGroup, FormControl} from "react-bootstrap";
+import { Form, InputGroup, FormControl, Button} from "react-bootstrap";
 import SearchImg from '../../assets/search.png';
 import BranchesData from '../../data/branchesdata';
 import Carousel from 'react-bootstrap/Carousel';
 import './BranchSection.css'
 import Accordion from 'react-bootstrap/Accordion';
-
-
+import { motion, AnimatePresence } from "framer-motion";
+import { fadeVariant } from '../../data/animation';
 
 const BranchSection = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -24,6 +24,8 @@ const filteredBranches = BranchesData.filter(branch =>
   &&
   (regionFilter === "All" || branch.region === regionFilter)
 );
+
+
 
   return (
     <Container fluid className="bg-white custom-x-padding py-5">
@@ -74,10 +76,9 @@ const filteredBranches = BranchesData.filter(branch =>
           <Col lg={5}>
           <div className="rounded-3 shadow-sm p-3 border-dark-subtle mb-3" style={{ maxHeight: "500px", overflowY: "auto"}}>
             <ListGroup>
-
               {filteredBranches.length > 0 ? (
             filteredBranches.map((branchesdata) => (
-              <ListGroup.Item className="border-end-0 border-start-0 rounded-0" key={branchesdata.id} eventKey={branchesdata.id}>
+              <ListGroup.Item className="border-end-0 border-start-0 rounded-0" key={branchesdata.id} eventKey={branchesdata.id} >
                 {branchesdata.branch_name}
               </ListGroup.Item>
             ))
@@ -89,17 +90,31 @@ const filteredBranches = BranchesData.filter(branch =>
             </ListGroup>
             </div>
           </Col>
-        
-          
+                
           <Col>
+        
             <Tab.Content>
+              <AnimatePresence mode="wait">
             {BranchesData.map((branchesdata) => (
-              <Tab.Pane eventKey={branchesdata.id} key={branchesdata.id}>
+         
+
+              <Tab.Pane eventKey={branchesdata.id} key={branchesdata.id} mountOnEnter unmountOnExit>
+                   <motion.div
+                key={branchesdata.id}
+                variants={fadeVariant}
+                initial="hidden"
+                animate="show"
+                exit="exit"
+                transition={{ duration: 0.25 }}
+              >
+
+            
                 <Card className="shadow-sm border-light-subtle p-3" style={{ maxWidth: "55rem" }}>
+                  
                   <Card.Header as="h4" className='bg-white'>{branchesdata.branch_name}</Card.Header>
                   <Row>
                   <Col>
-                  <Card.Body>
+                  <Card.Body >
                     <Card.Text>
                       <h6 className='mt-4'>Address:</h6>
                       <p> {branchesdata.address}</p>
@@ -112,7 +127,7 @@ const filteredBranches = BranchesData.filter(branch =>
                       <h6 className='mt-4'>Owned and Operated by:</h6>
                       <p> {branchesdata.company}</p>
                     </Card.Text>
-                    
+                     
                   </Card.Body>
                   </Col>
                   <Col>
@@ -127,12 +142,21 @@ const filteredBranches = BranchesData.filter(branch =>
                     </Carousel>
                   </Col>
                   </Row>
+                  <Card.Footer className='mt-4 bg-white'>
+                    <div className='mt-2'>
+                      <Button variant="danger" href={branchesdata.maps}>View on Map</Button>
+                    </div>
+                    </Card.Footer>
                 </Card>
+                  </motion.div>
               </Tab.Pane>
                 ))}
+                </AnimatePresence>
             </Tab.Content>
+      
           </Col>
         </Row>
+        
       </Tab.Container>
 
       
@@ -177,6 +201,11 @@ const filteredBranches = BranchesData.filter(branch =>
                     </Carousel>
                   </Col>
                   </Row>
+                   <Card.Footer className='mt-4 bg-white'>
+                    <div className='mt-2'>
+                      <Button variant="danger" href={branchesdata.maps}>View on Map</Button>
+                    </div>
+                    </Card.Footer>
                 </Card>
         </Accordion.Body>
       </Accordion.Item>

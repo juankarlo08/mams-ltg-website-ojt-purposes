@@ -4,7 +4,13 @@ import Row from 'react-bootstrap/Row';
 import Accordion from 'react-bootstrap/Accordion';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
 import './FAQSection.css';
+import { fadeIn, childVariant } from '../../data/animation';
+import { motion } from 'framer-motion';
+
+const MotionContainer = motion(Container);
+const MotionRow = motion(Row);
 
 const FAQSection = () => {
     const handleRefresh = () => {
@@ -12,10 +18,15 @@ const FAQSection = () => {
         
       };
   return (
-    <Container fluid className='bg-white custom-x-padding py-5'>
-        <Row className='my-5'>
-        <h1 className="display-4 fw-bold">FAQs</h1>
-        <p className="lead text-muted">Here are some common questions about our franchise opportunities, how to get started and our microlending business.</p>
+    <MotionContainer 
+    fluid 
+    className='bg-white custom-x-padding py-5'
+    variants={fadeIn}
+    initial="hidden"
+    whileInView="show">
+
+        <MotionRow className='my-5' variants={childVariant}>
+        <h1 className="display-4">FAQs</h1>
         <h3 className='mt-5'>LT&G Credit Line</h3>
         
     <Accordion defaultActiveKey={["0","1","2","3"]} alwaysOpen flush className='mt-4 custom-accordion'>
@@ -64,9 +75,9 @@ const FAQSection = () => {
     </Col>
     </Accordion.Item>
   </Accordion>
-  </Row>
+  </MotionRow>
 
-  <Row>
+  <MotionRow variants={childVariant}>
      <h3 className='mt-5'>MAMS LT&G Franchising Corp </h3>
      <Accordion defaultActiveKey={["0","1","2","3"]} alwaysOpen flush className='mt-4 custom-accordion'>
      <Accordion.Item eventKey="0">
@@ -115,15 +126,15 @@ const FAQSection = () => {
         </Col>
     </Accordion.Item>
   </Accordion>
-  </Row>
-  <Row className='my-5'>
+  </MotionRow>
+  <MotionRow className='my-5' variants={childVariant}>
     <Col className='mt-5'>
     <h3> Still have questions?</h3>
     <p className='mt-3'>We're here to help you!</p>
-    <Button variant="danger" href='#/contact'>Contact</Button>
+    <Button variant="danger" as={Link} to="/contact">Contact</Button>
     </Col>
-  </Row>
-  </Container>
+  </MotionRow>
+  </MotionContainer>
   )
 }
 

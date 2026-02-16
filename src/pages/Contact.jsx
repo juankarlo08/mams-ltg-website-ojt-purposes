@@ -7,7 +7,6 @@ const Contact = () => {
     <>
     <ContactFormSection />
     <ApplyForLoanSection />
-
     </>
   )
 }

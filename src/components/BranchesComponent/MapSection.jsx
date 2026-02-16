@@ -1,7 +1,7 @@
 import {React, useState} from 'react'
-import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import LTGMarker from '../../assets/ltg-marker.png'
-import * as ltgData from '../../data/ltg-branches.json';
+import BranchesData from '../../data/branchesdata'
 import './MapSection.css';
 
 
@@ -44,23 +44,34 @@ const MapSection = () => {
         >
           { /* Child components, such as markers, info windows, etc. */}
           <>
-            {ltgData.features.map(branch => (
-              <Marker
-                key={branch.properties.LTG_ID}
-                position={{
-                  lat: branch.geometry.coordinates[0],
-                  lng: branch.geometry.coordinates[1]
-                }}
-                onClick={() => {
-                  setSelectedBranch(branch);
-                }}
-                icon={{
-                  url: LTGMarker,
-                  scaledSize: { height: 40, width: 30 },
-                }}
-              />
-            ))}
+            {BranchesData.map((branch) => {
+              if (
+                !branch.coordinates ||
+                !Array.isArray(branch.coordinates) ||
+                branch.coordinates.length < 2
+              ) {
+                return null; 
+              }
+
+              return (
+                <Marker
+                    key={branch.id}
+                    position={{
+                      lat: branch.coordinates[0],
+                      lng: branch.coordinates[1],
+                    }}
+                    onClick={() => {
+                      setSelectedBranch(branch);
+                    }}
+                    icon={{
+                      url: LTGMarker,
+                      scaledSize: { height: 40, width: 30 },
+                    }}
+                  />
+                );
+              })}
           </>
+        
         
           
         </GoogleMap>
@@ -69,8 +80,8 @@ const MapSection = () => {
           
 
         <div className="branches-card mx-auto text-center">
-          <h3 className="text-light display-4 fw-bold">Find a Branch Near You</h3>
-          <p className="text-light">From year 2018 a fast growing branches across the Philippines started from 5 branches to {ltgData.features.length} branches as of now.</p>
+          <h3 className="text-light display-4">Find a Branch Near You</h3>
+          <p className=" fs-5 fw-light text-secondary">From year 2018 a fast growing branches across the Philippines started from 5 branches to {BranchesData.length} branches as of now.</p>
         </div>
       </div>
       

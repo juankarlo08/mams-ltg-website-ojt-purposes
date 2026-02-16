@@ -1,26 +1,47 @@
 import React from 'react';
-import { Container, Row, Col, Card, Tabs, Tab, ListGroup, Badge } from "react-bootstrap";
-import PreOpeningPic from '../../img/pre-opening-pic.jpg';
-import FranchiseTrainingPic from '../../img/franchise-training-pic.jpg';
-import MarketingSupportPic from '../../img/marketing-support-pic.jpg';
+import { Container, Row, Col, Card } from "react-bootstrap";
 import './FranchiseProgramSection.css';
+import PreOpeningSupport from '../../img/pre-opening.png';
+import OpeningSupport from '../../img/opening.png';
+import ContinuingSupport from '../../img/continuing.png';
+import MarketingSupport from '../../img/marketing.png';
+import Image from 'react-bootstrap/Image';
+import { fadeIn, childVariant } from '../../data/animation';
+import { motion } from 'framer-motion';
+
+
+const MotionContainer = motion(Container);
+const MotionCol = motion(Col);
+const MotionCard = motion(Card);
 
 const FranchiseProgramSection = () => {
   return (
-    <Container fluid className="custom-x-padding py-5">
+    <MotionContainer 
+    fluid 
+    className="custom-x-padding py-5 bg-light"
+    variants={fadeIn}
+    initial="hidden"
+    whileInView="show"
+    >
+
     <Row className='mt-5 justify-content-center'>
            <Col className='mb-5' xxl={10}>
-            <h1 className="display-4 fw-bold text-center">Franchise Programs</h1>
-            <p className="lead text-muted text-center">Explore our flexible and rewarding franchise programs designed to help you start and grow your own successful microlending business.</p>
+            <h1 className="display-4 text-center">Franchise Programs</h1>
              </Col>
     </Row>
 
-    <Row className="d-flex">
-  <Col lg={3} className="d-flex flex-column">
-    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+<Row className='my-5'>
+  <MotionCol lg={3} className="d-flex flex-column" variants={childVariant}>
+    <MotionCard className="mb-4 p-3 shadow rounded-4 flex-fill d-flex flex-column bg-info"  whileHover={{ scale: 1.1 }}>
+      <div className='d-flex justify-content-center mt-3'>
+        <div className='franchise-program-header'>
+          <Image src={PreOpeningSupport} className='border border-4 rounded-circle border-light p-2 bg-danger' style={{maxHeight:"100px", width:"auto"}} alt='stats pic' />
+        </div>
+      </div>
       <Card.Body>
-        <h5 className='mb-4'>Pre-Opening Support</h5>
-        <ul className="list-unstyled text-start text-muted">
+        <h5 className='mb-4 mt-4 text-center text-light'>Pre-Opening Support</h5>
+        <hr className='text-light'/>
+        <ul className="list-unstyled text-start text-secondary ">
           <li className='mt-2'>• Franchise Area Mapping & Survey</li>
           <li className='mt-2'>• Staff Recruitment Activities</li>
           <li className='mt-2'>• Staff Training</li>
@@ -30,28 +51,42 @@ const FranchiseProgramSection = () => {
           <li className='mt-2'>• Office Refurbishment</li>
         </ul>
       </Card.Body>
-    </Card>
-  </Col>
+    </MotionCard>
+  </MotionCol>
+  <MotionCol lg={3} className="d-flex flex-column" variants={childVariant}>
+    <MotionCard className="mb-4 p-3 border-2 shadow rounded-4 flex-fill d-flex flex-column bg-info"  whileHover={{ scale: 1.1 }}>
 
-  <Col lg={3} className="d-flex flex-column">
-    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+     <div className='d-flex justify-content-center mt-3'>
+        <div className='franchise-program-header'>
+             <Image src={OpeningSupport} className='border border-4 rounded-circle border-light p-2 bg-danger' style={{maxHeight:"100px", width:"auto"}} alt='stats pic' />
+        </div>
+      </div>
       <Card.Body>
-        <h5 className='mb-4'>Opening Support</h5>
-        <ul className="list-unstyled text-start text-muted">
+        <h5 className='mb-4 mt-4 text-center text-light'>Opening Support</h5>
+        <hr className='text-light'/>
+        <ul className="list-unstyled text-start text-secondary">
           <li className='mt-2'>• Detailed Area Mapping</li>
           <li className='mt-2'>• Guided Business Roll Out</li>
           <li className='mt-2'>• Systems Installation and Orientation</li>
           <li className='mt-2'>• Branch Blessing on Opening Day</li>
         </ul>
       </Card.Body>
-    </Card>
-  </Col>
+    </MotionCard>
+  </MotionCol>
 
-  <Col lg={3} className="d-flex flex-column">
-    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+  <MotionCol lg={3} className="d-flex flex-column" variants={childVariant}>
+    <MotionCard className="mb-4 p-3 border-2 shadow rounded-4 flex-fill d-flex flex-column bg-info"  whileHover={{ scale: 1.1 }}>
+
+      <div className='d-flex justify-content-center mt-3'>
+        <div className='franchise-program-header'>
+             <Image src={ContinuingSupport} className='border border-4 rounded-circle border-light p-2 bg-danger' style={{height:"100px", width:"auto"}} alt='stats pic' />
+        </div>
+      </div>
+
       <Card.Body>
-        <h5 className='mb-4'>Continuing Support</h5>
-        <ul className="list-unstyled text-start text-muted">
+        <h5 className='mb-4 mt-4 text-center text-light'>Continuing Support</h5>
+        <hr className='text-light'/>
+        <ul className="list-unstyled text-start text-secondary">
           <li className='mt-2'>• Periodic Branch Audit</li>
           <li className='mt-2'>• Regular Branch Assistance by Area Supervisors</li>
           <li className='mt-2'>• Daily IT monitoring And Support</li>
@@ -59,24 +94,30 @@ const FranchiseProgramSection = () => {
           <li className='mt-2'>• Semi-Monthly Branch Evaluation with Franchise Owners & Managers</li>
         </ul>
       </Card.Body>
-    </Card>
-  </Col>
+    </MotionCard>
+  </MotionCol>
 
-  <Col lg={3} className="d-flex flex-column">
-    <Card className="flex-fill mb-4 p-3 border-2 shadow-sm rounded-5">
+  <MotionCol lg={3} className="d-flex flex-column" variants={childVariant}>
+    <MotionCard className="mb-4 p-3 border-2 shadow rounded-4 flex-fill d-flex flex-column bg-info" whileHover={{ scale: 1.1 }} >
+
+     <div className='d-flex justify-content-center mt-3'>
+        <div className='franchise-program-header'>
+             <Image src={MarketingSupport} className='border border-4 rounded-circle border-light p-2 bg-danger' style={{maxHeight:"100px", width:"auto"}} alt='stats pic' />
+        </div>
+      </div>
       <Card.Body>
-        <h5 className='mb-4'>Marketing Support</h5>
-        <ul className="list-unstyled text-start text-muted">
+        <h5 className='mb-4 mt-4 text-center text-light'>Marketing Support</h5>
+        <hr className='text-light'/>
+        <ul className="list-unstyled text-start text-secondary">
           <li className='mt-2'>• Opening Week Marketing Drive with LT&G Head Office Team</li>
           <li className='mt-2'>• Social Media Advertising</li>
           <li className='mt-2'>• Flyer Layout and Design</li>
         </ul>
       </Card.Body>
-    </Card>
-  </Col>
+    </MotionCard>
+  </MotionCol>
 </Row>
-
-  </Container>
+  </MotionContainer>
 
   )
 }

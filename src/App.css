@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   font-family: "Roboto", sans-serif;
 }
@@ -23,6 +24,8 @@ body{
   --bs-danger-rgb: 182, 37, 37;
   --bs-info: #232b37;
   --bs-info-rgb: 35, 43, 55;
+   --bs-secondary: #9c9c9c;
+  --bs-secondary-rgb: 156, 156, 156;
 }
 
 html {

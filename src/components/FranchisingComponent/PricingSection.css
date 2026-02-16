@@ -3,3 +3,14 @@
   background-image: linear-gradient(#232b37 50%, white 50%);
   background-repeat: no-repeat; 
 }
+
+.vps-badge-header {
+  position: absolute;
+  top: -14px;
+  background-color: #b62525;
+  color: white;
+  padding: 5px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  z-index: 1;
+}

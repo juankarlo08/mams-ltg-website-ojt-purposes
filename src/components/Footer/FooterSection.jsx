@@ -4,8 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
+import { footerFadeIn } from '../../data/animation';
+import { motion } from 'framer-motion';
 
-
+const MotionContainer = motion(Container);
 
 const FooterSection = () => {
     const [expanded, setExpanded] = useState(false);
@@ -27,7 +29,13 @@ const FooterSection = () => {
     }
 
   return (
-      <Container fluid className='custom-x-padding py-3 bg-info'>
+      <MotionContainer 
+      fluid 
+      className='custom-x-padding py-3 bg-info'
+      variants={footerFadeIn}
+      initial="hidden"
+      animate="show"
+      >
       <Row className="d-flex flex-lg-row flex-column-reverse text-center align-items-center">
         <Col lg={6} >
         <div className="d-flex text-light justify-content-lg-start justify-content-center mt-3">
@@ -59,7 +67,7 @@ const FooterSection = () => {
         </Col>
       </Row>
       
-</Container>
+</MotionContainer>
   )
 }
 
