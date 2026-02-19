@@ -1,6 +1,7 @@
 import {useEffect, useState, React} from 'react'
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
+import AdCarouselModal from "../Ads/AdCarouselModal";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
@@ -39,6 +40,7 @@ const HeroSection = () => {
 
   return (
     <MotionContainer fluid className='custom-x-padding py-5' variants={fadeIn} initial="hidden" whileInView="show">
+       <AdCarouselModal />
       <Row className="d-flex align-items-center justify-content-center my-5">
         <Col lg={6} className='d-flex flex-column justify-content-center text-start'>
           <h1 className='text-info display-3 '>Franchise the Future<br /> of Microlending</h1>  

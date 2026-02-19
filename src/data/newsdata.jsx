@@ -13,10 +13,47 @@ import News12 from '../img/news-pic/fa-2025.jpg'
 import News13 from '../img/news-pic/ltg-cdo-blessing.jpg'
 import News14 from '../img/news-pic/franchise-expo-antipolo.jpg'
 import News15 from '../img/news-pic/mother-testimonial.jpg'
+import News16 from '../img/news-pic/Branch Managers Enrichment Training.jpg'
+import News17 from '../img/news-pic/ltg-san_pedro-blessing.jpg'
+import News18 from '../img/news-pic/ltg-manila_1-blessing.jpg'
+import News19 from '../img/news-pic/ltg-antipolo-blessing.jpg'
+
 
 import { FaFacebook} from "react-icons/fa6";
 export default [
 
+    {
+        id: 16,
+        date: "December 6, 2025",
+        title: "🌟 A Blessed Milestone: LT&G Credit Line Antipolo branch 🎉",
+        link: "https://www.facebook.com/share/p/18MSCGqDiB/",
+        img: News19,
+        source: <FaFacebook />
+    },
+    {
+        id: 14,
+        date: "October 28, 2025",
+        title: "🌟 A Blessed Milestone: LT&G Credit Line Binondo Branch Blessing 🎉",
+        link: "https://www.facebook.com/share/p/18JxxdgnXa/",
+        img: News18,
+        source: <FaFacebook />
+    },
+    {
+        id: 13,
+        date: "September 6, 2025",
+        title: "🌟 A Blessed Milestone: LT&G Credit Line San Pedro, Laguna Branch Blessing 🎉",
+        link: "https://www.facebook.com/share/p/1CFDQKYp6U/",
+        img: News17,
+        source: <FaFacebook />
+    },
+    {
+        id: 12,
+        date: "July 20, 2025",
+        title: "Empowering Leaders: Highlights from the LT&G Branch Managers’ Enrichment Training",
+        link: "https://www.facebook.com/share/p/14VUwN8jT7h/",
+        img: News16,
+        source: <FaFacebook />
+    },
     {
         id: 15,
         date: "June 16, 2025",
@@ -143,7 +180,8 @@ export default [
         link: "https://www.facebook.com/share/p/1BiHu328Gb/",
         img: News11,
         source: <FaFacebook />
-    }
+    },
+
     
     
 ]
