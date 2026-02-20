@@ -75,7 +75,7 @@ const HeroSection = () => {
         <Col lg={6} className='d-flex align-items-center'>
           <video width="100%" height="auto" controls poster={VideoThumbnail} className='rounded-3 shadow'>
             <source src={PromotionalVideo} type="video/mp4" />
-            <track label='English' kind='subtitles' srcLang='en' src={VideoSubtitles} />
+            <track label='English' kind='subtitles' srcLang='en' src={VideoSubtitles} default />
             Your browser does not support the video tag.
           </video>
         </Col>
