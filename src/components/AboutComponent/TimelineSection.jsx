@@ -22,7 +22,8 @@ const TimelineSection = () => {
   className="py-5 custom-x-padding"
   variants={fadeIn}
   initial="hidden"
-  whileInView="show">
+  whileInView="show"
+  viewport={{ once: true }}>
 
   <MotionRow variants={childVariant} className='justify-content-center my-5'>
     <Col xxl={7} className='text-center'>

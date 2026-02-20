@@ -14,12 +14,12 @@ const CEOSection = () => {
   return (
     <Container fluid className='ceo-section'>     
     <MotionRow className='custom-x-padding d-flex flex-column-reverse flex-lg-row'>
-     <MotionCol variants={ceoVariant} initial="hidden" whileInView="show" lg={6} className='d-flex justify-content-center align-items-center'>
+     <MotionCol variants={ceoVariant} initial="hidden" whileInView="show" viewport={{ once: true }} lg={6} className='d-flex justify-content-center align-items-center'>
        <img src={CEOPic} alt="First Pic" className="object-fit-cover img-fluid mt-3" style={{width:"auto", maxHeight:"500px"}}/>
       </MotionCol>
       <MotionCol lg={6} variants={fadeIn} initial="hidden" whileInView="show" className='d-flex flex-column align-items-start justify-content-center mb-5 '>   
       <div className='text-start'>
-      <h1 className="display-4 mt-5 text-light">Marco Antonio M. Soliman</h1>
+      <h3 className="display-4 mt-5 text-light">Marco Antonio M. Soliman</h3>
       <h5 className='text-secondary'>President & CEO</h5>
       <p className="fs-5 fw-light mt-3 text-light">Based in Legazpi, Albay, entrepreneur Marco Antonio M. Soliman 
         has started a company with his mantra “Better Loans, Better Lives.”  LT&G Credit Line 

@@ -31,13 +31,51 @@ const HeroSection = () => {
     };
   }, []);
 
-  useMotionValueEvent(clientCount, "change", (latest) => {
-    setRoundedClientCount(Math.floor(latest));
-  });
+  return (
+    <Col className="border-start ps-4">
+      <motion.div className="h1 mt-3 fw-bold text-dark">{rounded}</motion.div>
+      <p className="text-muted mb-0">{label}</p>
+    </Col>
+  );
+};
 
-  useMotionValueEvent(branchCount, "change", (latest) => {
-    setRoundedBranchCount(Math.floor(latest));
-  });
+const HeroSection = () => {
+  const HerostructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "LT&G Credit Line",
+    "url": "https://ltgcreditline.com",
+    "logo": "https://ltgcreditline.com/logo.png",
+    "description": "LT&G Credit Line offers a structured microlending franchise opportunity in the Philippines, empowering entrepreneurs to build their own lending business with a proven system and operational support.",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "bestRating": "5",
+      "ratingCount": "20"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Franchise Opportunities",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Active loan clients served",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "value": 109805
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Franchise branches nationwide",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "value": BranchesData.length
+          }
+        }
+      ]
+    }
+  };
 
   return (
     <MotionContainer fluid className='custom-x-padding py-5' variants={fadeIn} initial="hidden" whileInView="show">

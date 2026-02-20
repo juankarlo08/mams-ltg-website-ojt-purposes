@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet-async'
 import HeroSection from '../components/HomeComponent/HeroSection'
 import FeatureListSection from '../components/HomeComponent/FeatureListSection'
 import TestimonialSection from '../components/HomeComponent/TestimonialSection'
@@ -7,18 +8,25 @@ import CTASection from '../components/HomeComponent/CTASection'
 import CustomerTestimonial from '../components/HomeComponent/CustomerTestimonial'
 import LogoClouds from '../components/HomeComponent/LogoClouds'
 
-
 const Home = () => {
+  
   return (
     <>
-    <HeroSection />
-    <LogoClouds />
-    <FeatureListSection />
-    <CustomerTestimonial />
-    <TestimonialSection />
-  <NewsAndEventSection />
-    <CTASection />
+      <Helmet>
+        <title>LT&G Credit Line - Microlending Franchise Philippines</title>
+        <meta 
+          name="description" 
+          content="Join LT&G Credit Line, the first microlending franchise in the Philippines. Empower your future with accessible loans and nationwide opportunities." 
+        />        
+      </Helmet>
 
+      <HeroSection />
+      <LogoClouds />
+      <FeatureListSection />
+      <CustomerTestimonial />
+      <TestimonialSection />
+      <NewsAndEventSection />
+      <CTASection />
     </>
   )
 }
