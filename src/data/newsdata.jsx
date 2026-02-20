@@ -1,25 +1,25 @@
-import News1 from '../img/news-pic/franchise-negosyo.jpg';
-import News2 from '../img/news-pic/ltg-muntinlupa-open.jpg';
-import News3 from '../img/news-pic/ltg-las-piñas-blessing.jpg'
-import News4 from '../img/news-pic/ltg-cares.jpg'
-import News5 from '../img/news-pic/ltg-taytay-blessing.jpg'
-import News6 from '../img/news-pic/ltg-bacoor-blessing.jpg'
-import News7 from '../img/news-pic/franchise-negosyo-negros.jpg'
-import News8 from '../img/news-pic/ltg-valenzuela-blessing.jpg'
-import News9 from '../img/news-pic/ltg-meycauayan-blessing.jpg'
-import News10 from '../img/news-pic/ltg-lipa-blessing.jpg'
-import News11 from '../img/news-pic/ltg-malolos-blessing.jpg'
-import News12 from '../img/news-pic/fa-2025.jpg'
-import News13 from '../img/news-pic/ltg-cdo-blessing.jpg'
-import News14 from '../img/news-pic/franchise-expo-antipolo.jpg'
-import News15 from '../img/news-pic/mother-testimonial.jpg'
-import News16 from '../img/news-pic/Branch Managers Enrichment Training.jpg'
-import News17 from '../img/news-pic/ltg-san_pedro-blessing.jpg'
-import News18 from '../img/news-pic/ltg-manila_1-blessing.jpg'
-import News19 from '../img/news-pic/ltg-antipolo-blessing.jpg'
+import News1 from '../img/news-pic/franchise-negosyo.webp';
+import News2 from '../img/news-pic/ltg-muntinlupa-open.webp';
+import News3 from '../img/news-pic/ltg-las-piñas-blessing.webp'
+import News4 from '../img/news-pic/ltg-cares.webp'
+import News5 from '../img/news-pic/ltg-taytay-blessing.webp'
+import News6 from '../img/news-pic/ltg-bacoor-blessing.webp'
+import News7 from '../img/news-pic/franchise-negosyo-negros.webp'
+import News8 from '../img/news-pic/ltg-valenzuela-blessing.webp'
+import News9 from '../img/news-pic/ltg-meycauayan-blessing.webp'
+import News10 from '../img/news-pic/ltg-lipa-blessing.webp'
+import News11 from '../img/news-pic/ltg-malolos-blessing.webp'
+import News12 from '../img/news-pic/fa-2025.webp'
+import News13 from '../img/news-pic/ltg-cdo-blessing.webp'
+import News14 from '../img/news-pic/franchise-expo-antipolo.webp'
+import News15 from '../img/news-pic/mother-testimonial.webp'
+import News16 from '../img/news-pic/Branch Managers Enrichment Training.webp'
+import News17 from '../img/news-pic/ltg-san_pedro-blessing.webp'
+import News18 from '../img/news-pic/ltg-manila_1-blessing.webp'
+import News19 from '../img/news-pic/ltg-antipolo-blessing.webp'
 
 
-import { FaFacebook} from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
 export default [
 
     {
@@ -61,7 +61,7 @@ export default [
         link: "https://www.facebook.com/share/p/1ESjib8SUf/",
         img: News15,
         source: <FaFacebook />
-        
+
     },
     {
         id: 14,
@@ -70,16 +70,16 @@ export default [
         link: "https://www.facebook.com/share/p/1CBmCNwcH9/",
         img: News14,
         source: <FaFacebook />
-        
+
     },
-     {
+    {
         id: 13,
         date: "May 30, 2025",
         title: "Another Franchise Success! 🎉 LT&G Credit Line Cagayan De Oro Branch Blessing",
         link: "https://www.facebook.com/share/p/19NoLexCar/",
         img: News13,
         source: <FaFacebook />
-        
+
     },
     {
         id: 12,
@@ -88,7 +88,7 @@ export default [
         link: "https://web.facebook.com/share/p/19AtkQXPrq/",
         img: News12,
         source: <FaFacebook />
-        
+
     },
     {
         id: 1,
@@ -97,7 +97,7 @@ export default [
         link: "https://www.facebook.com/share/p/16Qwn9qUok/",
         img: News1,
         source: <FaFacebook />
-        
+
     },
     {
         id: 2,
@@ -106,7 +106,7 @@ export default [
         link: "https://www.facebook.com/share/v/16a5h1FkPe/",
         img: News2,
         source: <FaFacebook />
-        
+
     },
     {
         id: 3,
@@ -123,7 +123,7 @@ export default [
         link: "https://www.facebook.com/share/p/192e3vtXMF/",
         img: News4,
         source: <FaFacebook />
-        
+
     },
     {
         id: 5,
@@ -182,6 +182,6 @@ export default [
         source: <FaFacebook />
     },
 
-    
-    
+
+
 ]
