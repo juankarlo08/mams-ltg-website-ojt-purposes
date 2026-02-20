@@ -11,6 +11,9 @@ import SirJasper from '../../img/sir-jasper.webp'
 import SirCarloTestimonial from '../../video/SirCarloTestimonial.mp4'
 import MamEuniceTestimonial from '../../video/MamEuniceTestimonial.mp4'
 import SirJasperTestimonial from '../../video/SirJasperTestimonial.mp4'
+import SirJasperTestimonialSubtitles from '../../video/sir-jasper-testimonial-subtitles.vtt'
+import SirCarloTestimonialSubtitles from '../../video/sir-carlo-testimonial-subtitles.vtt'
+import MamEuniceTestimonialSubtitles from '../../video/mam-eunice-testimonial-subtitles.vtt'
 import { FaStar } from "react-icons/fa";
 import './TestimonialSection.css'
 import { fadeIn, ceoVariant } from '../../data/animation';
@@ -74,6 +77,7 @@ const TestimonialSection = () => {
                 <Row className='justify-content-center mb-5'>
                   <video className='rounded-3 video-size' controls>
                     <source src={MamEuniceTestimonial} type="video/mp4" />
+                    <track label='English' kind='subtitles' srcLang='en' src={MamEuniceTestimonialSubtitles} default />
                     Your browser does not support the video tag.
                   </video>
                 </Row>
@@ -135,6 +139,8 @@ const TestimonialSection = () => {
                 <Row className='justify-content-center mb-5'>
                   <video className='rounded-3 video-size' controls>
                     <source src={SirCarloTestimonial} type="video/mp4" />
+                    <track label='English' kind='subtitles' srcLang='en' src={SirCarloTestimonialSubtitles} default />
+
                     Your browser does not support the video tag.
                   </video>
                 </Row>
@@ -197,6 +203,7 @@ const TestimonialSection = () => {
                 <Row className='justify-content-center mb-5'>
                   <video className='rounded-3 video-size' controls>
                     <source src={SirJasperTestimonial} type="video/mp4" />
+                    <track label='English' kind='subtitles' srcLang='en' src={SirJasperTestimonialSubtitles} default />
                     Your browser does not support the video tag.
                   </video>
                 </Row>

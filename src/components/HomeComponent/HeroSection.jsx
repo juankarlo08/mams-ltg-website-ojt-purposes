@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import PromotionalVideo from '../../video/promotional-video.mp4';
-import VideoSubtitles from '../../video/subtitles.vtt';
+import VideoSubtitles from '../../video/promotional-video-subtitles.vtt';
 import VideoThumbnail from '../../img/video-thumbnail/video-thumbnail.png'
 import BranchesData from '../../data/branchesdata'
 import { useMotionValue, useMotionValueEvent, motion, animate } from 'framer-motion';
