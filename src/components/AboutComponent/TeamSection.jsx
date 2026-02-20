@@ -43,10 +43,11 @@ const TeamSection = () => {
     variants={fadeIn}
     initial="hidden"
     whileInView="show"
+    viewport={{ once: true }}
     >
         <Row className='justify-content-center mt-5'>
             <Col xxl={9}>
-            <h1 className="display-4 text-center">Our Team</h1>
+            <h2 className="h1 display-4 text-center">Our Team</h2>
             <p className="lead text-muted text-center">We have professional consultants in our franchise team. We are also always looking for new people to join our team. Our consultants know their stuff very well. Feel free to contact us for a quote.</p>
             </Col>
         </Row>

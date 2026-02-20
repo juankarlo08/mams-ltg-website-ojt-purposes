@@ -32,7 +32,7 @@ const TestimonialSection = () => {
         <Carousel.Item>
           <Container fluid className="bg-testimonial-mam-eunice custom-x-padding py-5 align-items-stretch">
              
-          <MotionRow variants={fadeIn} initial="hidden" whileInView="show">
+          <MotionRow variants={fadeIn} initial="hidden" whileInView="show" viewport={{ once: true }}>
             <Row className=' justify-content-center text-light mt-5 mb-0'>
             <h1 className="display-4 text-center mb-5">Hear From Our Successful Franchisees</h1>  
             </Row>
