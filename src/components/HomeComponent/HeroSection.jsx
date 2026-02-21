@@ -32,7 +32,7 @@ const AnimatedCounter = ({ targetValue, label }) => {
 };
 
 const HeroSection = () => {
-  const HerostructuredData = {
+  const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "LT&G Credit Line",
