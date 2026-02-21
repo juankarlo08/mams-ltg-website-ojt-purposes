@@ -5,10 +5,15 @@ import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 import { Helmet } from "react-helmet-async";
 
 import AdCarouselModal from "../Ads/AdCarouselModal";
-import PromotionalVideo from "../../video/promotional-video.mp4";
-import VideoThumbnail from "../../img/video-thumbnail/video-thumbnail.png";
-import BranchesData from "../../data/branchesdata";
-import { fadeIn } from "../../data/animation";
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import PromotionalVideo from '../../video/promotional-video.mp4';
+import VideoSubtitles from '../../video/promotional-video-subtitles.vtt';
+import VideoThumbnail from '../../img/video-thumbnail/video-thumbnail.png'
+import BranchesData from '../../data/branchesdata'
+import { useMotionValue, useMotionValueEvent, motion, animate } from 'framer-motion';
+import { fadeIn, childVariant } from '../../data/animation';
 
 const MotionContainer = motion(Container);
 
