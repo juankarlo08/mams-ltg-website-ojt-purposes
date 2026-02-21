@@ -11,7 +11,7 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>About LT&G Credit Line | Microlending Franchise Philippines</title>
+        <title>About Us | LT&G Credit Line</title>
         <meta
           name="description"
           content="Learn about LT&G Credit Line's mission, vision, and team. Discover our journey as a leading microlending franchise in the Philippines."
