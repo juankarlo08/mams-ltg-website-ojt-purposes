@@ -169,7 +169,7 @@
 }
 
 
-@media (max-width: 900px){
+@media (max-width: 767px){
   .adImage{
     min-height: 220px;
   }
@@ -178,6 +178,11 @@
     display: block;
     bottom: 10px;
     right: 12px;
+  }
+  .adDontShow:active {
+    transform: scale(0.92);
+    background-color: #333333 !important;
+    opacity: 1 !important;
   }
 }
 

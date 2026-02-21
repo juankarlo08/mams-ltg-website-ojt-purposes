@@ -122,12 +122,6 @@ export default function AdCarouselModal() {
                       className="w-100 h-100 adImage"
 
                     />
-                    {/* <Form.Check
-                    type="checkbox"
-                    label="Don’t show again"
-                    checked={dontShowAgain}
-                    onChange={(e) => setDontShowAgain(e.target.checked)}
-                    /> */}
                   </div>
 
 
