@@ -167,6 +167,7 @@ const HeroSection = () => {
               poster={VideoThumbnail}
               className="rounded-3 shadow-lg"
             >
+              <track label='English' kind='subtitles' srcLang='en' src={VideoSubtitles} default />
               <source src={PromotionalVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
