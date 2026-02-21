@@ -1,20 +1,71 @@
 import React from 'react';
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import { motion } from 'framer-motion';
+
+// Styling & Assets
 import './FranchiseProgramSection.css';
 import PreOpeningSupport from '../../img/pre-opening.png';
 import OpeningSupport from '../../img/opening.png';
 import ContinuingSupport from '../../img/continuing.png';
 import MarketingSupport from '../../img/marketing.png';
-import Image from 'react-bootstrap/Image';
 import { fadeIn, childVariant } from '../../data/animation';
-import { motion } from 'framer-motion';
-
 
 const MotionContainer = motion(Container);
 const MotionCol = motion(Col);
 const MotionCard = motion(Card);
 
 const FranchiseProgramSection = () => {
+  const programs = [
+    {
+      title: "Pre-Opening Support",
+      img: PreOpeningSupport,
+      alt: "Pre-opening microlending franchise support services",
+      items: [
+        "Franchise Area Mapping & Survey",
+        "Staff Recruitment Activities",
+        "Staff Training",
+        "Branch Office Site Evaluation",
+        "Certificate Course in Microlending",
+        "Business Registration Assistance",
+        "Office Refurbishment"
+      ]
+    },
+    {
+      title: "Opening Support",
+      img: OpeningSupport,
+      alt: "Opening day support for new franchise branches",
+      items: [
+        "Detailed Area Mapping",
+        "Guided Business Roll Out",
+        "Systems Installation and Orientation",
+        "Branch Blessing on Opening Day"
+      ]
+    },
+    {
+      title: "Continuing Support",
+      img: ContinuingSupport,
+      alt: "Ongoing operational and IT support for franchisees",
+      items: [
+        "Periodic Branch Audit",
+        "Regular Area Supervisor Assistance",
+        "Daily IT Monitoring And Support",
+        "Regular HR Assistance and Guidance",
+        "Semi-Monthly Branch Evaluations"
+      ]
+    },
+    {
+      title: "Marketing Support",
+      img: MarketingSupport,
+      alt: "Marketing and social media advertising for franchise success",
+      items: [
+        "Opening Week Marketing Drive",
+        "Social Media Advertising",
+        "Flyer Layout and Design",
+        "Head Office Marketing Support"
+      ]
+    }
+  ];
+
   return (
     <MotionContainer
       fluid
@@ -23,6 +74,13 @@ const FranchiseProgramSection = () => {
       initial="hidden"
       whileInView="show"
     >
+      <Row className='mt-5 justify-content-center'>
+        <Col className='mb-5' xxl={10}>
+          <h2 className="display-4 text-center fw-light text-dark">
+            Franchise Programs
+          </h2>
+        </Col>
+      </Row>
 
       <Row className='mt-5 justify-content-center'>
         <Col className='mb-5' xxl={10}>
@@ -122,4 +180,4 @@ const FranchiseProgramSection = () => {
   )
 }
 
-export default FranchiseProgramSection
+export default FranchiseProgramSection;

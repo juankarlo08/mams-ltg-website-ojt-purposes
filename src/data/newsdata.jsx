@@ -18,6 +18,7 @@ import News17 from '../img/news-pic/ltg-san_pedro-blessing.webp'
 import News18 from '../img/news-pic/ltg-manila_1-blessing.webp'
 import News19 from '../img/news-pic/ltg-antipolo-blessing.webp'
 
+import { FaFacebook } from "react-icons/fa6";
 
 import { FaFacebook } from "react-icons/fa6";
 export default [

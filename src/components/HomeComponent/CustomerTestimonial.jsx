@@ -1,11 +1,10 @@
-import React from 'react'
+import React from 'react';
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
 import MiriamSinio from '../../img/miriam-sinio.webp';
 import CrisantaPamintuan from '../../img/crisanta-pamintuan.webp';
 import MarifeMataba from '../../img/marife-mataba.webp';
 import { fadeIn, childVariant } from '../../data/animation';
-import { motion } from 'framer-motion';
 
 const MotionContainer = motion(Container);
 const MotionCol = motion(Col);
@@ -38,6 +37,25 @@ const testimonials = [
 ];
 
 const CustomerTestimonial = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "Organization",
+      "name": "LT&G Credit Line"
+    },
+    "reviewRating": testimonials.map((t) => ({
+      "@type": "Rating",
+      "ratingValue": t.rating,
+      "bestRating": 5,
+      "name": t.name
+    })),
+    "author": testimonials.map((t) => ({
+      "@type": "Person",
+      "name": t.name
+    }))
+  };
+
   return (
     <MotionContainer fluid className="bg-light custom-x-padding py-5" variants={fadeIn} initial="hidden" whileInView="show">
       <Row className='mt-5'>
@@ -84,4 +102,4 @@ const CustomerTestimonial = () => {
   )
 }
 
-export default CustomerTestimonial
+export default CustomerTestimonial;
