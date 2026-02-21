@@ -4,10 +4,11 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
 
 import AdCarouselModal from "../Ads/AdCarouselModal";
-import PromotionalVideo from "../../video/promotional-video.mp4";
-import VideoThumbnail from "../../img/video-thumbnail/video-thumbnail.png";
-import BranchesData from "../../data/branchesdata";
-import { fadeIn } from "../../data/animation";
+import PromotionalVideo from '../../video/promotional-video.mp4';
+import VideoSubtitles from '../../video/promotional-video-subtitles.vtt';
+import VideoThumbnail from '../../img/video-thumbnail/video-thumbnail.png'
+import BranchesData from '../../data/branchesdata'
+import { fadeIn, childVariant } from '../../data/animation';
 
 const MotionContainer = motion(Container);
 
@@ -118,6 +119,7 @@ const HeroSection = () => {
               poster={VideoThumbnail}
               className="rounded-3 shadow-lg"
             >
+              <track label='English' kind='subtitles' srcLang='en' src={VideoSubtitles} default />
               <source src={PromotionalVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
