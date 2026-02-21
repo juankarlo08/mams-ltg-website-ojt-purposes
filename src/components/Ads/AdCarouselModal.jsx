@@ -5,7 +5,6 @@ import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
-import Form from "react-bootstrap/Form";
 
 import "./AdCarouselModal.css";
 
@@ -121,23 +120,23 @@ export default function AdCarouselModal() {
                       src={s.img}
                       alt={s.alt}
                       className="w-100 h-100 adImage"
-                      
+
                     />
-                {/* <div className="adDontShow">
-                  <Form.Check
+                    <div className="adDontShow d-block d-sm-none">
+                      <Button>Button</Button>
+                    </div>
+                    {/* <Form.Check
                     type="checkbox"
                     label="Don’t show again"
                     checked={dontShowAgain}
                     onChange={(e) => setDontShowAgain(e.target.checked)}
-                  />
-                </div> */}
+                  /> */}
                   </div>
 
                   <div className="adRight col-md-6 text-white d-flex flex-column justify-content-center text-center p-4">
                     <div
-                      className={`adSlideContent ${
-                        activeIndex === i ? "is-active" : ""
-                      }`}
+                      className={`adSlideContent ${activeIndex === i ? "is-active" : ""
+                        }`}
                     >
                       {s.badge && (
                         <Badge pill className="adBadge mb-2">
