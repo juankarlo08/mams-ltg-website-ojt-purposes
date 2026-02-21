@@ -74,13 +74,6 @@ const FranchiseProgramSection = () => {
       initial="hidden"
       whileInView="show"
     >
-      <Row className='mt-5 justify-content-center'>
-        <Col className='mb-5' xxl={10}>
-          <h2 className="display-4 text-center fw-light text-dark">
-            Franchise Programs
-          </h2>
-        </Col>
-      </Row>
 
       <Row className='mt-5 justify-content-center'>
         <Col className='mb-5' xxl={10}>

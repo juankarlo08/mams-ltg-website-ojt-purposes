@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
+import { motion } from "framer-motion";
 import MiriamSinio from '../../img/miriam-sinio.webp';
 import CrisantaPamintuan from '../../img/crisanta-pamintuan.webp';
 import MarifeMataba from '../../img/marife-mataba.webp';
