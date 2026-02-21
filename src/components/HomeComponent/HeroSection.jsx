@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 
 import AdCarouselModal from "../Ads/AdCarouselModal";
 import PromotionalVideo from '../../video/promotional-video.mp4';
@@ -33,56 +32,8 @@ const AnimatedCounter = ({ targetValue, label }) => {
 };
 
 const HeroSection = () => {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "LT&G Credit Line",
-    "url": "https://ltgcreditline.com",
-    "logo": "https://ltgcreditline.com/logo.png",
-    "description": "LT&G Credit Line offers a structured microlending franchise opportunity in the Philippines, empowering entrepreneurs to build their own lending business with a proven system and operational support.",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.8",
-      "bestRating": "5",
-      "ratingCount": "20"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Franchise Opportunities",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "name": "Active loan clients served",
-          "eligibleQuantity": {
-            "@type": "QuantitativeValue",
-            "value": 109805
-          }
-        },
-        {
-          "@type": "Offer",
-          "name": "Franchise branches nationwide",
-          "eligibleQuantity": {
-            "@type": "QuantitativeValue",
-            "value": BranchesData.length
-          }
-        }
-      ]
-    }
-  };
-
   return (
     <>
-      <Helmet>
-        <title>Home | LT&G Credit Line</title>
-        <meta
-          name="description"
-          content="Join LT&G Credit Line's microlending franchise in the Philippines. Empower your future with a proven system, operational support, and scalable income."
-        />
-        <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
-        </script>
-      </Helmet>
-
       <MotionContainer
         fluid
         className="custom-x-padding py-5"
@@ -99,7 +50,7 @@ const HeroSection = () => {
             className="d-flex flex-column justify-content-center text-start"
           >
             <h1 className="text-info display-3 fw-light">
-              Franchise the Future of Microlending
+              Franchise the Future <br/>of Microlending
             </h1>
 
             <p className="fs-5 fw-light text-muted mt-3">
@@ -109,7 +60,7 @@ const HeroSection = () => {
               operational support, and a scalable income model.
             </p>
 
-            <div className="mt-4">
+            <div className="mt-4 d-flex flex-column flex-sm-row gap-3">
               <Button
                 variant="danger"
                 className="me-2 px-4 py-2"
@@ -164,6 +115,7 @@ const HeroSection = () => {
               width="100%"
               height="auto"
               controls
+              preload="none"
               poster={VideoThumbnail}
               className="rounded-3 shadow-lg"
             >

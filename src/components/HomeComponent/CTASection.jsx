@@ -36,10 +36,10 @@ const CTASection = () => {
           </p>
 
           {/* ✅ Conversion-Focused CTA */}
-          <div className='mt-4'>
+          <div className='mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center'>
             <Button 
               variant='danger' 
-              className='me-3 px-4 py-2'
+              className='px-4 py-2'
               as={Link} 
               to="/franchising"
             >
