@@ -22,12 +22,10 @@ const CTASection = () => {
       <Row className="text-center justify-content-center py-5">
         <Col xxl={9} md={12} className='my-5'>
 
-          {/* ✅ SEO + Emotional Positioning */}
           <h1 className='display-4'>
             Build Your Own Profitable Microlending Business
           </h1>
 
-          {/* ✅ Persuasion + Investor Language */}
           <p className='fs-5 fw-light mt-3 text-muted'>
             Take the next step toward business growth and financial independence
             by partnering with LT&G Credit Line. Our microlending franchise
@@ -35,11 +33,10 @@ const CTASection = () => {
             support, and access to a high-demand lending market.
           </p>
 
-          {/* ✅ Conversion-Focused CTA */}
-          <div className='mt-4'>
+          <div className='mt-4 d-flex flex-column flex-sm-row gap-3 justify-content-center'>
             <Button 
               variant='danger' 
-              className='me-3 px-4 py-2'
+              className='px-4 py-2'
               as={Link} 
               to="/franchising"
             >

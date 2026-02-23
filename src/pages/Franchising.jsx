@@ -1,50 +1,76 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import FranchiseProgramSection from '../components/FranchisingComponent/FranchiseProgramSection';
-import PricingSection from '../components/FranchisingComponent/PricingSection';
-import FAQSection from '../components/FranchisingComponent/FAQSection';
+import ContactFormSection from '../components/ContactComponent/ContactFormSection';
+import ApplyForLoanSection from '../components/ContactComponent/ApplyForLoanSection';
 
-const Franchising = () => {
-
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "LT&G Credit Line",
-    "url": "https://ltgcreditline.com/franchising",
-    "logo": "https://ltgcreditline.com/logo.png",
-    "description": "LT&G Credit Line offers microlending franchise opportunities in the Philippines, providing entrepreneurs with a proven lending business model, operational support, and scalable income potential.",
-    "address": {
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "LT&G Credit Line",
+  "url": "https://ltgcreditline.com/contact",
+  "logo": "https://ltgcreditline.com/logo.png",
+  "description": "Contact LT&G Credit Line for loan applications, franchise inquiries, and support. Visit our Bicol or Manila offices or reach us via email or phone.",
+  "address": [
+    {
       "@type": "PostalAddress",
+      "streetAddress": "2/F, Soliman Bldg, Imelda Roces Ave, Tahao Road",
+      "addressLocality": "Legazpi City",
+      "addressRegion": "Bicol",
       "addressCountry": "PH"
     },
-    "makesOffer": {
-      "@type": "Offer",
-      "name": "Microlending Franchise Opportunity",
-      "description": "Franchise opportunities for entrepreneurs seeking to operate a microlending business under the LT&G Credit Line brand."
+    {
+      "@type": "PostalAddress",
+      "streetAddress": "2/F Unit V, TFN Building, 963 Gen Kalentong Cor.Haig St, Daang Bakal",
+      "addressLocality": "Mandaluyong",
+      "addressRegion": "Metro Manila",
+      "postalCode": "1550",
+      "addressCountry": "PH"
     }
-  };
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+639673507944",
+      "contactType": "customer service",
+      "areaServed": "PH"
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "franchise@ltgcreditline.com",
+      "contactType": "customer service",
+      "areaServed": "PH"
+    }
+  ],
+  "makesOffer": {
+    "@type": "Offer",
+    "name": "Loan & Franchise Support",
+    "description": "Inquiries for loan applications and franchise opportunities under the LT&G Credit Line brand."
+  }
+};
 
+const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Franchise | LT&G Credit Line</title>
-
+        <title>Contact LT&G Credit Line | Loan & Franchise Inquiries</title>
         <meta
           name="description"
-          content="Explore LT&G Credit Line’s franchising program. Learn about investment costs, franchise support, and pricing."
+          content="Contact LTG Credit Line for loan applications, franchise inquiries, and support. Visit our Bicol or Manila offices or reach us via email or phone."
         />
+        <meta name="keywords" content="LT&G Credit Line, loan application, franchise inquiry, contact, microlending, Legazpi City, Manila" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://ltgcreditline.com/contact" />
 
+        {/* Structured Data */}
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
         </script>
-
       </Helmet>
 
-      <PricingSection />
-      <FranchiseProgramSection />
-      <FAQSection />
+      <ContactFormSection />
+      <ApplyForLoanSection />
     </>
   );
 };
 
-export default Franchising;
+export default Contact;
