@@ -37,7 +37,7 @@ const TestimonialSection = () => {
 
           <MotionRow variants={fadeIn} initial="hidden" whileInView="show">
             <Row className=' justify-content-center text-light mt-5 mb-0'>
-              <h1 className="display-4 text-center mb-5">Hear From Our Successful Franchisees</h1>
+              <h2 className="h1 display-4 text-center mb-5">Hear From Our Successful Franchisees</h2>
             </Row>
 
             {showFirst ? (
@@ -102,7 +102,7 @@ const TestimonialSection = () => {
             whileInView="show"
           >
             <Row className=' justify-content-center text-light mt-5 mb-0'>
-              <h1 className="display-4 text-center mb-5">Hear From Our Successful Franchisees</h1>
+              <h2 className="h1 display-4 text-center mb-5">Hear From Our Successful Franchisees</h2>
             </Row>
 
             {showFirst ? (
@@ -166,7 +166,7 @@ const TestimonialSection = () => {
             whileInView="show"
           >
             <Row className=' justify-content-center text-light mt-5 mb-0'>
-              <h1 className="display-4 text-center mb-5">Hear From Our Successful Franchisees</h1>
+              <h2 className="h1 display-4 text-center mb-5">Hear From Our Successful Franchisees</h2>
             </Row>
             {showFirst ? (
               <div>
