@@ -5,7 +5,6 @@ import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
-import Form from "react-bootstrap/Form";
 
 import "./AdCarouselModal.css";
 
@@ -121,23 +120,15 @@ export default function AdCarouselModal() {
                       src={s.img}
                       alt={s.alt}
                       className="w-100 h-100 adImage"
-                      
+
                     />
-                {/* <div className="adDontShow">
-                  <Form.Check
-                    type="checkbox"
-                    label="Don’t show again"
-                    checked={dontShowAgain}
-                    onChange={(e) => setDontShowAgain(e.target.checked)}
-                  />
-                </div> */}
                   </div>
+
 
                   <div className="adRight col-md-6 text-white d-flex flex-column justify-content-center text-center p-4">
                     <div
-                      className={`adSlideContent ${
-                        activeIndex === i ? "is-active" : ""
-                      }`}
+                      className={`adSlideContent ${activeIndex === i ? "is-active" : ""
+                        }`}
                     >
                       {s.badge && (
                         <Badge pill className="adBadge mb-2">
@@ -168,6 +159,11 @@ export default function AdCarouselModal() {
             </Carousel.Item>
           ))}
         </Carousel>
+        <div className="adDontShow">
+          <Button onClick={handleClose} variant="secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"></path></svg>
+          </Button>
+        </div>
       </Modal.Body>
     </Modal>
   );

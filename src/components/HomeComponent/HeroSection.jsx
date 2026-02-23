@@ -2,13 +2,13 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
-import { Helmet } from "react-helmet-async";
 
 import AdCarouselModal from "../Ads/AdCarouselModal";
-import PromotionalVideo from "../../video/promotional-video.mp4";
-import VideoThumbnail from "../../img/video-thumbnail/video-thumbnail.png";
-import BranchesData from "../../data/branchesdata";
-import { fadeIn } from "../../data/animation";
+import PromotionalVideo from '../../video/promotional-video.mp4';
+import VideoSubtitles from '../../video/promotional-video-subtitles.vtt';
+import VideoThumbnail from '../../img/video-thumbnail/video-thumbnail.png'
+import BranchesData from '../../data/branchesdata'
+import { fadeIn, childVariant } from '../../data/animation';
 
 const MotionContainer = motion(Container);
 
@@ -34,14 +34,6 @@ const AnimatedCounter = ({ targetValue, label }) => {
 const HeroSection = () => {
   return (
     <>
-      <Helmet>
-        <title>Home | LT&G Credit Line</title>
-        <meta
-          name="description"
-          content="Join LT&G Credit Line's microlending franchise in the Philippines. Empower your future with a proven system, operational support, and scalable income."
-        />
-      </Helmet>
-
       <MotionContainer
         fluid
         className="custom-x-padding py-5"
@@ -58,7 +50,7 @@ const HeroSection = () => {
             className="d-flex flex-column justify-content-center text-start"
           >
             <h1 className="text-info display-3 fw-light">
-              Franchise the Future of Microlending
+              Franchise the Future <br/>of Microlending
             </h1>
 
             <p className="fs-5 fw-light text-muted mt-3">
@@ -123,9 +115,11 @@ const HeroSection = () => {
               width="100%"
               height="auto"
               controls
+              preload="none"
               poster={VideoThumbnail}
               className="rounded-3 shadow-lg"
             >
+              <track label='English' kind='subtitles' srcLang='en' src={VideoSubtitles} default />
               <source src={PromotionalVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
