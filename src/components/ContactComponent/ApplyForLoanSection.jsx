@@ -25,7 +25,7 @@ const ApplyForLoanSection = () => {
             </p>
             <hr />
             <p className='fs-5 mt-3 text-muted fw-light fst-italic'>LT&G Credit Line is open from Monday to Saturday.</p>
-            <div className='my-5'>
+            <div className='my-5 d-flex flex-column flex-md-row'>
               <Button as={Link} to="/branches" variant='danger'>Find a Branch Near You</Button>
             </div>
           </Col>

@@ -209,7 +209,7 @@ const TestimonialSection = () => {
                 </Row>
               </motion.div>
             )}
-            <Row className='text-center mb-5'>
+            <Row className='text-center mb-5 d-flex flex-column'>
               <div>
                 <Button variant='danger' className="ms-4" onClick={handleToggle}> {showFirst ? 'Show' : 'Hide'} Video Testimonial</Button>
               </div>

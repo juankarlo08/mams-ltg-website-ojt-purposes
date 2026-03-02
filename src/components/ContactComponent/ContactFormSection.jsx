@@ -145,7 +145,9 @@ const ContactFormSection = () => {
      
              />
          </Form.Group>
-        <Button variant="danger" type="submit">Submit</Button>
+         <div className='d-flex flex-md-row flex-column'>
+          <Button variant="danger" type="submit">Submit</Button>
+         </div>
       </Form>
       </motion.div>
     </Col>

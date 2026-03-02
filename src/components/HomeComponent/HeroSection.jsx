@@ -63,7 +63,7 @@ const HeroSection = () => {
             <div className="mt-4 d-flex flex-column flex-sm-row gap-3">
               <Button
                 variant="danger"
-                className="me-2 px-4 py-2"
+                className="px-4 py-2"
                 as={Link}
                 to="/franchising"
               >

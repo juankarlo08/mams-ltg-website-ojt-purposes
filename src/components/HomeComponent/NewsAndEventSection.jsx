@@ -72,14 +72,16 @@ const NewsAndEventSection = () => {
                   <Card.Title className="news-data-title">
                     {newsdata.title}
                   </Card.Title>
+                  <div className="d-flex flex-column flex-sm-row">
                   <Button
                     variant="danger"
                     className="mt-3"
                     href={newsdata.link}
-                  >
+                    >
                     {" "}
                     Read More
                   </Button>
+                    </div>
                 </Card.Body>
               </MotionCard>
             ))}
