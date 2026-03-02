@@ -14,8 +14,8 @@ const AboutHeaderSection = () => {
           <p className="mt-3 fs-5 fw-light text-muted">
             LT&G Credit Line offers loans to micro-entrepreneurs for operational or growth capital, providing customized credit, flexible terms, risk-handling insurance, and value-added services. LT&G is committed to empowering small businesses and families through fair, reliable, and accessible financial solutions. Guided by the principle "better loans, better lives," we promote financial stability, improved livelihoods, and community growth through responsible lending.
           </p>
-          <div className='mt-4'>
-            <Button variant='danger' className='me-2' as={Link} to="/franchising">Learn More</Button>
+          <div className='mt-4 d-flex flex-sm-row flex-column gap-3'>
+            <Button variant='danger' className='' as={Link} to="/franchising">Learn More</Button>
             <Button variant='secondary' as={Link} to="/contact">Join Now</Button>
           </div>
         </Col>

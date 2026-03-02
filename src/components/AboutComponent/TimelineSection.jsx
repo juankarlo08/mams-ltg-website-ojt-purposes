@@ -31,7 +31,7 @@ const TimelineSection = () => {
           <h2 className="h1 display-4 text-center">Milestones of Growth</h2>
           <p className="lead text-muted text-center mb-4">Every step marks our dedication to providing reliable credit solutions.
             Together, we've built a legacy of progress and partnership.</p>
-          <div className='mb-5'>
+          <div className='mb-5 d-flex justify-content-center flex-column flex-md-row'>
             <Button variant='danger' as={Link} to="/franchising">Become a Franchisee</Button>
           </div>
 
